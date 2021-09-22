@@ -26,11 +26,9 @@ class Win32LobAppAssignmentSettings extends MobileAppAssignmentSettings
     /**
     * Set the @odata.type since this type is immediately descended from an abstract
     * type that is referenced as the type in an entity.
-    * @param array $propDict The property dictionary
     */
-    public function __construct($propDict = array())
+    public function __construct()
     {
-        parent::__construct($propDict);
         $this->setODataType("#microsoft.graph.win32LobAppAssignmentSettings");
     }
 
@@ -43,8 +41,9 @@ class Win32LobAppAssignmentSettings extends MobileAppAssignmentSettings
     */
     public function getDeliveryOptimizationPriority()
     {
-        if (array_key_exists("deliveryOptimizationPriority", $this->_propDict)) {
-            if (is_a($this->_propDict["deliveryOptimizationPriority"], "\Microsoft\Graph\Model\Win32LobAppDeliveryOptimizationPriority") || is_null($this->_propDict["deliveryOptimizationPriority"])) {
+        if (array_key_exists("deliveryOptimizationPriority", $this->_propDict) && !is_null($this->_propDict["deliveryOptimizationPriority"])) {
+     
+            if (is_a($this->_propDict["deliveryOptimizationPriority"], "\Microsoft\Graph\Model\Win32LobAppDeliveryOptimizationPriority")) {
                 return $this->_propDict["deliveryOptimizationPriority"];
             } else {
                 $this->_propDict["deliveryOptimizationPriority"] = new Win32LobAppDeliveryOptimizationPriority($this->_propDict["deliveryOptimizationPriority"]);
@@ -76,8 +75,9 @@ class Win32LobAppAssignmentSettings extends MobileAppAssignmentSettings
     */
     public function getInstallTimeSettings()
     {
-        if (array_key_exists("installTimeSettings", $this->_propDict)) {
-            if (is_a($this->_propDict["installTimeSettings"], "\Microsoft\Graph\Model\MobileAppInstallTimeSettings") || is_null($this->_propDict["installTimeSettings"])) {
+        if (array_key_exists("installTimeSettings", $this->_propDict) && !is_null($this->_propDict["installTimeSettings"])) {
+     
+            if (is_a($this->_propDict["installTimeSettings"], "\Microsoft\Graph\Model\MobileAppInstallTimeSettings")) {
                 return $this->_propDict["installTimeSettings"];
             } else {
                 $this->_propDict["installTimeSettings"] = new MobileAppInstallTimeSettings($this->_propDict["installTimeSettings"]);
@@ -109,8 +109,9 @@ class Win32LobAppAssignmentSettings extends MobileAppAssignmentSettings
     */
     public function getNotifications()
     {
-        if (array_key_exists("notifications", $this->_propDict)) {
-            if (is_a($this->_propDict["notifications"], "\Microsoft\Graph\Model\Win32LobAppNotification") || is_null($this->_propDict["notifications"])) {
+        if (array_key_exists("notifications", $this->_propDict) && !is_null($this->_propDict["notifications"])) {
+     
+            if (is_a($this->_propDict["notifications"], "\Microsoft\Graph\Model\Win32LobAppNotification")) {
                 return $this->_propDict["notifications"];
             } else {
                 $this->_propDict["notifications"] = new Win32LobAppNotification($this->_propDict["notifications"]);
@@ -142,8 +143,9 @@ class Win32LobAppAssignmentSettings extends MobileAppAssignmentSettings
     */
     public function getRestartSettings()
     {
-        if (array_key_exists("restartSettings", $this->_propDict)) {
-            if (is_a($this->_propDict["restartSettings"], "\Microsoft\Graph\Model\Win32LobAppRestartSettings") || is_null($this->_propDict["restartSettings"])) {
+        if (array_key_exists("restartSettings", $this->_propDict) && !is_null($this->_propDict["restartSettings"])) {
+     
+            if (is_a($this->_propDict["restartSettings"], "\Microsoft\Graph\Model\Win32LobAppRestartSettings")) {
                 return $this->_propDict["restartSettings"];
             } else {
                 $this->_propDict["restartSettings"] = new Win32LobAppRestartSettings($this->_propDict["restartSettings"]);

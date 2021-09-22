@@ -61,11 +61,11 @@ class OrganizationalBrandingProperties extends Entity
     */
     public function getBackgroundImage()
     {
-        if (array_key_exists("backgroundImage", $this->_propDict)) {
-            if (is_a($this->_propDict["backgroundImage"], "\GuzzleHttp\Psr7\Stream") || is_null($this->_propDict["backgroundImage"])) {
+        if (array_key_exists("backgroundImage", $this->_propDict) && !is_null($this->_propDict["backgroundImage"])) {
+            if (is_a($this->_propDict["backgroundImage"], "\GuzzleHttp\Psr7\Stream")) {
                 return $this->_propDict["backgroundImage"];
             } else {
-                $this->_propDict["backgroundImage"] = \GuzzleHttp\Psr7\Utils::streamFor($this->_propDict["backgroundImage"]);
+                $this->_propDict["backgroundImage"] = \GuzzleHttp\Psr7\stream_for($this->_propDict["backgroundImage"]);
                 return $this->_propDict["backgroundImage"];
             }
         }
@@ -94,11 +94,11 @@ class OrganizationalBrandingProperties extends Entity
     */
     public function getBannerLogo()
     {
-        if (array_key_exists("bannerLogo", $this->_propDict)) {
-            if (is_a($this->_propDict["bannerLogo"], "\GuzzleHttp\Psr7\Stream") || is_null($this->_propDict["bannerLogo"])) {
+        if (array_key_exists("bannerLogo", $this->_propDict) && !is_null($this->_propDict["bannerLogo"])) {
+            if (is_a($this->_propDict["bannerLogo"], "\GuzzleHttp\Psr7\Stream")) {
                 return $this->_propDict["bannerLogo"];
             } else {
-                $this->_propDict["bannerLogo"] = \GuzzleHttp\Psr7\Utils::streamFor($this->_propDict["bannerLogo"]);
+                $this->_propDict["bannerLogo"] = \GuzzleHttp\Psr7\stream_for($this->_propDict["bannerLogo"]);
                 return $this->_propDict["bannerLogo"];
             }
         }
@@ -156,11 +156,11 @@ class OrganizationalBrandingProperties extends Entity
     */
     public function getSquareLogo()
     {
-        if (array_key_exists("squareLogo", $this->_propDict)) {
-            if (is_a($this->_propDict["squareLogo"], "\GuzzleHttp\Psr7\Stream") || is_null($this->_propDict["squareLogo"])) {
+        if (array_key_exists("squareLogo", $this->_propDict) && !is_null($this->_propDict["squareLogo"])) {
+            if (is_a($this->_propDict["squareLogo"], "\GuzzleHttp\Psr7\Stream")) {
                 return $this->_propDict["squareLogo"];
             } else {
-                $this->_propDict["squareLogo"] = \GuzzleHttp\Psr7\Utils::streamFor($this->_propDict["squareLogo"]);
+                $this->_propDict["squareLogo"] = \GuzzleHttp\Psr7\stream_for($this->_propDict["squareLogo"]);
                 return $this->_propDict["squareLogo"];
             }
         }
