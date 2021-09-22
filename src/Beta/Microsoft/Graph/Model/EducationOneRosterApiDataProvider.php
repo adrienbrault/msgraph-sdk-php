@@ -26,11 +26,9 @@ class EducationOneRosterApiDataProvider extends EducationSynchronizationDataProv
     /**
     * Set the @odata.type since this type is immediately descended from an abstract
     * type that is referenced as the type in an entity.
-    * @param array $propDict The property dictionary
     */
-    public function __construct($propDict = array())
+    public function __construct()
     {
-        parent::__construct($propDict);
         $this->setODataType("#microsoft.graph.educationOneRosterApiDataProvider");
     }
 
@@ -42,8 +40,9 @@ class EducationOneRosterApiDataProvider extends EducationSynchronizationDataProv
     */
     public function getConnectionSettings()
     {
-        if (array_key_exists("connectionSettings", $this->_propDict)) {
-            if (is_a($this->_propDict["connectionSettings"], "\Beta\Microsoft\Graph\Model\EducationSynchronizationConnectionSettings") || is_null($this->_propDict["connectionSettings"])) {
+        if (array_key_exists("connectionSettings", $this->_propDict) && !is_null($this->_propDict["connectionSettings"])) {
+     
+            if (is_a($this->_propDict["connectionSettings"], "\Beta\Microsoft\Graph\Model\EducationSynchronizationConnectionSettings")) {
                 return $this->_propDict["connectionSettings"];
             } else {
                 $this->_propDict["connectionSettings"] = new EducationSynchronizationConnectionSettings($this->_propDict["connectionSettings"]);
@@ -99,8 +98,9 @@ class EducationOneRosterApiDataProvider extends EducationSynchronizationDataProv
     */
     public function getCustomizations()
     {
-        if (array_key_exists("customizations", $this->_propDict)) {
-            if (is_a($this->_propDict["customizations"], "\Beta\Microsoft\Graph\Model\EducationSynchronizationCustomizations") || is_null($this->_propDict["customizations"])) {
+        if (array_key_exists("customizations", $this->_propDict) && !is_null($this->_propDict["customizations"])) {
+     
+            if (is_a($this->_propDict["customizations"], "\Beta\Microsoft\Graph\Model\EducationSynchronizationCustomizations")) {
                 return $this->_propDict["customizations"];
             } else {
                 $this->_propDict["customizations"] = new EducationSynchronizationCustomizations($this->_propDict["customizations"]);
@@ -165,7 +165,7 @@ class EducationOneRosterApiDataProvider extends EducationSynchronizationDataProv
     /**
     * Sets the schoolsIds
     *
-    * @param string $val The value of the schoolsIds
+    * @param string[] $val The value of the schoolsIds
     *
     * @return EducationOneRosterApiDataProvider
     */
@@ -191,7 +191,7 @@ class EducationOneRosterApiDataProvider extends EducationSynchronizationDataProv
     /**
     * Sets the termIds
     *
-    * @param string $val The value of the termIds
+    * @param string[] $val The value of the termIds
     *
     * @return EducationOneRosterApiDataProvider
     */

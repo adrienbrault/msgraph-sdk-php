@@ -31,8 +31,9 @@ class PropertyRule extends \Beta\Microsoft\Graph\Model\Entity
     */
     public function getOperation()
     {
-        if (array_key_exists("operation", $this->_propDict)) {
-            if (is_a($this->_propDict["operation"], "\Beta\Microsoft\Graph\ExternalConnectors\Model\RuleOperation") || is_null($this->_propDict["operation"])) {
+        if (array_key_exists("operation", $this->_propDict) && !is_null($this->_propDict["operation"])) {
+     
+            if (is_a($this->_propDict["operation"], "\Beta\Microsoft\Graph\ExternalConnectors\Model\RuleOperation")) {
                 return $this->_propDict["operation"];
             } else {
                 $this->_propDict["operation"] = new RuleOperation($this->_propDict["operation"]);
@@ -97,7 +98,7 @@ class PropertyRule extends \Beta\Microsoft\Graph\Model\Entity
     /**
     * Sets the values
     *
-    * @param string $val The value of the values
+    * @param string[] $val The value of the values
     *
     * @return PropertyRule
     */
@@ -114,8 +115,9 @@ class PropertyRule extends \Beta\Microsoft\Graph\Model\Entity
     */
     public function getValuesJoinedBy()
     {
-        if (array_key_exists("valuesJoinedBy", $this->_propDict)) {
-            if (is_a($this->_propDict["valuesJoinedBy"], "\Beta\Microsoft\Graph\Model\BinaryOperator") || is_null($this->_propDict["valuesJoinedBy"])) {
+        if (array_key_exists("valuesJoinedBy", $this->_propDict) && !is_null($this->_propDict["valuesJoinedBy"])) {
+     
+            if (is_a($this->_propDict["valuesJoinedBy"], "\Beta\Microsoft\Graph\Model\BinaryOperator")) {
                 return $this->_propDict["valuesJoinedBy"];
             } else {
                 $this->_propDict["valuesJoinedBy"] = new \Beta\Microsoft\Graph\Model\BinaryOperator($this->_propDict["valuesJoinedBy"]);

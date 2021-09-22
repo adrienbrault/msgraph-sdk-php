@@ -31,8 +31,9 @@ class AttackSimulationRepeatOffender extends Entity
     */
     public function getAttackSimulationUser()
     {
-        if (array_key_exists("attackSimulationUser", $this->_propDict)) {
-            if (is_a($this->_propDict["attackSimulationUser"], "\Beta\Microsoft\Graph\Model\AttackSimulationUser") || is_null($this->_propDict["attackSimulationUser"])) {
+        if (array_key_exists("attackSimulationUser", $this->_propDict) && !is_null($this->_propDict["attackSimulationUser"])) {
+     
+            if (is_a($this->_propDict["attackSimulationUser"], "\Beta\Microsoft\Graph\Model\AttackSimulationUser")) {
                 return $this->_propDict["attackSimulationUser"];
             } else {
                 $this->_propDict["attackSimulationUser"] = new AttackSimulationUser($this->_propDict["attackSimulationUser"]);

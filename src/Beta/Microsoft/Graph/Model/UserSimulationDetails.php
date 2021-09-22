@@ -83,8 +83,9 @@ class UserSimulationDetails extends Entity
     */
     public function getCompromisedDateTime()
     {
-        if (array_key_exists("compromisedDateTime", $this->_propDict)) {
-            if (is_a($this->_propDict["compromisedDateTime"], "\DateTime") || is_null($this->_propDict["compromisedDateTime"])) {
+        if (array_key_exists("compromisedDateTime", $this->_propDict) && !is_null($this->_propDict["compromisedDateTime"])) {
+     
+            if (is_a($this->_propDict["compromisedDateTime"], "\DateTime")) {
                 return $this->_propDict["compromisedDateTime"];
             } else {
                 $this->_propDict["compromisedDateTime"] = new \DateTime($this->_propDict["compromisedDateTime"]);
@@ -166,8 +167,9 @@ class UserSimulationDetails extends Entity
     */
     public function getReportedPhishDateTime()
     {
-        if (array_key_exists("reportedPhishDateTime", $this->_propDict)) {
-            if (is_a($this->_propDict["reportedPhishDateTime"], "\DateTime") || is_null($this->_propDict["reportedPhishDateTime"])) {
+        if (array_key_exists("reportedPhishDateTime", $this->_propDict) && !is_null($this->_propDict["reportedPhishDateTime"])) {
+     
+            if (is_a($this->_propDict["reportedPhishDateTime"], "\DateTime")) {
                 return $this->_propDict["reportedPhishDateTime"];
             } else {
                 $this->_propDict["reportedPhishDateTime"] = new \DateTime($this->_propDict["reportedPhishDateTime"]);
@@ -193,25 +195,29 @@ class UserSimulationDetails extends Entity
     /**
     * Gets the simulationEvents
     *
-    * @return UserSimulationEventInfo|null The simulationEvents
+    * @return UserSimulationEventInfo[]|null The simulationEvents
     */
     public function getSimulationEvents()
     {
-        if (array_key_exists("simulationEvents", $this->_propDict)) {
-            if (is_a($this->_propDict["simulationEvents"], "\Beta\Microsoft\Graph\Model\UserSimulationEventInfo") || is_null($this->_propDict["simulationEvents"])) {
-                return $this->_propDict["simulationEvents"];
-            } else {
-                $this->_propDict["simulationEvents"] = new UserSimulationEventInfo($this->_propDict["simulationEvents"]);
-                return $this->_propDict["simulationEvents"];
+        if (array_key_exists("simulationEvents", $this->_propDict) && !is_null($this->_propDict["simulationEvents"])) {
+       
+            if (count($this->_propDict['simulationEvents']) > 0 && is_a($this->_propDict['simulationEvents'][0], 'UserSimulationEventInfo')) {
+               return $this->_propDict['simulationEvents'];
             }
-        }
+            $simulationEvents = [];
+            foreach ($this->_propDict['simulationEvents'] as $singleValue) {
+               $simulationEvents []= new UserSimulationEventInfo($singleValue);
+            }
+            $this->_propDict['simulationEvents'] = $simulationEvents;
+            return $this->_propDict['simulationEvents'];
+            }
         return null;
     }
 
     /**
     * Sets the simulationEvents
     *
-    * @param UserSimulationEventInfo $val The value to assign to the simulationEvents
+    * @param UserSimulationEventInfo[] $val The value to assign to the simulationEvents
     *
     * @return UserSimulationDetails The UserSimulationDetails
     */
@@ -228,8 +234,9 @@ class UserSimulationDetails extends Entity
     */
     public function getSimulationUser()
     {
-        if (array_key_exists("simulationUser", $this->_propDict)) {
-            if (is_a($this->_propDict["simulationUser"], "\Beta\Microsoft\Graph\Model\AttackSimulationUser") || is_null($this->_propDict["simulationUser"])) {
+        if (array_key_exists("simulationUser", $this->_propDict) && !is_null($this->_propDict["simulationUser"])) {
+     
+            if (is_a($this->_propDict["simulationUser"], "\Beta\Microsoft\Graph\Model\AttackSimulationUser")) {
                 return $this->_propDict["simulationUser"];
             } else {
                 $this->_propDict["simulationUser"] = new AttackSimulationUser($this->_propDict["simulationUser"]);
@@ -255,25 +262,29 @@ class UserSimulationDetails extends Entity
     /**
     * Gets the trainingEvents
     *
-    * @return UserTrainingEventInfo|null The trainingEvents
+    * @return UserTrainingEventInfo[]|null The trainingEvents
     */
     public function getTrainingEvents()
     {
-        if (array_key_exists("trainingEvents", $this->_propDict)) {
-            if (is_a($this->_propDict["trainingEvents"], "\Beta\Microsoft\Graph\Model\UserTrainingEventInfo") || is_null($this->_propDict["trainingEvents"])) {
-                return $this->_propDict["trainingEvents"];
-            } else {
-                $this->_propDict["trainingEvents"] = new UserTrainingEventInfo($this->_propDict["trainingEvents"]);
-                return $this->_propDict["trainingEvents"];
+        if (array_key_exists("trainingEvents", $this->_propDict) && !is_null($this->_propDict["trainingEvents"])) {
+       
+            if (count($this->_propDict['trainingEvents']) > 0 && is_a($this->_propDict['trainingEvents'][0], 'UserTrainingEventInfo')) {
+               return $this->_propDict['trainingEvents'];
             }
-        }
+            $trainingEvents = [];
+            foreach ($this->_propDict['trainingEvents'] as $singleValue) {
+               $trainingEvents []= new UserTrainingEventInfo($singleValue);
+            }
+            $this->_propDict['trainingEvents'] = $trainingEvents;
+            return $this->_propDict['trainingEvents'];
+            }
         return null;
     }
 
     /**
     * Sets the trainingEvents
     *
-    * @param UserTrainingEventInfo $val The value to assign to the trainingEvents
+    * @param UserTrainingEventInfo[] $val The value to assign to the trainingEvents
     *
     * @return UserSimulationDetails The UserSimulationDetails
     */

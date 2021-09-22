@@ -31,8 +31,9 @@ class PasswordCredentialConfiguration extends Entity
     */
     public function getMaxLifetime()
     {
-        if (array_key_exists("maxLifetime", $this->_propDict)) {
-            if (is_a($this->_propDict["maxLifetime"], "\Beta\Microsoft\Graph\Model\Duration") || is_null($this->_propDict["maxLifetime"])) {
+        if (array_key_exists("maxLifetime", $this->_propDict) && !is_null($this->_propDict["maxLifetime"])) {
+     
+            if (is_a($this->_propDict["maxLifetime"], "\Beta\Microsoft\Graph\Model\Duration")) {
                 return $this->_propDict["maxLifetime"];
             } else {
                 $this->_propDict["maxLifetime"] = new Duration($this->_propDict["maxLifetime"]);
@@ -63,8 +64,9 @@ class PasswordCredentialConfiguration extends Entity
     */
     public function getRestrictForAppsCreatedAfterDateTime()
     {
-        if (array_key_exists("restrictForAppsCreatedAfterDateTime", $this->_propDict)) {
-            if (is_a($this->_propDict["restrictForAppsCreatedAfterDateTime"], "\DateTime") || is_null($this->_propDict["restrictForAppsCreatedAfterDateTime"])) {
+        if (array_key_exists("restrictForAppsCreatedAfterDateTime", $this->_propDict) && !is_null($this->_propDict["restrictForAppsCreatedAfterDateTime"])) {
+     
+            if (is_a($this->_propDict["restrictForAppsCreatedAfterDateTime"], "\DateTime")) {
                 return $this->_propDict["restrictForAppsCreatedAfterDateTime"];
             } else {
                 $this->_propDict["restrictForAppsCreatedAfterDateTime"] = new \DateTime($this->_propDict["restrictForAppsCreatedAfterDateTime"]);
@@ -96,8 +98,9 @@ class PasswordCredentialConfiguration extends Entity
     */
     public function getRestrictionType()
     {
-        if (array_key_exists("restrictionType", $this->_propDict)) {
-            if (is_a($this->_propDict["restrictionType"], "\Beta\Microsoft\Graph\Model\AppCredentialRestrictionType") || is_null($this->_propDict["restrictionType"])) {
+        if (array_key_exists("restrictionType", $this->_propDict) && !is_null($this->_propDict["restrictionType"])) {
+     
+            if (is_a($this->_propDict["restrictionType"], "\Beta\Microsoft\Graph\Model\AppCredentialRestrictionType")) {
                 return $this->_propDict["restrictionType"];
             } else {
                 $this->_propDict["restrictionType"] = new AppCredentialRestrictionType($this->_propDict["restrictionType"]);

@@ -31,8 +31,9 @@ class AttackSimulationSimulationUserCoverage extends Entity
     */
     public function getAttackSimulationUser()
     {
-        if (array_key_exists("attackSimulationUser", $this->_propDict)) {
-            if (is_a($this->_propDict["attackSimulationUser"], "\Beta\Microsoft\Graph\Model\AttackSimulationUser") || is_null($this->_propDict["attackSimulationUser"])) {
+        if (array_key_exists("attackSimulationUser", $this->_propDict) && !is_null($this->_propDict["attackSimulationUser"])) {
+     
+            if (is_a($this->_propDict["attackSimulationUser"], "\Beta\Microsoft\Graph\Model\AttackSimulationUser")) {
                 return $this->_propDict["attackSimulationUser"];
             } else {
                 $this->_propDict["attackSimulationUser"] = new AttackSimulationUser($this->_propDict["attackSimulationUser"]);
@@ -114,8 +115,9 @@ class AttackSimulationSimulationUserCoverage extends Entity
     */
     public function getLatestSimulationDateTime()
     {
-        if (array_key_exists("latestSimulationDateTime", $this->_propDict)) {
-            if (is_a($this->_propDict["latestSimulationDateTime"], "\DateTime") || is_null($this->_propDict["latestSimulationDateTime"])) {
+        if (array_key_exists("latestSimulationDateTime", $this->_propDict) && !is_null($this->_propDict["latestSimulationDateTime"])) {
+     
+            if (is_a($this->_propDict["latestSimulationDateTime"], "\DateTime")) {
                 return $this->_propDict["latestSimulationDateTime"];
             } else {
                 $this->_propDict["latestSimulationDateTime"] = new \DateTime($this->_propDict["latestSimulationDateTime"]);

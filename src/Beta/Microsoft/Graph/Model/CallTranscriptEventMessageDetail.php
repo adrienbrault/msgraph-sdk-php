@@ -26,11 +26,9 @@ class CallTranscriptEventMessageDetail extends EventMessageDetail
     /**
     * Set the @odata.type since this type is immediately descended from an abstract
     * type that is referenced as the type in an entity.
-    * @param array $propDict The property dictionary
     */
-    public function __construct($propDict = array())
+    public function __construct()
     {
-        parent::__construct($propDict);
         $this->setODataType("#microsoft.graph.callTranscriptEventMessageDetail");
     }
 
@@ -99,8 +97,9 @@ class CallTranscriptEventMessageDetail extends EventMessageDetail
     */
     public function getMeetingOrganizer()
     {
-        if (array_key_exists("meetingOrganizer", $this->_propDict)) {
-            if (is_a($this->_propDict["meetingOrganizer"], "\Beta\Microsoft\Graph\Model\IdentitySet") || is_null($this->_propDict["meetingOrganizer"])) {
+        if (array_key_exists("meetingOrganizer", $this->_propDict) && !is_null($this->_propDict["meetingOrganizer"])) {
+     
+            if (is_a($this->_propDict["meetingOrganizer"], "\Beta\Microsoft\Graph\Model\IdentitySet")) {
                 return $this->_propDict["meetingOrganizer"];
             } else {
                 $this->_propDict["meetingOrganizer"] = new IdentitySet($this->_propDict["meetingOrganizer"]);

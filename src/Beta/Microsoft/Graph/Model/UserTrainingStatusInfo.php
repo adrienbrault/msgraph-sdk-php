@@ -31,8 +31,9 @@ class UserTrainingStatusInfo extends Entity
     */
     public function getAssignedDateTime()
     {
-        if (array_key_exists("assignedDateTime", $this->_propDict)) {
-            if (is_a($this->_propDict["assignedDateTime"], "\DateTime") || is_null($this->_propDict["assignedDateTime"])) {
+        if (array_key_exists("assignedDateTime", $this->_propDict) && !is_null($this->_propDict["assignedDateTime"])) {
+     
+            if (is_a($this->_propDict["assignedDateTime"], "\DateTime")) {
                 return $this->_propDict["assignedDateTime"];
             } else {
                 $this->_propDict["assignedDateTime"] = new \DateTime($this->_propDict["assignedDateTime"]);
@@ -62,8 +63,9 @@ class UserTrainingStatusInfo extends Entity
     */
     public function getCompletionDateTime()
     {
-        if (array_key_exists("completionDateTime", $this->_propDict)) {
-            if (is_a($this->_propDict["completionDateTime"], "\DateTime") || is_null($this->_propDict["completionDateTime"])) {
+        if (array_key_exists("completionDateTime", $this->_propDict) && !is_null($this->_propDict["completionDateTime"])) {
+     
+            if (is_a($this->_propDict["completionDateTime"], "\DateTime")) {
                 return $this->_propDict["completionDateTime"];
             } else {
                 $this->_propDict["completionDateTime"] = new \DateTime($this->_propDict["completionDateTime"]);
@@ -119,8 +121,9 @@ class UserTrainingStatusInfo extends Entity
     */
     public function getTrainingStatus()
     {
-        if (array_key_exists("trainingStatus", $this->_propDict)) {
-            if (is_a($this->_propDict["trainingStatus"], "\Beta\Microsoft\Graph\Model\TrainingStatus") || is_null($this->_propDict["trainingStatus"])) {
+        if (array_key_exists("trainingStatus", $this->_propDict) && !is_null($this->_propDict["trainingStatus"])) {
+     
+            if (is_a($this->_propDict["trainingStatus"], "\Beta\Microsoft\Graph\Model\TrainingStatus")) {
                 return $this->_propDict["trainingStatus"];
             } else {
                 $this->_propDict["trainingStatus"] = new TrainingStatus($this->_propDict["trainingStatus"]);

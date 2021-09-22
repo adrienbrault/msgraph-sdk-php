@@ -26,11 +26,9 @@ class DeviceManagementConfigurationSimpleSettingInstanceTemplate extends DeviceM
     /**
     * Set the @odata.type since this type is immediately descended from an abstract
     * type that is referenced as the type in an entity.
-    * @param array $propDict The property dictionary
     */
-    public function __construct($propDict = array())
+    public function __construct()
     {
-        parent::__construct($propDict);
         $this->setODataType("#microsoft.graph.deviceManagementConfigurationSimpleSettingInstanceTemplate");
     }
 
@@ -43,8 +41,9 @@ class DeviceManagementConfigurationSimpleSettingInstanceTemplate extends DeviceM
     */
     public function getSimpleSettingValueTemplate()
     {
-        if (array_key_exists("simpleSettingValueTemplate", $this->_propDict)) {
-            if (is_a($this->_propDict["simpleSettingValueTemplate"], "\Beta\Microsoft\Graph\Model\DeviceManagementConfigurationSimpleSettingValueTemplate") || is_null($this->_propDict["simpleSettingValueTemplate"])) {
+        if (array_key_exists("simpleSettingValueTemplate", $this->_propDict) && !is_null($this->_propDict["simpleSettingValueTemplate"])) {
+     
+            if (is_a($this->_propDict["simpleSettingValueTemplate"], "\Beta\Microsoft\Graph\Model\DeviceManagementConfigurationSimpleSettingValueTemplate")) {
                 return $this->_propDict["simpleSettingValueTemplate"];
             } else {
                 $this->_propDict["simpleSettingValueTemplate"] = new DeviceManagementConfigurationSimpleSettingValueTemplate($this->_propDict["simpleSettingValueTemplate"]);

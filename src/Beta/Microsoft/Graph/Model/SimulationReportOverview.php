@@ -27,25 +27,29 @@ class SimulationReportOverview extends Entity
     /**
     * Gets the recommendedActions
     *
-    * @return RecommendedAction|null The recommendedActions
+    * @return RecommendedAction[]|null The recommendedActions
     */
     public function getRecommendedActions()
     {
-        if (array_key_exists("recommendedActions", $this->_propDict)) {
-            if (is_a($this->_propDict["recommendedActions"], "\Beta\Microsoft\Graph\Model\RecommendedAction") || is_null($this->_propDict["recommendedActions"])) {
-                return $this->_propDict["recommendedActions"];
-            } else {
-                $this->_propDict["recommendedActions"] = new RecommendedAction($this->_propDict["recommendedActions"]);
-                return $this->_propDict["recommendedActions"];
+        if (array_key_exists("recommendedActions", $this->_propDict) && !is_null($this->_propDict["recommendedActions"])) {
+       
+            if (count($this->_propDict['recommendedActions']) > 0 && is_a($this->_propDict['recommendedActions'][0], 'RecommendedAction')) {
+               return $this->_propDict['recommendedActions'];
             }
-        }
+            $recommendedActions = [];
+            foreach ($this->_propDict['recommendedActions'] as $singleValue) {
+               $recommendedActions []= new RecommendedAction($singleValue);
+            }
+            $this->_propDict['recommendedActions'] = $recommendedActions;
+            return $this->_propDict['recommendedActions'];
+            }
         return null;
     }
 
     /**
     * Sets the recommendedActions
     *
-    * @param RecommendedAction $val The value to assign to the recommendedActions
+    * @param RecommendedAction[] $val The value to assign to the recommendedActions
     *
     * @return SimulationReportOverview The SimulationReportOverview
     */
@@ -88,8 +92,9 @@ class SimulationReportOverview extends Entity
     */
     public function getSimulationEventsContent()
     {
-        if (array_key_exists("simulationEventsContent", $this->_propDict)) {
-            if (is_a($this->_propDict["simulationEventsContent"], "\Beta\Microsoft\Graph\Model\SimulationEventsContent") || is_null($this->_propDict["simulationEventsContent"])) {
+        if (array_key_exists("simulationEventsContent", $this->_propDict) && !is_null($this->_propDict["simulationEventsContent"])) {
+     
+            if (is_a($this->_propDict["simulationEventsContent"], "\Beta\Microsoft\Graph\Model\SimulationEventsContent")) {
                 return $this->_propDict["simulationEventsContent"];
             } else {
                 $this->_propDict["simulationEventsContent"] = new SimulationEventsContent($this->_propDict["simulationEventsContent"]);
@@ -119,8 +124,9 @@ class SimulationReportOverview extends Entity
     */
     public function getTrainingEventsContent()
     {
-        if (array_key_exists("trainingEventsContent", $this->_propDict)) {
-            if (is_a($this->_propDict["trainingEventsContent"], "\Beta\Microsoft\Graph\Model\TrainingEventsContent") || is_null($this->_propDict["trainingEventsContent"])) {
+        if (array_key_exists("trainingEventsContent", $this->_propDict) && !is_null($this->_propDict["trainingEventsContent"])) {
+     
+            if (is_a($this->_propDict["trainingEventsContent"], "\Beta\Microsoft\Graph\Model\TrainingEventsContent")) {
                 return $this->_propDict["trainingEventsContent"];
             } else {
                 $this->_propDict["trainingEventsContent"] = new TrainingEventsContent($this->_propDict["trainingEventsContent"]);

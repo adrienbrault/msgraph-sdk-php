@@ -105,25 +105,29 @@ class DisplayTemplate extends \Beta\Microsoft\Graph\Model\Entity
     /**
     * Gets the rules
     *
-    * @return PropertyRule|null The rules
+    * @return PropertyRule[]|null The rules
     */
     public function getRules()
     {
-        if (array_key_exists("rules", $this->_propDict)) {
-            if (is_a($this->_propDict["rules"], "\Beta\Microsoft\Graph\ExternalConnectors\Model\PropertyRule") || is_null($this->_propDict["rules"])) {
-                return $this->_propDict["rules"];
-            } else {
-                $this->_propDict["rules"] = new PropertyRule($this->_propDict["rules"]);
-                return $this->_propDict["rules"];
+        if (array_key_exists("rules", $this->_propDict) && !is_null($this->_propDict["rules"])) {
+       
+            if (count($this->_propDict['rules']) > 0 && is_a($this->_propDict['rules'][0], 'PropertyRule')) {
+               return $this->_propDict['rules'];
             }
-        }
+            $rules = [];
+            foreach ($this->_propDict['rules'] as $singleValue) {
+               $rules []= new PropertyRule($singleValue);
+            }
+            $this->_propDict['rules'] = $rules;
+            return $this->_propDict['rules'];
+            }
         return null;
     }
 
     /**
     * Sets the rules
     *
-    * @param PropertyRule $val The value to assign to the rules
+    * @param PropertyRule[] $val The value to assign to the rules
     *
     * @return DisplayTemplate The DisplayTemplate
     */

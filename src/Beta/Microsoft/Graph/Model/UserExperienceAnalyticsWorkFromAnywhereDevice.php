@@ -322,8 +322,8 @@ class UserExperienceAnalyticsWorkFromAnywhereDevice extends Entity
     */
     public function getHealthStatus()
     {
-        if (array_key_exists("healthStatus", $this->_propDict)) {
-            if (is_a($this->_propDict["healthStatus"], "\Beta\Microsoft\Graph\Model\UserExperienceAnalyticsHealthState") || is_null($this->_propDict["healthStatus"])) {
+        if (array_key_exists("healthStatus", $this->_propDict) && !is_null($this->_propDict["healthStatus"])) {
+            if (is_a($this->_propDict["healthStatus"], "\Beta\Microsoft\Graph\Model\UserExperienceAnalyticsHealthState")) {
                 return $this->_propDict["healthStatus"];
             } else {
                 $this->_propDict["healthStatus"] = new UserExperienceAnalyticsHealthState($this->_propDict["healthStatus"]);
@@ -877,8 +877,8 @@ class UserExperienceAnalyticsWorkFromAnywhereDevice extends Entity
     */
     public function getUpgradeEligibility()
     {
-        if (array_key_exists("upgradeEligibility", $this->_propDict)) {
-            if (is_a($this->_propDict["upgradeEligibility"], "\Beta\Microsoft\Graph\Model\OperatingSystemUpgradeEligibility") || is_null($this->_propDict["upgradeEligibility"])) {
+        if (array_key_exists("upgradeEligibility", $this->_propDict) && !is_null($this->_propDict["upgradeEligibility"])) {
+            if (is_a($this->_propDict["upgradeEligibility"], "\Beta\Microsoft\Graph\Model\OperatingSystemUpgradeEligibility")) {
                 return $this->_propDict["upgradeEligibility"];
             } else {
                 $this->_propDict["upgradeEligibility"] = new OperatingSystemUpgradeEligibility($this->_propDict["upgradeEligibility"]);

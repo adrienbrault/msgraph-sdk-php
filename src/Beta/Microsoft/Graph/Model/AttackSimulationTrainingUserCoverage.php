@@ -31,8 +31,9 @@ class AttackSimulationTrainingUserCoverage extends Entity
     */
     public function getAttackSimulationUser()
     {
-        if (array_key_exists("attackSimulationUser", $this->_propDict)) {
-            if (is_a($this->_propDict["attackSimulationUser"], "\Beta\Microsoft\Graph\Model\AttackSimulationUser") || is_null($this->_propDict["attackSimulationUser"])) {
+        if (array_key_exists("attackSimulationUser", $this->_propDict) && !is_null($this->_propDict["attackSimulationUser"])) {
+     
+            if (is_a($this->_propDict["attackSimulationUser"], "\Beta\Microsoft\Graph\Model\AttackSimulationUser")) {
                 return $this->_propDict["attackSimulationUser"];
             } else {
                 $this->_propDict["attackSimulationUser"] = new AttackSimulationUser($this->_propDict["attackSimulationUser"]);
@@ -58,25 +59,29 @@ class AttackSimulationTrainingUserCoverage extends Entity
     /**
     * Gets the userTrainings
     *
-    * @return UserTrainingStatusInfo|null The userTrainings
+    * @return UserTrainingStatusInfo[]|null The userTrainings
     */
     public function getUserTrainings()
     {
-        if (array_key_exists("userTrainings", $this->_propDict)) {
-            if (is_a($this->_propDict["userTrainings"], "\Beta\Microsoft\Graph\Model\UserTrainingStatusInfo") || is_null($this->_propDict["userTrainings"])) {
-                return $this->_propDict["userTrainings"];
-            } else {
-                $this->_propDict["userTrainings"] = new UserTrainingStatusInfo($this->_propDict["userTrainings"]);
-                return $this->_propDict["userTrainings"];
+        if (array_key_exists("userTrainings", $this->_propDict) && !is_null($this->_propDict["userTrainings"])) {
+       
+            if (count($this->_propDict['userTrainings']) > 0 && is_a($this->_propDict['userTrainings'][0], 'UserTrainingStatusInfo')) {
+               return $this->_propDict['userTrainings'];
             }
-        }
+            $userTrainings = [];
+            foreach ($this->_propDict['userTrainings'] as $singleValue) {
+               $userTrainings []= new UserTrainingStatusInfo($singleValue);
+            }
+            $this->_propDict['userTrainings'] = $userTrainings;
+            return $this->_propDict['userTrainings'];
+            }
         return null;
     }
 
     /**
     * Sets the userTrainings
     *
-    * @param UserTrainingStatusInfo $val The value to assign to the userTrainings
+    * @param UserTrainingStatusInfo[] $val The value to assign to the userTrainings
     *
     * @return AttackSimulationTrainingUserCoverage The AttackSimulationTrainingUserCoverage
     */

@@ -57,8 +57,9 @@ class UserTrainingContentEventInfo extends Entity
     */
     public function getContentDateTime()
     {
-        if (array_key_exists("contentDateTime", $this->_propDict)) {
-            if (is_a($this->_propDict["contentDateTime"], "\DateTime") || is_null($this->_propDict["contentDateTime"])) {
+        if (array_key_exists("contentDateTime", $this->_propDict) && !is_null($this->_propDict["contentDateTime"])) {
+     
+            if (is_a($this->_propDict["contentDateTime"], "\DateTime")) {
                 return $this->_propDict["contentDateTime"];
             } else {
                 $this->_propDict["contentDateTime"] = new \DateTime($this->_propDict["contentDateTime"]);

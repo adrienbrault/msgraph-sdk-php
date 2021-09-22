@@ -31,8 +31,8 @@ class Simulation extends Entity
     */
     public function getAttackTechnique()
     {
-        if (array_key_exists("attackTechnique", $this->_propDict)) {
-            if (is_a($this->_propDict["attackTechnique"], "\Beta\Microsoft\Graph\Model\SimulationAttackTechnique") || is_null($this->_propDict["attackTechnique"])) {
+        if (array_key_exists("attackTechnique", $this->_propDict) && !is_null($this->_propDict["attackTechnique"])) {
+            if (is_a($this->_propDict["attackTechnique"], "\Beta\Microsoft\Graph\Model\SimulationAttackTechnique")) {
                 return $this->_propDict["attackTechnique"];
             } else {
                 $this->_propDict["attackTechnique"] = new SimulationAttackTechnique($this->_propDict["attackTechnique"]);
@@ -62,8 +62,8 @@ class Simulation extends Entity
     */
     public function getAttackType()
     {
-        if (array_key_exists("attackType", $this->_propDict)) {
-            if (is_a($this->_propDict["attackType"], "\Beta\Microsoft\Graph\Model\SimulationAttackType") || is_null($this->_propDict["attackType"])) {
+        if (array_key_exists("attackType", $this->_propDict) && !is_null($this->_propDict["attackType"])) {
+            if (is_a($this->_propDict["attackType"], "\Beta\Microsoft\Graph\Model\SimulationAttackType")) {
                 return $this->_propDict["attackType"];
             } else {
                 $this->_propDict["attackType"] = new SimulationAttackType($this->_propDict["attackType"]);
@@ -120,8 +120,8 @@ class Simulation extends Entity
     */
     public function getCompletionDateTime()
     {
-        if (array_key_exists("completionDateTime", $this->_propDict)) {
-            if (is_a($this->_propDict["completionDateTime"], "\DateTime") || is_null($this->_propDict["completionDateTime"])) {
+        if (array_key_exists("completionDateTime", $this->_propDict) && !is_null($this->_propDict["completionDateTime"])) {
+            if (is_a($this->_propDict["completionDateTime"], "\DateTime")) {
                 return $this->_propDict["completionDateTime"];
             } else {
                 $this->_propDict["completionDateTime"] = new \DateTime($this->_propDict["completionDateTime"]);
@@ -151,8 +151,8 @@ class Simulation extends Entity
     */
     public function getCreatedBy()
     {
-        if (array_key_exists("createdBy", $this->_propDict)) {
-            if (is_a($this->_propDict["createdBy"], "\Beta\Microsoft\Graph\Model\EmailIdentity") || is_null($this->_propDict["createdBy"])) {
+        if (array_key_exists("createdBy", $this->_propDict) && !is_null($this->_propDict["createdBy"])) {
+            if (is_a($this->_propDict["createdBy"], "\Beta\Microsoft\Graph\Model\EmailIdentity")) {
                 return $this->_propDict["createdBy"];
             } else {
                 $this->_propDict["createdBy"] = new EmailIdentity($this->_propDict["createdBy"]);
@@ -182,8 +182,8 @@ class Simulation extends Entity
     */
     public function getCreatedDateTime()
     {
-        if (array_key_exists("createdDateTime", $this->_propDict)) {
-            if (is_a($this->_propDict["createdDateTime"], "\DateTime") || is_null($this->_propDict["createdDateTime"])) {
+        if (array_key_exists("createdDateTime", $this->_propDict) && !is_null($this->_propDict["createdDateTime"])) {
+            if (is_a($this->_propDict["createdDateTime"], "\DateTime")) {
                 return $this->_propDict["createdDateTime"];
             } else {
                 $this->_propDict["createdDateTime"] = new \DateTime($this->_propDict["createdDateTime"]);
@@ -348,8 +348,8 @@ class Simulation extends Entity
     */
     public function getLastModifiedBy()
     {
-        if (array_key_exists("lastModifiedBy", $this->_propDict)) {
-            if (is_a($this->_propDict["lastModifiedBy"], "\Beta\Microsoft\Graph\Model\EmailIdentity") || is_null($this->_propDict["lastModifiedBy"])) {
+        if (array_key_exists("lastModifiedBy", $this->_propDict) && !is_null($this->_propDict["lastModifiedBy"])) {
+            if (is_a($this->_propDict["lastModifiedBy"], "\Beta\Microsoft\Graph\Model\EmailIdentity")) {
                 return $this->_propDict["lastModifiedBy"];
             } else {
                 $this->_propDict["lastModifiedBy"] = new EmailIdentity($this->_propDict["lastModifiedBy"]);
@@ -379,8 +379,8 @@ class Simulation extends Entity
     */
     public function getLastModifiedDateTime()
     {
-        if (array_key_exists("lastModifiedDateTime", $this->_propDict)) {
-            if (is_a($this->_propDict["lastModifiedDateTime"], "\DateTime") || is_null($this->_propDict["lastModifiedDateTime"])) {
+        if (array_key_exists("lastModifiedDateTime", $this->_propDict) && !is_null($this->_propDict["lastModifiedDateTime"])) {
+            if (is_a($this->_propDict["lastModifiedDateTime"], "\DateTime")) {
                 return $this->_propDict["lastModifiedDateTime"];
             } else {
                 $this->_propDict["lastModifiedDateTime"] = new \DateTime($this->_propDict["lastModifiedDateTime"]);
@@ -410,8 +410,8 @@ class Simulation extends Entity
     */
     public function getLaunchDateTime()
     {
-        if (array_key_exists("launchDateTime", $this->_propDict)) {
-            if (is_a($this->_propDict["launchDateTime"], "\DateTime") || is_null($this->_propDict["launchDateTime"])) {
+        if (array_key_exists("launchDateTime", $this->_propDict) && !is_null($this->_propDict["launchDateTime"])) {
+            if (is_a($this->_propDict["launchDateTime"], "\DateTime")) {
                 return $this->_propDict["launchDateTime"];
             } else {
                 $this->_propDict["launchDateTime"] = new \DateTime($this->_propDict["launchDateTime"]);
@@ -441,8 +441,8 @@ class Simulation extends Entity
     */
     public function getMode()
     {
-        if (array_key_exists("mode", $this->_propDict)) {
-            if (is_a($this->_propDict["mode"], "\Beta\Microsoft\Graph\Model\SimulationMode") || is_null($this->_propDict["mode"])) {
+        if (array_key_exists("mode", $this->_propDict) && !is_null($this->_propDict["mode"])) {
+            if (is_a($this->_propDict["mode"], "\Beta\Microsoft\Graph\Model\SimulationMode")) {
                 return $this->_propDict["mode"];
             } else {
                 $this->_propDict["mode"] = new SimulationMode($this->_propDict["mode"]);
@@ -472,8 +472,8 @@ class Simulation extends Entity
     */
     public function getPayloadDeliveryPlatform()
     {
-        if (array_key_exists("payloadDeliveryPlatform", $this->_propDict)) {
-            if (is_a($this->_propDict["payloadDeliveryPlatform"], "\Beta\Microsoft\Graph\Model\PayloadDeliveryPlatform") || is_null($this->_propDict["payloadDeliveryPlatform"])) {
+        if (array_key_exists("payloadDeliveryPlatform", $this->_propDict) && !is_null($this->_propDict["payloadDeliveryPlatform"])) {
+            if (is_a($this->_propDict["payloadDeliveryPlatform"], "\Beta\Microsoft\Graph\Model\PayloadDeliveryPlatform")) {
                 return $this->_propDict["payloadDeliveryPlatform"];
             } else {
                 $this->_propDict["payloadDeliveryPlatform"] = new PayloadDeliveryPlatform($this->_propDict["payloadDeliveryPlatform"]);
@@ -503,8 +503,8 @@ class Simulation extends Entity
     */
     public function getPayloadSource()
     {
-        if (array_key_exists("payloadSource", $this->_propDict)) {
-            if (is_a($this->_propDict["payloadSource"], "\Beta\Microsoft\Graph\Model\PayloadSource") || is_null($this->_propDict["payloadSource"])) {
+        if (array_key_exists("payloadSource", $this->_propDict) && !is_null($this->_propDict["payloadSource"])) {
+            if (is_a($this->_propDict["payloadSource"], "\Beta\Microsoft\Graph\Model\PayloadSource")) {
                 return $this->_propDict["payloadSource"];
             } else {
                 $this->_propDict["payloadSource"] = new PayloadSource($this->_propDict["payloadSource"]);
@@ -534,8 +534,8 @@ class Simulation extends Entity
     */
     public function getReport()
     {
-        if (array_key_exists("report", $this->_propDict)) {
-            if (is_a($this->_propDict["report"], "\Beta\Microsoft\Graph\Model\SimulationReport") || is_null($this->_propDict["report"])) {
+        if (array_key_exists("report", $this->_propDict) && !is_null($this->_propDict["report"])) {
+            if (is_a($this->_propDict["report"], "\Beta\Microsoft\Graph\Model\SimulationReport")) {
                 return $this->_propDict["report"];
             } else {
                 $this->_propDict["report"] = new SimulationReport($this->_propDict["report"]);
@@ -565,8 +565,8 @@ class Simulation extends Entity
     */
     public function getStatus()
     {
-        if (array_key_exists("status", $this->_propDict)) {
-            if (is_a($this->_propDict["status"], "\Beta\Microsoft\Graph\Model\SimulationStatus") || is_null($this->_propDict["status"])) {
+        if (array_key_exists("status", $this->_propDict) && !is_null($this->_propDict["status"])) {
+            if (is_a($this->_propDict["status"], "\Beta\Microsoft\Graph\Model\SimulationStatus")) {
                 return $this->_propDict["status"];
             } else {
                 $this->_propDict["status"] = new SimulationStatus($this->_propDict["status"]);
@@ -596,8 +596,8 @@ class Simulation extends Entity
     */
     public function getTrainingAssignmentPreference()
     {
-        if (array_key_exists("trainingAssignmentPreference", $this->_propDict)) {
-            if (is_a($this->_propDict["trainingAssignmentPreference"], "\Beta\Microsoft\Graph\Model\TrainingAssignmentPreference") || is_null($this->_propDict["trainingAssignmentPreference"])) {
+        if (array_key_exists("trainingAssignmentPreference", $this->_propDict) && !is_null($this->_propDict["trainingAssignmentPreference"])) {
+            if (is_a($this->_propDict["trainingAssignmentPreference"], "\Beta\Microsoft\Graph\Model\TrainingAssignmentPreference")) {
                 return $this->_propDict["trainingAssignmentPreference"];
             } else {
                 $this->_propDict["trainingAssignmentPreference"] = new TrainingAssignmentPreference($this->_propDict["trainingAssignmentPreference"]);
@@ -627,8 +627,8 @@ class Simulation extends Entity
     */
     public function getTrainingContentPreference()
     {
-        if (array_key_exists("trainingContentPreference", $this->_propDict)) {
-            if (is_a($this->_propDict["trainingContentPreference"], "\Beta\Microsoft\Graph\Model\TrainingContentPreference") || is_null($this->_propDict["trainingContentPreference"])) {
+        if (array_key_exists("trainingContentPreference", $this->_propDict) && !is_null($this->_propDict["trainingContentPreference"])) {
+            if (is_a($this->_propDict["trainingContentPreference"], "\Beta\Microsoft\Graph\Model\TrainingContentPreference")) {
                 return $this->_propDict["trainingContentPreference"];
             } else {
                 $this->_propDict["trainingContentPreference"] = new TrainingContentPreference($this->_propDict["trainingContentPreference"]);
@@ -658,8 +658,8 @@ class Simulation extends Entity
     */
     public function getTrainingDueDateTime()
     {
-        if (array_key_exists("trainingDueDateTime", $this->_propDict)) {
-            if (is_a($this->_propDict["trainingDueDateTime"], "\DateTime") || is_null($this->_propDict["trainingDueDateTime"])) {
+        if (array_key_exists("trainingDueDateTime", $this->_propDict) && !is_null($this->_propDict["trainingDueDateTime"])) {
+            if (is_a($this->_propDict["trainingDueDateTime"], "\DateTime")) {
                 return $this->_propDict["trainingDueDateTime"];
             } else {
                 $this->_propDict["trainingDueDateTime"] = new \DateTime($this->_propDict["trainingDueDateTime"]);
