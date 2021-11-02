@@ -100,15 +100,15 @@ class IosUpdateConfiguration extends DeviceConfiguration
     public function getScheduledInstallDays()
     {
         if (array_key_exists('scheduledInstallDays', $this->_propDict) && !is_null($this->_propDict['scheduledInstallDays'])) {
-            $scheduledInstallDays = [];
-            if (count($this->_propDict['scheduledInstallDays']) > 0 && is_a($this->_propDict['scheduledInstallDays'][0], 'DayOfWeek')) {
-                return $this->_propDict['scheduledInstallDays'];
-            }
-            foreach ($this->_propDict['scheduledInstallDays'] as $singleValue) {
-                $scheduledInstallDays []= new DayOfWeek($singleValue);
-            }
-            $this->_propDict['scheduledInstallDays'] = $scheduledInstallDays;
-            return $this->_propDict['scheduledInstallDays'];
+           $scheduledInstallDays = [];
+           if (count($this->_propDict['scheduledInstallDays']) > 0 && is_a($this->_propDict['scheduledInstallDays'][0], 'DayOfWeek')) {
+              return $this->_propDict['scheduledInstallDays'];
+           }
+           foreach ($this->_propDict['scheduledInstallDays'] as $singleValue) {
+              $scheduledInstallDays []= new DayOfWeek($singleValue);
+           }
+           $this->_propDict['scheduledInstallDays'] = $scheduledInstallDays;
+           return $this->_propDict['scheduledInstallDays'];
         }
         return null;
     }

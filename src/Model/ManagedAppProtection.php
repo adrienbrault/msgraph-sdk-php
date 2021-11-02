@@ -34,15 +34,15 @@ class ManagedAppProtection extends ManagedAppPolicy
     public function getAllowedDataStorageLocations()
     {
         if (array_key_exists('allowedDataStorageLocations', $this->_propDict) && !is_null($this->_propDict['allowedDataStorageLocations'])) {
-            $allowedDataStorageLocations = [];
-            if (count($this->_propDict['allowedDataStorageLocations']) > 0 && is_a($this->_propDict['allowedDataStorageLocations'][0], 'ManagedAppDataStorageLocation')) {
-                return $this->_propDict['allowedDataStorageLocations'];
-            }
-            foreach ($this->_propDict['allowedDataStorageLocations'] as $singleValue) {
-                $allowedDataStorageLocations []= new ManagedAppDataStorageLocation($singleValue);
-            }
-            $this->_propDict['allowedDataStorageLocations'] = $allowedDataStorageLocations;
-            return $this->_propDict['allowedDataStorageLocations'];
+           $allowedDataStorageLocations = [];
+           if (count($this->_propDict['allowedDataStorageLocations']) > 0 && is_a($this->_propDict['allowedDataStorageLocations'][0], 'ManagedAppDataStorageLocation')) {
+              return $this->_propDict['allowedDataStorageLocations'];
+           }
+           foreach ($this->_propDict['allowedDataStorageLocations'] as $singleValue) {
+              $allowedDataStorageLocations []= new ManagedAppDataStorageLocation($singleValue);
+           }
+           $this->_propDict['allowedDataStorageLocations'] = $allowedDataStorageLocations;
+           return $this->_propDict['allowedDataStorageLocations'];
         }
         return null;
     }

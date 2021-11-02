@@ -199,15 +199,15 @@ class ListItem extends BaseItem
     public function getVersions()
     {
         if (array_key_exists('versions', $this->_propDict) && !is_null($this->_propDict['versions'])) {
-            $versions = [];
-            if (count($this->_propDict['versions']) > 0 && is_a($this->_propDict['versions'][0], 'ListItemVersion')) {
-                return $this->_propDict['versions'];
-            }
-            foreach ($this->_propDict['versions'] as $singleValue) {
-                $versions []= new ListItemVersion($singleValue);
-            }
-            $this->_propDict['versions'] = $versions;
-            return $this->_propDict['versions'];
+           $versions = [];
+           if (count($this->_propDict['versions']) > 0 && is_a($this->_propDict['versions'][0], 'ListItemVersion')) {
+              return $this->_propDict['versions'];
+           }
+           foreach ($this->_propDict['versions'] as $singleValue) {
+              $versions []= new ListItemVersion($singleValue);
+           }
+           $this->_propDict['versions'] = $versions;
+           return $this->_propDict['versions'];
         }
         return null;
     }

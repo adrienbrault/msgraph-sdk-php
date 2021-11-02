@@ -92,15 +92,15 @@ class ContactFolder extends Entity
     public function getChildFolders()
     {
         if (array_key_exists('childFolders', $this->_propDict) && !is_null($this->_propDict['childFolders'])) {
-            $childFolders = [];
-            if (count($this->_propDict['childFolders']) > 0 && is_a($this->_propDict['childFolders'][0], 'ContactFolder')) {
-                return $this->_propDict['childFolders'];
-            }
-            foreach ($this->_propDict['childFolders'] as $singleValue) {
-                $childFolders []= new ContactFolder($singleValue);
-            }
-            $this->_propDict['childFolders'] = $childFolders;
-            return $this->_propDict['childFolders'];
+           $childFolders = [];
+           if (count($this->_propDict['childFolders']) > 0 && is_a($this->_propDict['childFolders'][0], 'ContactFolder')) {
+              return $this->_propDict['childFolders'];
+           }
+           foreach ($this->_propDict['childFolders'] as $singleValue) {
+              $childFolders []= new ContactFolder($singleValue);
+           }
+           $this->_propDict['childFolders'] = $childFolders;
+           return $this->_propDict['childFolders'];
         }
         return null;
     }
@@ -129,15 +129,15 @@ class ContactFolder extends Entity
     public function getContacts()
     {
         if (array_key_exists('contacts', $this->_propDict) && !is_null($this->_propDict['contacts'])) {
-            $contacts = [];
-            if (count($this->_propDict['contacts']) > 0 && is_a($this->_propDict['contacts'][0], 'Contact')) {
-                return $this->_propDict['contacts'];
-            }
-            foreach ($this->_propDict['contacts'] as $singleValue) {
-                $contacts []= new Contact($singleValue);
-            }
-            $this->_propDict['contacts'] = $contacts;
-            return $this->_propDict['contacts'];
+           $contacts = [];
+           if (count($this->_propDict['contacts']) > 0 && is_a($this->_propDict['contacts'][0], 'Contact')) {
+              return $this->_propDict['contacts'];
+           }
+           foreach ($this->_propDict['contacts'] as $singleValue) {
+              $contacts []= new Contact($singleValue);
+           }
+           $this->_propDict['contacts'] = $contacts;
+           return $this->_propDict['contacts'];
         }
         return null;
     }
@@ -166,15 +166,15 @@ class ContactFolder extends Entity
     public function getMultiValueExtendedProperties()
     {
         if (array_key_exists('multiValueExtendedProperties', $this->_propDict) && !is_null($this->_propDict['multiValueExtendedProperties'])) {
-            $multiValueExtendedProperties = [];
-            if (count($this->_propDict['multiValueExtendedProperties']) > 0 && is_a($this->_propDict['multiValueExtendedProperties'][0], 'MultiValueLegacyExtendedProperty')) {
-                return $this->_propDict['multiValueExtendedProperties'];
-            }
-            foreach ($this->_propDict['multiValueExtendedProperties'] as $singleValue) {
-                $multiValueExtendedProperties []= new MultiValueLegacyExtendedProperty($singleValue);
-            }
-            $this->_propDict['multiValueExtendedProperties'] = $multiValueExtendedProperties;
-            return $this->_propDict['multiValueExtendedProperties'];
+           $multiValueExtendedProperties = [];
+           if (count($this->_propDict['multiValueExtendedProperties']) > 0 && is_a($this->_propDict['multiValueExtendedProperties'][0], 'MultiValueLegacyExtendedProperty')) {
+              return $this->_propDict['multiValueExtendedProperties'];
+           }
+           foreach ($this->_propDict['multiValueExtendedProperties'] as $singleValue) {
+              $multiValueExtendedProperties []= new MultiValueLegacyExtendedProperty($singleValue);
+           }
+           $this->_propDict['multiValueExtendedProperties'] = $multiValueExtendedProperties;
+           return $this->_propDict['multiValueExtendedProperties'];
         }
         return null;
     }
@@ -203,15 +203,15 @@ class ContactFolder extends Entity
     public function getSingleValueExtendedProperties()
     {
         if (array_key_exists('singleValueExtendedProperties', $this->_propDict) && !is_null($this->_propDict['singleValueExtendedProperties'])) {
-            $singleValueExtendedProperties = [];
-            if (count($this->_propDict['singleValueExtendedProperties']) > 0 && is_a($this->_propDict['singleValueExtendedProperties'][0], 'SingleValueLegacyExtendedProperty')) {
-                return $this->_propDict['singleValueExtendedProperties'];
-            }
-            foreach ($this->_propDict['singleValueExtendedProperties'] as $singleValue) {
-                $singleValueExtendedProperties []= new SingleValueLegacyExtendedProperty($singleValue);
-            }
-            $this->_propDict['singleValueExtendedProperties'] = $singleValueExtendedProperties;
-            return $this->_propDict['singleValueExtendedProperties'];
+           $singleValueExtendedProperties = [];
+           if (count($this->_propDict['singleValueExtendedProperties']) > 0 && is_a($this->_propDict['singleValueExtendedProperties'][0], 'SingleValueLegacyExtendedProperty')) {
+              return $this->_propDict['singleValueExtendedProperties'];
+           }
+           foreach ($this->_propDict['singleValueExtendedProperties'] as $singleValue) {
+              $singleValueExtendedProperties []= new SingleValueLegacyExtendedProperty($singleValue);
+           }
+           $this->_propDict['singleValueExtendedProperties'] = $singleValueExtendedProperties;
+           return $this->_propDict['singleValueExtendedProperties'];
         }
         return null;
     }

@@ -34,15 +34,15 @@ class Security extends Entity
     public function getAlerts()
     {
         if (array_key_exists('alerts', $this->_propDict) && !is_null($this->_propDict['alerts'])) {
-            $alerts = [];
-            if (count($this->_propDict['alerts']) > 0 && is_a($this->_propDict['alerts'][0], 'Alert')) {
-                return $this->_propDict['alerts'];
-            }
-            foreach ($this->_propDict['alerts'] as $singleValue) {
-                $alerts []= new Alert($singleValue);
-            }
-            $this->_propDict['alerts'] = $alerts;
-            return $this->_propDict['alerts'];
+           $alerts = [];
+           if (count($this->_propDict['alerts']) > 0 && is_a($this->_propDict['alerts'][0], 'Alert')) {
+              return $this->_propDict['alerts'];
+           }
+           foreach ($this->_propDict['alerts'] as $singleValue) {
+              $alerts []= new Alert($singleValue);
+           }
+           $this->_propDict['alerts'] = $alerts;
+           return $this->_propDict['alerts'];
         }
         return null;
     }
@@ -70,15 +70,15 @@ class Security extends Entity
     public function getSecureScoreControlProfiles()
     {
         if (array_key_exists('secureScoreControlProfiles', $this->_propDict) && !is_null($this->_propDict['secureScoreControlProfiles'])) {
-            $secureScoreControlProfiles = [];
-            if (count($this->_propDict['secureScoreControlProfiles']) > 0 && is_a($this->_propDict['secureScoreControlProfiles'][0], 'SecureScoreControlProfile')) {
-                return $this->_propDict['secureScoreControlProfiles'];
-            }
-            foreach ($this->_propDict['secureScoreControlProfiles'] as $singleValue) {
-                $secureScoreControlProfiles []= new SecureScoreControlProfile($singleValue);
-            }
-            $this->_propDict['secureScoreControlProfiles'] = $secureScoreControlProfiles;
-            return $this->_propDict['secureScoreControlProfiles'];
+           $secureScoreControlProfiles = [];
+           if (count($this->_propDict['secureScoreControlProfiles']) > 0 && is_a($this->_propDict['secureScoreControlProfiles'][0], 'SecureScoreControlProfile')) {
+              return $this->_propDict['secureScoreControlProfiles'];
+           }
+           foreach ($this->_propDict['secureScoreControlProfiles'] as $singleValue) {
+              $secureScoreControlProfiles []= new SecureScoreControlProfile($singleValue);
+           }
+           $this->_propDict['secureScoreControlProfiles'] = $secureScoreControlProfiles;
+           return $this->_propDict['secureScoreControlProfiles'];
         }
         return null;
     }
@@ -105,15 +105,15 @@ class Security extends Entity
     public function getSecureScores()
     {
         if (array_key_exists('secureScores', $this->_propDict) && !is_null($this->_propDict['secureScores'])) {
-            $secureScores = [];
-            if (count($this->_propDict['secureScores']) > 0 && is_a($this->_propDict['secureScores'][0], 'SecureScore')) {
-                return $this->_propDict['secureScores'];
-            }
-            foreach ($this->_propDict['secureScores'] as $singleValue) {
-                $secureScores []= new SecureScore($singleValue);
-            }
-            $this->_propDict['secureScores'] = $secureScores;
-            return $this->_propDict['secureScores'];
+           $secureScores = [];
+           if (count($this->_propDict['secureScores']) > 0 && is_a($this->_propDict['secureScores'][0], 'SecureScore')) {
+              return $this->_propDict['secureScores'];
+           }
+           foreach ($this->_propDict['secureScores'] as $singleValue) {
+              $secureScores []= new SecureScore($singleValue);
+           }
+           $this->_propDict['secureScores'] = $secureScores;
+           return $this->_propDict['secureScores'];
         }
         return null;
     }

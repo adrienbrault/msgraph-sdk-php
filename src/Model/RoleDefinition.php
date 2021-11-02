@@ -121,15 +121,15 @@ class RoleDefinition extends Entity
     public function getRolePermissions()
     {
         if (array_key_exists('rolePermissions', $this->_propDict) && !is_null($this->_propDict['rolePermissions'])) {
-            $rolePermissions = [];
-            if (count($this->_propDict['rolePermissions']) > 0 && is_a($this->_propDict['rolePermissions'][0], 'RolePermission')) {
-                return $this->_propDict['rolePermissions'];
-            }
-            foreach ($this->_propDict['rolePermissions'] as $singleValue) {
-                $rolePermissions []= new RolePermission($singleValue);
-            }
-            $this->_propDict['rolePermissions'] = $rolePermissions;
-            return $this->_propDict['rolePermissions'];
+           $rolePermissions = [];
+           if (count($this->_propDict['rolePermissions']) > 0 && is_a($this->_propDict['rolePermissions'][0], 'RolePermission')) {
+              return $this->_propDict['rolePermissions'];
+           }
+           foreach ($this->_propDict['rolePermissions'] as $singleValue) {
+              $rolePermissions []= new RolePermission($singleValue);
+           }
+           $this->_propDict['rolePermissions'] = $rolePermissions;
+           return $this->_propDict['rolePermissions'];
         }
         return null;
     }
@@ -158,15 +158,15 @@ class RoleDefinition extends Entity
     public function getRoleAssignments()
     {
         if (array_key_exists('roleAssignments', $this->_propDict) && !is_null($this->_propDict['roleAssignments'])) {
-            $roleAssignments = [];
-            if (count($this->_propDict['roleAssignments']) > 0 && is_a($this->_propDict['roleAssignments'][0], 'RoleAssignment')) {
-                return $this->_propDict['roleAssignments'];
-            }
-            foreach ($this->_propDict['roleAssignments'] as $singleValue) {
-                $roleAssignments []= new RoleAssignment($singleValue);
-            }
-            $this->_propDict['roleAssignments'] = $roleAssignments;
-            return $this->_propDict['roleAssignments'];
+           $roleAssignments = [];
+           if (count($this->_propDict['roleAssignments']) > 0 && is_a($this->_propDict['roleAssignments'][0], 'RoleAssignment')) {
+              return $this->_propDict['roleAssignments'];
+           }
+           foreach ($this->_propDict['roleAssignments'] as $singleValue) {
+              $roleAssignments []= new RoleAssignment($singleValue);
+           }
+           $this->_propDict['roleAssignments'] = $roleAssignments;
+           return $this->_propDict['roleAssignments'];
         }
         return null;
     }

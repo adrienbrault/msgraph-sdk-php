@@ -162,15 +162,15 @@ class Chat extends Entity
     public function getInstalledApps()
     {
         if (array_key_exists('installedApps', $this->_propDict) && !is_null($this->_propDict['installedApps'])) {
-            $installedApps = [];
-            if (count($this->_propDict['installedApps']) > 0 && is_a($this->_propDict['installedApps'][0], 'TeamsAppInstallation')) {
-                return $this->_propDict['installedApps'];
-            }
-            foreach ($this->_propDict['installedApps'] as $singleValue) {
-                $installedApps []= new TeamsAppInstallation($singleValue);
-            }
-            $this->_propDict['installedApps'] = $installedApps;
-            return $this->_propDict['installedApps'];
+           $installedApps = [];
+           if (count($this->_propDict['installedApps']) > 0 && is_a($this->_propDict['installedApps'][0], 'TeamsAppInstallation')) {
+              return $this->_propDict['installedApps'];
+           }
+           foreach ($this->_propDict['installedApps'] as $singleValue) {
+              $installedApps []= new TeamsAppInstallation($singleValue);
+           }
+           $this->_propDict['installedApps'] = $installedApps;
+           return $this->_propDict['installedApps'];
         }
         return null;
     }
@@ -199,15 +199,15 @@ class Chat extends Entity
     public function getMembers()
     {
         if (array_key_exists('members', $this->_propDict) && !is_null($this->_propDict['members'])) {
-            $members = [];
-            if (count($this->_propDict['members']) > 0 && is_a($this->_propDict['members'][0], 'ConversationMember')) {
-                return $this->_propDict['members'];
-            }
-            foreach ($this->_propDict['members'] as $singleValue) {
-                $members []= new ConversationMember($singleValue);
-            }
-            $this->_propDict['members'] = $members;
-            return $this->_propDict['members'];
+           $members = [];
+           if (count($this->_propDict['members']) > 0 && is_a($this->_propDict['members'][0], 'ConversationMember')) {
+              return $this->_propDict['members'];
+           }
+           foreach ($this->_propDict['members'] as $singleValue) {
+              $members []= new ConversationMember($singleValue);
+           }
+           $this->_propDict['members'] = $members;
+           return $this->_propDict['members'];
         }
         return null;
     }
@@ -236,15 +236,15 @@ class Chat extends Entity
     public function getMessages()
     {
         if (array_key_exists('messages', $this->_propDict) && !is_null($this->_propDict['messages'])) {
-            $messages = [];
-            if (count($this->_propDict['messages']) > 0 && is_a($this->_propDict['messages'][0], 'ChatMessage')) {
-                return $this->_propDict['messages'];
-            }
-            foreach ($this->_propDict['messages'] as $singleValue) {
-                $messages []= new ChatMessage($singleValue);
-            }
-            $this->_propDict['messages'] = $messages;
-            return $this->_propDict['messages'];
+           $messages = [];
+           if (count($this->_propDict['messages']) > 0 && is_a($this->_propDict['messages'][0], 'ChatMessage')) {
+              return $this->_propDict['messages'];
+           }
+           foreach ($this->_propDict['messages'] as $singleValue) {
+              $messages []= new ChatMessage($singleValue);
+           }
+           $this->_propDict['messages'] = $messages;
+           return $this->_propDict['messages'];
         }
         return null;
     }
@@ -272,15 +272,15 @@ class Chat extends Entity
     public function getTabs()
     {
         if (array_key_exists('tabs', $this->_propDict) && !is_null($this->_propDict['tabs'])) {
-            $tabs = [];
-            if (count($this->_propDict['tabs']) > 0 && is_a($this->_propDict['tabs'][0], 'TeamsTab')) {
-                return $this->_propDict['tabs'];
-            }
-            foreach ($this->_propDict['tabs'] as $singleValue) {
-                $tabs []= new TeamsTab($singleValue);
-            }
-            $this->_propDict['tabs'] = $tabs;
-            return $this->_propDict['tabs'];
+           $tabs = [];
+           if (count($this->_propDict['tabs']) > 0 && is_a($this->_propDict['tabs'][0], 'TeamsTab')) {
+              return $this->_propDict['tabs'];
+           }
+           foreach ($this->_propDict['tabs'] as $singleValue) {
+              $tabs []= new TeamsTab($singleValue);
+           }
+           $this->_propDict['tabs'] = $tabs;
+           return $this->_propDict['tabs'];
         }
         return null;
     }

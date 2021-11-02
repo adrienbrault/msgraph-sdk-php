@@ -123,15 +123,15 @@ class Call extends Entity
     public function getCallRoutes()
     {
         if (array_key_exists('callRoutes', $this->_propDict) && !is_null($this->_propDict['callRoutes'])) {
-            $callRoutes = [];
-            if (count($this->_propDict['callRoutes']) > 0 && is_a($this->_propDict['callRoutes'][0], 'CallRoute')) {
-                return $this->_propDict['callRoutes'];
-            }
-            foreach ($this->_propDict['callRoutes'] as $singleValue) {
-                $callRoutes []= new CallRoute($singleValue);
-            }
-            $this->_propDict['callRoutes'] = $callRoutes;
-            return $this->_propDict['callRoutes'];
+           $callRoutes = [];
+           if (count($this->_propDict['callRoutes']) > 0 && is_a($this->_propDict['callRoutes'][0], 'CallRoute')) {
+              return $this->_propDict['callRoutes'];
+           }
+           foreach ($this->_propDict['callRoutes'] as $singleValue) {
+              $callRoutes []= new CallRoute($singleValue);
+           }
+           $this->_propDict['callRoutes'] = $callRoutes;
+           return $this->_propDict['callRoutes'];
         }
         return null;
     }
@@ -384,15 +384,15 @@ class Call extends Entity
     public function getRequestedModalities()
     {
         if (array_key_exists('requestedModalities', $this->_propDict) && !is_null($this->_propDict['requestedModalities'])) {
-            $requestedModalities = [];
-            if (count($this->_propDict['requestedModalities']) > 0 && is_a($this->_propDict['requestedModalities'][0], 'Modality')) {
-                return $this->_propDict['requestedModalities'];
-            }
-            foreach ($this->_propDict['requestedModalities'] as $singleValue) {
-                $requestedModalities []= new Modality($singleValue);
-            }
-            $this->_propDict['requestedModalities'] = $requestedModalities;
-            return $this->_propDict['requestedModalities'];
+           $requestedModalities = [];
+           if (count($this->_propDict['requestedModalities']) > 0 && is_a($this->_propDict['requestedModalities'][0], 'Modality')) {
+              return $this->_propDict['requestedModalities'];
+           }
+           foreach ($this->_propDict['requestedModalities'] as $singleValue) {
+              $requestedModalities []= new Modality($singleValue);
+           }
+           $this->_propDict['requestedModalities'] = $requestedModalities;
+           return $this->_propDict['requestedModalities'];
         }
         return null;
     }
@@ -539,15 +539,15 @@ class Call extends Entity
     public function getTargets()
     {
         if (array_key_exists('targets', $this->_propDict) && !is_null($this->_propDict['targets'])) {
-            $targets = [];
-            if (count($this->_propDict['targets']) > 0 && is_a($this->_propDict['targets'][0], 'InvitationParticipantInfo')) {
-                return $this->_propDict['targets'];
-            }
-            foreach ($this->_propDict['targets'] as $singleValue) {
-                $targets []= new InvitationParticipantInfo($singleValue);
-            }
-            $this->_propDict['targets'] = $targets;
-            return $this->_propDict['targets'];
+           $targets = [];
+           if (count($this->_propDict['targets']) > 0 && is_a($this->_propDict['targets'][0], 'InvitationParticipantInfo')) {
+              return $this->_propDict['targets'];
+           }
+           foreach ($this->_propDict['targets'] as $singleValue) {
+              $targets []= new InvitationParticipantInfo($singleValue);
+           }
+           $this->_propDict['targets'] = $targets;
+           return $this->_propDict['targets'];
         }
         return null;
     }
@@ -666,15 +666,15 @@ class Call extends Entity
     public function getOperations()
     {
         if (array_key_exists('operations', $this->_propDict) && !is_null($this->_propDict['operations'])) {
-            $operations = [];
-            if (count($this->_propDict['operations']) > 0 && is_a($this->_propDict['operations'][0], 'CommsOperation')) {
-                return $this->_propDict['operations'];
-            }
-            foreach ($this->_propDict['operations'] as $singleValue) {
-                $operations []= new CommsOperation($singleValue);
-            }
-            $this->_propDict['operations'] = $operations;
-            return $this->_propDict['operations'];
+           $operations = [];
+           if (count($this->_propDict['operations']) > 0 && is_a($this->_propDict['operations'][0], 'CommsOperation')) {
+              return $this->_propDict['operations'];
+           }
+           foreach ($this->_propDict['operations'] as $singleValue) {
+              $operations []= new CommsOperation($singleValue);
+           }
+           $this->_propDict['operations'] = $operations;
+           return $this->_propDict['operations'];
         }
         return null;
     }
@@ -703,15 +703,15 @@ class Call extends Entity
     public function getParticipants()
     {
         if (array_key_exists('participants', $this->_propDict) && !is_null($this->_propDict['participants'])) {
-            $participants = [];
-            if (count($this->_propDict['participants']) > 0 && is_a($this->_propDict['participants'][0], 'Participant')) {
-                return $this->_propDict['participants'];
-            }
-            foreach ($this->_propDict['participants'] as $singleValue) {
-                $participants []= new Participant($singleValue);
-            }
-            $this->_propDict['participants'] = $participants;
-            return $this->_propDict['participants'];
+           $participants = [];
+           if (count($this->_propDict['participants']) > 0 && is_a($this->_propDict['participants'][0], 'Participant')) {
+              return $this->_propDict['participants'];
+           }
+           foreach ($this->_propDict['participants'] as $singleValue) {
+              $participants []= new Participant($singleValue);
+           }
+           $this->_propDict['participants'] = $participants;
+           return $this->_propDict['participants'];
         }
         return null;
     }

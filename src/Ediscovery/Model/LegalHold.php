@@ -344,15 +344,15 @@ class LegalHold extends \Microsoft\Graph\Model\Entity
     public function getSiteSources()
     {
         if (array_key_exists('siteSources', $this->_propDict) && !is_null($this->_propDict['siteSources'])) {
-            $siteSources = [];
-            if (count($this->_propDict['siteSources']) > 0 && is_a($this->_propDict['siteSources'][0], 'SiteSource')) {
-                return $this->_propDict['siteSources'];
-            }
-            foreach ($this->_propDict['siteSources'] as $singleValue) {
-                $siteSources []= new SiteSource($singleValue);
-            }
-            $this->_propDict['siteSources'] = $siteSources;
-            return $this->_propDict['siteSources'];
+           $siteSources = [];
+           if (count($this->_propDict['siteSources']) > 0 && is_a($this->_propDict['siteSources'][0], 'SiteSource')) {
+              return $this->_propDict['siteSources'];
+           }
+           foreach ($this->_propDict['siteSources'] as $singleValue) {
+              $siteSources []= new SiteSource($singleValue);
+           }
+           $this->_propDict['siteSources'] = $siteSources;
+           return $this->_propDict['siteSources'];
         }
         return null;
     }
@@ -381,15 +381,15 @@ class LegalHold extends \Microsoft\Graph\Model\Entity
     public function getUserSources()
     {
         if (array_key_exists('userSources', $this->_propDict) && !is_null($this->_propDict['userSources'])) {
-            $userSources = [];
-            if (count($this->_propDict['userSources']) > 0 && is_a($this->_propDict['userSources'][0], 'UserSource')) {
-                return $this->_propDict['userSources'];
-            }
-            foreach ($this->_propDict['userSources'] as $singleValue) {
-                $userSources []= new UserSource($singleValue);
-            }
-            $this->_propDict['userSources'] = $userSources;
-            return $this->_propDict['userSources'];
+           $userSources = [];
+           if (count($this->_propDict['userSources']) > 0 && is_a($this->_propDict['userSources'][0], 'UserSource')) {
+              return $this->_propDict['userSources'];
+           }
+           foreach ($this->_propDict['userSources'] as $singleValue) {
+              $userSources []= new UserSource($singleValue);
+           }
+           $this->_propDict['userSources'] = $userSources;
+           return $this->_propDict['userSources'];
         }
         return null;
     }

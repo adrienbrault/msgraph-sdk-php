@@ -249,15 +249,15 @@ class ManagedDevice extends Entity
     public function getDeviceActionResults()
     {
         if (array_key_exists('deviceActionResults', $this->_propDict) && !is_null($this->_propDict['deviceActionResults'])) {
-            $deviceActionResults = [];
-            if (count($this->_propDict['deviceActionResults']) > 0 && is_a($this->_propDict['deviceActionResults'][0], 'DeviceActionResult')) {
-                return $this->_propDict['deviceActionResults'];
-            }
-            foreach ($this->_propDict['deviceActionResults'] as $singleValue) {
-                $deviceActionResults []= new DeviceActionResult($singleValue);
-            }
-            $this->_propDict['deviceActionResults'] = $deviceActionResults;
-            return $this->_propDict['deviceActionResults'];
+           $deviceActionResults = [];
+           if (count($this->_propDict['deviceActionResults']) > 0 && is_a($this->_propDict['deviceActionResults'][0], 'DeviceActionResult')) {
+              return $this->_propDict['deviceActionResults'];
+           }
+           foreach ($this->_propDict['deviceActionResults'] as $singleValue) {
+              $deviceActionResults []= new DeviceActionResult($singleValue);
+           }
+           $this->_propDict['deviceActionResults'] = $deviceActionResults;
+           return $this->_propDict['deviceActionResults'];
         }
         return null;
     }
@@ -1581,15 +1581,15 @@ class ManagedDevice extends Entity
     public function getDeviceCompliancePolicyStates()
     {
         if (array_key_exists('deviceCompliancePolicyStates', $this->_propDict) && !is_null($this->_propDict['deviceCompliancePolicyStates'])) {
-            $deviceCompliancePolicyStates = [];
-            if (count($this->_propDict['deviceCompliancePolicyStates']) > 0 && is_a($this->_propDict['deviceCompliancePolicyStates'][0], 'DeviceCompliancePolicyState')) {
-                return $this->_propDict['deviceCompliancePolicyStates'];
-            }
-            foreach ($this->_propDict['deviceCompliancePolicyStates'] as $singleValue) {
-                $deviceCompliancePolicyStates []= new DeviceCompliancePolicyState($singleValue);
-            }
-            $this->_propDict['deviceCompliancePolicyStates'] = $deviceCompliancePolicyStates;
-            return $this->_propDict['deviceCompliancePolicyStates'];
+           $deviceCompliancePolicyStates = [];
+           if (count($this->_propDict['deviceCompliancePolicyStates']) > 0 && is_a($this->_propDict['deviceCompliancePolicyStates'][0], 'DeviceCompliancePolicyState')) {
+              return $this->_propDict['deviceCompliancePolicyStates'];
+           }
+           foreach ($this->_propDict['deviceCompliancePolicyStates'] as $singleValue) {
+              $deviceCompliancePolicyStates []= new DeviceCompliancePolicyState($singleValue);
+           }
+           $this->_propDict['deviceCompliancePolicyStates'] = $deviceCompliancePolicyStates;
+           return $this->_propDict['deviceCompliancePolicyStates'];
         }
         return null;
     }
@@ -1618,15 +1618,15 @@ class ManagedDevice extends Entity
     public function getDeviceConfigurationStates()
     {
         if (array_key_exists('deviceConfigurationStates', $this->_propDict) && !is_null($this->_propDict['deviceConfigurationStates'])) {
-            $deviceConfigurationStates = [];
-            if (count($this->_propDict['deviceConfigurationStates']) > 0 && is_a($this->_propDict['deviceConfigurationStates'][0], 'DeviceConfigurationState')) {
-                return $this->_propDict['deviceConfigurationStates'];
-            }
-            foreach ($this->_propDict['deviceConfigurationStates'] as $singleValue) {
-                $deviceConfigurationStates []= new DeviceConfigurationState($singleValue);
-            }
-            $this->_propDict['deviceConfigurationStates'] = $deviceConfigurationStates;
-            return $this->_propDict['deviceConfigurationStates'];
+           $deviceConfigurationStates = [];
+           if (count($this->_propDict['deviceConfigurationStates']) > 0 && is_a($this->_propDict['deviceConfigurationStates'][0], 'DeviceConfigurationState')) {
+              return $this->_propDict['deviceConfigurationStates'];
+           }
+           foreach ($this->_propDict['deviceConfigurationStates'] as $singleValue) {
+              $deviceConfigurationStates []= new DeviceConfigurationState($singleValue);
+           }
+           $this->_propDict['deviceConfigurationStates'] = $deviceConfigurationStates;
+           return $this->_propDict['deviceConfigurationStates'];
         }
         return null;
     }

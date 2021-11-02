@@ -162,15 +162,15 @@ class DeviceManagement extends Entity
     public function getTermsAndConditions()
     {
         if (array_key_exists('termsAndConditions', $this->_propDict) && !is_null($this->_propDict['termsAndConditions'])) {
-            $termsAndConditions = [];
-            if (count($this->_propDict['termsAndConditions']) > 0 && is_a($this->_propDict['termsAndConditions'][0], 'TermsAndConditions')) {
-                return $this->_propDict['termsAndConditions'];
-            }
-            foreach ($this->_propDict['termsAndConditions'] as $singleValue) {
-                $termsAndConditions []= new TermsAndConditions($singleValue);
-            }
-            $this->_propDict['termsAndConditions'] = $termsAndConditions;
-            return $this->_propDict['termsAndConditions'];
+           $termsAndConditions = [];
+           if (count($this->_propDict['termsAndConditions']) > 0 && is_a($this->_propDict['termsAndConditions'][0], 'TermsAndConditions')) {
+              return $this->_propDict['termsAndConditions'];
+           }
+           foreach ($this->_propDict['termsAndConditions'] as $singleValue) {
+              $termsAndConditions []= new TermsAndConditions($singleValue);
+           }
+           $this->_propDict['termsAndConditions'] = $termsAndConditions;
+           return $this->_propDict['termsAndConditions'];
         }
         return null;
     }
@@ -199,15 +199,15 @@ class DeviceManagement extends Entity
     public function getDeviceCompliancePolicies()
     {
         if (array_key_exists('deviceCompliancePolicies', $this->_propDict) && !is_null($this->_propDict['deviceCompliancePolicies'])) {
-            $deviceCompliancePolicies = [];
-            if (count($this->_propDict['deviceCompliancePolicies']) > 0 && is_a($this->_propDict['deviceCompliancePolicies'][0], 'DeviceCompliancePolicy')) {
-                return $this->_propDict['deviceCompliancePolicies'];
-            }
-            foreach ($this->_propDict['deviceCompliancePolicies'] as $singleValue) {
-                $deviceCompliancePolicies []= new DeviceCompliancePolicy($singleValue);
-            }
-            $this->_propDict['deviceCompliancePolicies'] = $deviceCompliancePolicies;
-            return $this->_propDict['deviceCompliancePolicies'];
+           $deviceCompliancePolicies = [];
+           if (count($this->_propDict['deviceCompliancePolicies']) > 0 && is_a($this->_propDict['deviceCompliancePolicies'][0], 'DeviceCompliancePolicy')) {
+              return $this->_propDict['deviceCompliancePolicies'];
+           }
+           foreach ($this->_propDict['deviceCompliancePolicies'] as $singleValue) {
+              $deviceCompliancePolicies []= new DeviceCompliancePolicy($singleValue);
+           }
+           $this->_propDict['deviceCompliancePolicies'] = $deviceCompliancePolicies;
+           return $this->_propDict['deviceCompliancePolicies'];
         }
         return null;
     }
@@ -269,15 +269,15 @@ class DeviceManagement extends Entity
     public function getDeviceCompliancePolicySettingStateSummaries()
     {
         if (array_key_exists('deviceCompliancePolicySettingStateSummaries', $this->_propDict) && !is_null($this->_propDict['deviceCompliancePolicySettingStateSummaries'])) {
-            $deviceCompliancePolicySettingStateSummaries = [];
-            if (count($this->_propDict['deviceCompliancePolicySettingStateSummaries']) > 0 && is_a($this->_propDict['deviceCompliancePolicySettingStateSummaries'][0], 'DeviceCompliancePolicySettingStateSummary')) {
-                return $this->_propDict['deviceCompliancePolicySettingStateSummaries'];
-            }
-            foreach ($this->_propDict['deviceCompliancePolicySettingStateSummaries'] as $singleValue) {
-                $deviceCompliancePolicySettingStateSummaries []= new DeviceCompliancePolicySettingStateSummary($singleValue);
-            }
-            $this->_propDict['deviceCompliancePolicySettingStateSummaries'] = $deviceCompliancePolicySettingStateSummaries;
-            return $this->_propDict['deviceCompliancePolicySettingStateSummaries'];
+           $deviceCompliancePolicySettingStateSummaries = [];
+           if (count($this->_propDict['deviceCompliancePolicySettingStateSummaries']) > 0 && is_a($this->_propDict['deviceCompliancePolicySettingStateSummaries'][0], 'DeviceCompliancePolicySettingStateSummary')) {
+              return $this->_propDict['deviceCompliancePolicySettingStateSummaries'];
+           }
+           foreach ($this->_propDict['deviceCompliancePolicySettingStateSummaries'] as $singleValue) {
+              $deviceCompliancePolicySettingStateSummaries []= new DeviceCompliancePolicySettingStateSummary($singleValue);
+           }
+           $this->_propDict['deviceCompliancePolicySettingStateSummaries'] = $deviceCompliancePolicySettingStateSummaries;
+           return $this->_propDict['deviceCompliancePolicySettingStateSummaries'];
         }
         return null;
     }
@@ -339,15 +339,15 @@ class DeviceManagement extends Entity
     public function getDeviceConfigurations()
     {
         if (array_key_exists('deviceConfigurations', $this->_propDict) && !is_null($this->_propDict['deviceConfigurations'])) {
-            $deviceConfigurations = [];
-            if (count($this->_propDict['deviceConfigurations']) > 0 && is_a($this->_propDict['deviceConfigurations'][0], 'DeviceConfiguration')) {
-                return $this->_propDict['deviceConfigurations'];
-            }
-            foreach ($this->_propDict['deviceConfigurations'] as $singleValue) {
-                $deviceConfigurations []= new DeviceConfiguration($singleValue);
-            }
-            $this->_propDict['deviceConfigurations'] = $deviceConfigurations;
-            return $this->_propDict['deviceConfigurations'];
+           $deviceConfigurations = [];
+           if (count($this->_propDict['deviceConfigurations']) > 0 && is_a($this->_propDict['deviceConfigurations'][0], 'DeviceConfiguration')) {
+              return $this->_propDict['deviceConfigurations'];
+           }
+           foreach ($this->_propDict['deviceConfigurations'] as $singleValue) {
+              $deviceConfigurations []= new DeviceConfiguration($singleValue);
+           }
+           $this->_propDict['deviceConfigurations'] = $deviceConfigurations;
+           return $this->_propDict['deviceConfigurations'];
         }
         return null;
     }
@@ -376,15 +376,15 @@ class DeviceManagement extends Entity
     public function getIosUpdateStatuses()
     {
         if (array_key_exists('iosUpdateStatuses', $this->_propDict) && !is_null($this->_propDict['iosUpdateStatuses'])) {
-            $iosUpdateStatuses = [];
-            if (count($this->_propDict['iosUpdateStatuses']) > 0 && is_a($this->_propDict['iosUpdateStatuses'][0], 'IosUpdateDeviceStatus')) {
-                return $this->_propDict['iosUpdateStatuses'];
-            }
-            foreach ($this->_propDict['iosUpdateStatuses'] as $singleValue) {
-                $iosUpdateStatuses []= new IosUpdateDeviceStatus($singleValue);
-            }
-            $this->_propDict['iosUpdateStatuses'] = $iosUpdateStatuses;
-            return $this->_propDict['iosUpdateStatuses'];
+           $iosUpdateStatuses = [];
+           if (count($this->_propDict['iosUpdateStatuses']) > 0 && is_a($this->_propDict['iosUpdateStatuses'][0], 'IosUpdateDeviceStatus')) {
+              return $this->_propDict['iosUpdateStatuses'];
+           }
+           foreach ($this->_propDict['iosUpdateStatuses'] as $singleValue) {
+              $iosUpdateStatuses []= new IosUpdateDeviceStatus($singleValue);
+           }
+           $this->_propDict['iosUpdateStatuses'] = $iosUpdateStatuses;
+           return $this->_propDict['iosUpdateStatuses'];
         }
         return null;
     }
@@ -446,15 +446,15 @@ class DeviceManagement extends Entity
     public function getComplianceManagementPartners()
     {
         if (array_key_exists('complianceManagementPartners', $this->_propDict) && !is_null($this->_propDict['complianceManagementPartners'])) {
-            $complianceManagementPartners = [];
-            if (count($this->_propDict['complianceManagementPartners']) > 0 && is_a($this->_propDict['complianceManagementPartners'][0], 'ComplianceManagementPartner')) {
-                return $this->_propDict['complianceManagementPartners'];
-            }
-            foreach ($this->_propDict['complianceManagementPartners'] as $singleValue) {
-                $complianceManagementPartners []= new ComplianceManagementPartner($singleValue);
-            }
-            $this->_propDict['complianceManagementPartners'] = $complianceManagementPartners;
-            return $this->_propDict['complianceManagementPartners'];
+           $complianceManagementPartners = [];
+           if (count($this->_propDict['complianceManagementPartners']) > 0 && is_a($this->_propDict['complianceManagementPartners'][0], 'ComplianceManagementPartner')) {
+              return $this->_propDict['complianceManagementPartners'];
+           }
+           foreach ($this->_propDict['complianceManagementPartners'] as $singleValue) {
+              $complianceManagementPartners []= new ComplianceManagementPartner($singleValue);
+           }
+           $this->_propDict['complianceManagementPartners'] = $complianceManagementPartners;
+           return $this->_propDict['complianceManagementPartners'];
         }
         return null;
     }
@@ -516,15 +516,15 @@ class DeviceManagement extends Entity
     public function getDeviceCategories()
     {
         if (array_key_exists('deviceCategories', $this->_propDict) && !is_null($this->_propDict['deviceCategories'])) {
-            $deviceCategories = [];
-            if (count($this->_propDict['deviceCategories']) > 0 && is_a($this->_propDict['deviceCategories'][0], 'DeviceCategory')) {
-                return $this->_propDict['deviceCategories'];
-            }
-            foreach ($this->_propDict['deviceCategories'] as $singleValue) {
-                $deviceCategories []= new DeviceCategory($singleValue);
-            }
-            $this->_propDict['deviceCategories'] = $deviceCategories;
-            return $this->_propDict['deviceCategories'];
+           $deviceCategories = [];
+           if (count($this->_propDict['deviceCategories']) > 0 && is_a($this->_propDict['deviceCategories'][0], 'DeviceCategory')) {
+              return $this->_propDict['deviceCategories'];
+           }
+           foreach ($this->_propDict['deviceCategories'] as $singleValue) {
+              $deviceCategories []= new DeviceCategory($singleValue);
+           }
+           $this->_propDict['deviceCategories'] = $deviceCategories;
+           return $this->_propDict['deviceCategories'];
         }
         return null;
     }
@@ -553,15 +553,15 @@ class DeviceManagement extends Entity
     public function getDeviceEnrollmentConfigurations()
     {
         if (array_key_exists('deviceEnrollmentConfigurations', $this->_propDict) && !is_null($this->_propDict['deviceEnrollmentConfigurations'])) {
-            $deviceEnrollmentConfigurations = [];
-            if (count($this->_propDict['deviceEnrollmentConfigurations']) > 0 && is_a($this->_propDict['deviceEnrollmentConfigurations'][0], 'DeviceEnrollmentConfiguration')) {
-                return $this->_propDict['deviceEnrollmentConfigurations'];
-            }
-            foreach ($this->_propDict['deviceEnrollmentConfigurations'] as $singleValue) {
-                $deviceEnrollmentConfigurations []= new DeviceEnrollmentConfiguration($singleValue);
-            }
-            $this->_propDict['deviceEnrollmentConfigurations'] = $deviceEnrollmentConfigurations;
-            return $this->_propDict['deviceEnrollmentConfigurations'];
+           $deviceEnrollmentConfigurations = [];
+           if (count($this->_propDict['deviceEnrollmentConfigurations']) > 0 && is_a($this->_propDict['deviceEnrollmentConfigurations'][0], 'DeviceEnrollmentConfiguration')) {
+              return $this->_propDict['deviceEnrollmentConfigurations'];
+           }
+           foreach ($this->_propDict['deviceEnrollmentConfigurations'] as $singleValue) {
+              $deviceEnrollmentConfigurations []= new DeviceEnrollmentConfiguration($singleValue);
+           }
+           $this->_propDict['deviceEnrollmentConfigurations'] = $deviceEnrollmentConfigurations;
+           return $this->_propDict['deviceEnrollmentConfigurations'];
         }
         return null;
     }
@@ -590,15 +590,15 @@ class DeviceManagement extends Entity
     public function getDeviceManagementPartners()
     {
         if (array_key_exists('deviceManagementPartners', $this->_propDict) && !is_null($this->_propDict['deviceManagementPartners'])) {
-            $deviceManagementPartners = [];
-            if (count($this->_propDict['deviceManagementPartners']) > 0 && is_a($this->_propDict['deviceManagementPartners'][0], 'DeviceManagementPartner')) {
-                return $this->_propDict['deviceManagementPartners'];
-            }
-            foreach ($this->_propDict['deviceManagementPartners'] as $singleValue) {
-                $deviceManagementPartners []= new DeviceManagementPartner($singleValue);
-            }
-            $this->_propDict['deviceManagementPartners'] = $deviceManagementPartners;
-            return $this->_propDict['deviceManagementPartners'];
+           $deviceManagementPartners = [];
+           if (count($this->_propDict['deviceManagementPartners']) > 0 && is_a($this->_propDict['deviceManagementPartners'][0], 'DeviceManagementPartner')) {
+              return $this->_propDict['deviceManagementPartners'];
+           }
+           foreach ($this->_propDict['deviceManagementPartners'] as $singleValue) {
+              $deviceManagementPartners []= new DeviceManagementPartner($singleValue);
+           }
+           $this->_propDict['deviceManagementPartners'] = $deviceManagementPartners;
+           return $this->_propDict['deviceManagementPartners'];
         }
         return null;
     }
@@ -627,15 +627,15 @@ class DeviceManagement extends Entity
     public function getExchangeConnectors()
     {
         if (array_key_exists('exchangeConnectors', $this->_propDict) && !is_null($this->_propDict['exchangeConnectors'])) {
-            $exchangeConnectors = [];
-            if (count($this->_propDict['exchangeConnectors']) > 0 && is_a($this->_propDict['exchangeConnectors'][0], 'DeviceManagementExchangeConnector')) {
-                return $this->_propDict['exchangeConnectors'];
-            }
-            foreach ($this->_propDict['exchangeConnectors'] as $singleValue) {
-                $exchangeConnectors []= new DeviceManagementExchangeConnector($singleValue);
-            }
-            $this->_propDict['exchangeConnectors'] = $exchangeConnectors;
-            return $this->_propDict['exchangeConnectors'];
+           $exchangeConnectors = [];
+           if (count($this->_propDict['exchangeConnectors']) > 0 && is_a($this->_propDict['exchangeConnectors'][0], 'DeviceManagementExchangeConnector')) {
+              return $this->_propDict['exchangeConnectors'];
+           }
+           foreach ($this->_propDict['exchangeConnectors'] as $singleValue) {
+              $exchangeConnectors []= new DeviceManagementExchangeConnector($singleValue);
+           }
+           $this->_propDict['exchangeConnectors'] = $exchangeConnectors;
+           return $this->_propDict['exchangeConnectors'];
         }
         return null;
     }
@@ -664,15 +664,15 @@ class DeviceManagement extends Entity
     public function getMobileThreatDefenseConnectors()
     {
         if (array_key_exists('mobileThreatDefenseConnectors', $this->_propDict) && !is_null($this->_propDict['mobileThreatDefenseConnectors'])) {
-            $mobileThreatDefenseConnectors = [];
-            if (count($this->_propDict['mobileThreatDefenseConnectors']) > 0 && is_a($this->_propDict['mobileThreatDefenseConnectors'][0], 'MobileThreatDefenseConnector')) {
-                return $this->_propDict['mobileThreatDefenseConnectors'];
-            }
-            foreach ($this->_propDict['mobileThreatDefenseConnectors'] as $singleValue) {
-                $mobileThreatDefenseConnectors []= new MobileThreatDefenseConnector($singleValue);
-            }
-            $this->_propDict['mobileThreatDefenseConnectors'] = $mobileThreatDefenseConnectors;
-            return $this->_propDict['mobileThreatDefenseConnectors'];
+           $mobileThreatDefenseConnectors = [];
+           if (count($this->_propDict['mobileThreatDefenseConnectors']) > 0 && is_a($this->_propDict['mobileThreatDefenseConnectors'][0], 'MobileThreatDefenseConnector')) {
+              return $this->_propDict['mobileThreatDefenseConnectors'];
+           }
+           foreach ($this->_propDict['mobileThreatDefenseConnectors'] as $singleValue) {
+              $mobileThreatDefenseConnectors []= new MobileThreatDefenseConnector($singleValue);
+           }
+           $this->_propDict['mobileThreatDefenseConnectors'] = $mobileThreatDefenseConnectors;
+           return $this->_propDict['mobileThreatDefenseConnectors'];
         }
         return null;
     }
@@ -734,15 +734,15 @@ class DeviceManagement extends Entity
     public function getDetectedApps()
     {
         if (array_key_exists('detectedApps', $this->_propDict) && !is_null($this->_propDict['detectedApps'])) {
-            $detectedApps = [];
-            if (count($this->_propDict['detectedApps']) > 0 && is_a($this->_propDict['detectedApps'][0], 'DetectedApp')) {
-                return $this->_propDict['detectedApps'];
-            }
-            foreach ($this->_propDict['detectedApps'] as $singleValue) {
-                $detectedApps []= new DetectedApp($singleValue);
-            }
-            $this->_propDict['detectedApps'] = $detectedApps;
-            return $this->_propDict['detectedApps'];
+           $detectedApps = [];
+           if (count($this->_propDict['detectedApps']) > 0 && is_a($this->_propDict['detectedApps'][0], 'DetectedApp')) {
+              return $this->_propDict['detectedApps'];
+           }
+           foreach ($this->_propDict['detectedApps'] as $singleValue) {
+              $detectedApps []= new DetectedApp($singleValue);
+           }
+           $this->_propDict['detectedApps'] = $detectedApps;
+           return $this->_propDict['detectedApps'];
         }
         return null;
     }
@@ -804,15 +804,15 @@ class DeviceManagement extends Entity
     public function getManagedDevices()
     {
         if (array_key_exists('managedDevices', $this->_propDict) && !is_null($this->_propDict['managedDevices'])) {
-            $managedDevices = [];
-            if (count($this->_propDict['managedDevices']) > 0 && is_a($this->_propDict['managedDevices'][0], 'ManagedDevice')) {
-                return $this->_propDict['managedDevices'];
-            }
-            foreach ($this->_propDict['managedDevices'] as $singleValue) {
-                $managedDevices []= new ManagedDevice($singleValue);
-            }
-            $this->_propDict['managedDevices'] = $managedDevices;
-            return $this->_propDict['managedDevices'];
+           $managedDevices = [];
+           if (count($this->_propDict['managedDevices']) > 0 && is_a($this->_propDict['managedDevices'][0], 'ManagedDevice')) {
+              return $this->_propDict['managedDevices'];
+           }
+           foreach ($this->_propDict['managedDevices'] as $singleValue) {
+              $managedDevices []= new ManagedDevice($singleValue);
+           }
+           $this->_propDict['managedDevices'] = $managedDevices;
+           return $this->_propDict['managedDevices'];
         }
         return null;
     }
@@ -841,15 +841,15 @@ class DeviceManagement extends Entity
     public function getImportedWindowsAutopilotDeviceIdentities()
     {
         if (array_key_exists('importedWindowsAutopilotDeviceIdentities', $this->_propDict) && !is_null($this->_propDict['importedWindowsAutopilotDeviceIdentities'])) {
-            $importedWindowsAutopilotDeviceIdentities = [];
-            if (count($this->_propDict['importedWindowsAutopilotDeviceIdentities']) > 0 && is_a($this->_propDict['importedWindowsAutopilotDeviceIdentities'][0], 'ImportedWindowsAutopilotDeviceIdentity')) {
-                return $this->_propDict['importedWindowsAutopilotDeviceIdentities'];
-            }
-            foreach ($this->_propDict['importedWindowsAutopilotDeviceIdentities'] as $singleValue) {
-                $importedWindowsAutopilotDeviceIdentities []= new ImportedWindowsAutopilotDeviceIdentity($singleValue);
-            }
-            $this->_propDict['importedWindowsAutopilotDeviceIdentities'] = $importedWindowsAutopilotDeviceIdentities;
-            return $this->_propDict['importedWindowsAutopilotDeviceIdentities'];
+           $importedWindowsAutopilotDeviceIdentities = [];
+           if (count($this->_propDict['importedWindowsAutopilotDeviceIdentities']) > 0 && is_a($this->_propDict['importedWindowsAutopilotDeviceIdentities'][0], 'ImportedWindowsAutopilotDeviceIdentity')) {
+              return $this->_propDict['importedWindowsAutopilotDeviceIdentities'];
+           }
+           foreach ($this->_propDict['importedWindowsAutopilotDeviceIdentities'] as $singleValue) {
+              $importedWindowsAutopilotDeviceIdentities []= new ImportedWindowsAutopilotDeviceIdentity($singleValue);
+           }
+           $this->_propDict['importedWindowsAutopilotDeviceIdentities'] = $importedWindowsAutopilotDeviceIdentities;
+           return $this->_propDict['importedWindowsAutopilotDeviceIdentities'];
         }
         return null;
     }
@@ -878,15 +878,15 @@ class DeviceManagement extends Entity
     public function getWindowsAutopilotDeviceIdentities()
     {
         if (array_key_exists('windowsAutopilotDeviceIdentities', $this->_propDict) && !is_null($this->_propDict['windowsAutopilotDeviceIdentities'])) {
-            $windowsAutopilotDeviceIdentities = [];
-            if (count($this->_propDict['windowsAutopilotDeviceIdentities']) > 0 && is_a($this->_propDict['windowsAutopilotDeviceIdentities'][0], 'WindowsAutopilotDeviceIdentity')) {
-                return $this->_propDict['windowsAutopilotDeviceIdentities'];
-            }
-            foreach ($this->_propDict['windowsAutopilotDeviceIdentities'] as $singleValue) {
-                $windowsAutopilotDeviceIdentities []= new WindowsAutopilotDeviceIdentity($singleValue);
-            }
-            $this->_propDict['windowsAutopilotDeviceIdentities'] = $windowsAutopilotDeviceIdentities;
-            return $this->_propDict['windowsAutopilotDeviceIdentities'];
+           $windowsAutopilotDeviceIdentities = [];
+           if (count($this->_propDict['windowsAutopilotDeviceIdentities']) > 0 && is_a($this->_propDict['windowsAutopilotDeviceIdentities'][0], 'WindowsAutopilotDeviceIdentity')) {
+              return $this->_propDict['windowsAutopilotDeviceIdentities'];
+           }
+           foreach ($this->_propDict['windowsAutopilotDeviceIdentities'] as $singleValue) {
+              $windowsAutopilotDeviceIdentities []= new WindowsAutopilotDeviceIdentity($singleValue);
+           }
+           $this->_propDict['windowsAutopilotDeviceIdentities'] = $windowsAutopilotDeviceIdentities;
+           return $this->_propDict['windowsAutopilotDeviceIdentities'];
         }
         return null;
     }
@@ -915,15 +915,15 @@ class DeviceManagement extends Entity
     public function getNotificationMessageTemplates()
     {
         if (array_key_exists('notificationMessageTemplates', $this->_propDict) && !is_null($this->_propDict['notificationMessageTemplates'])) {
-            $notificationMessageTemplates = [];
-            if (count($this->_propDict['notificationMessageTemplates']) > 0 && is_a($this->_propDict['notificationMessageTemplates'][0], 'NotificationMessageTemplate')) {
-                return $this->_propDict['notificationMessageTemplates'];
-            }
-            foreach ($this->_propDict['notificationMessageTemplates'] as $singleValue) {
-                $notificationMessageTemplates []= new NotificationMessageTemplate($singleValue);
-            }
-            $this->_propDict['notificationMessageTemplates'] = $notificationMessageTemplates;
-            return $this->_propDict['notificationMessageTemplates'];
+           $notificationMessageTemplates = [];
+           if (count($this->_propDict['notificationMessageTemplates']) > 0 && is_a($this->_propDict['notificationMessageTemplates'][0], 'NotificationMessageTemplate')) {
+              return $this->_propDict['notificationMessageTemplates'];
+           }
+           foreach ($this->_propDict['notificationMessageTemplates'] as $singleValue) {
+              $notificationMessageTemplates []= new NotificationMessageTemplate($singleValue);
+           }
+           $this->_propDict['notificationMessageTemplates'] = $notificationMessageTemplates;
+           return $this->_propDict['notificationMessageTemplates'];
         }
         return null;
     }
@@ -952,15 +952,15 @@ class DeviceManagement extends Entity
     public function getResourceOperations()
     {
         if (array_key_exists('resourceOperations', $this->_propDict) && !is_null($this->_propDict['resourceOperations'])) {
-            $resourceOperations = [];
-            if (count($this->_propDict['resourceOperations']) > 0 && is_a($this->_propDict['resourceOperations'][0], 'ResourceOperation')) {
-                return $this->_propDict['resourceOperations'];
-            }
-            foreach ($this->_propDict['resourceOperations'] as $singleValue) {
-                $resourceOperations []= new ResourceOperation($singleValue);
-            }
-            $this->_propDict['resourceOperations'] = $resourceOperations;
-            return $this->_propDict['resourceOperations'];
+           $resourceOperations = [];
+           if (count($this->_propDict['resourceOperations']) > 0 && is_a($this->_propDict['resourceOperations'][0], 'ResourceOperation')) {
+              return $this->_propDict['resourceOperations'];
+           }
+           foreach ($this->_propDict['resourceOperations'] as $singleValue) {
+              $resourceOperations []= new ResourceOperation($singleValue);
+           }
+           $this->_propDict['resourceOperations'] = $resourceOperations;
+           return $this->_propDict['resourceOperations'];
         }
         return null;
     }
@@ -989,15 +989,15 @@ class DeviceManagement extends Entity
     public function getRoleAssignments()
     {
         if (array_key_exists('roleAssignments', $this->_propDict) && !is_null($this->_propDict['roleAssignments'])) {
-            $roleAssignments = [];
-            if (count($this->_propDict['roleAssignments']) > 0 && is_a($this->_propDict['roleAssignments'][0], 'DeviceAndAppManagementRoleAssignment')) {
-                return $this->_propDict['roleAssignments'];
-            }
-            foreach ($this->_propDict['roleAssignments'] as $singleValue) {
-                $roleAssignments []= new DeviceAndAppManagementRoleAssignment($singleValue);
-            }
-            $this->_propDict['roleAssignments'] = $roleAssignments;
-            return $this->_propDict['roleAssignments'];
+           $roleAssignments = [];
+           if (count($this->_propDict['roleAssignments']) > 0 && is_a($this->_propDict['roleAssignments'][0], 'DeviceAndAppManagementRoleAssignment')) {
+              return $this->_propDict['roleAssignments'];
+           }
+           foreach ($this->_propDict['roleAssignments'] as $singleValue) {
+              $roleAssignments []= new DeviceAndAppManagementRoleAssignment($singleValue);
+           }
+           $this->_propDict['roleAssignments'] = $roleAssignments;
+           return $this->_propDict['roleAssignments'];
         }
         return null;
     }
@@ -1026,15 +1026,15 @@ class DeviceManagement extends Entity
     public function getRoleDefinitions()
     {
         if (array_key_exists('roleDefinitions', $this->_propDict) && !is_null($this->_propDict['roleDefinitions'])) {
-            $roleDefinitions = [];
-            if (count($this->_propDict['roleDefinitions']) > 0 && is_a($this->_propDict['roleDefinitions'][0], 'RoleDefinition')) {
-                return $this->_propDict['roleDefinitions'];
-            }
-            foreach ($this->_propDict['roleDefinitions'] as $singleValue) {
-                $roleDefinitions []= new RoleDefinition($singleValue);
-            }
-            $this->_propDict['roleDefinitions'] = $roleDefinitions;
-            return $this->_propDict['roleDefinitions'];
+           $roleDefinitions = [];
+           if (count($this->_propDict['roleDefinitions']) > 0 && is_a($this->_propDict['roleDefinitions'][0], 'RoleDefinition')) {
+              return $this->_propDict['roleDefinitions'];
+           }
+           foreach ($this->_propDict['roleDefinitions'] as $singleValue) {
+              $roleDefinitions []= new RoleDefinition($singleValue);
+           }
+           $this->_propDict['roleDefinitions'] = $roleDefinitions;
+           return $this->_propDict['roleDefinitions'];
         }
         return null;
     }
@@ -1063,15 +1063,15 @@ class DeviceManagement extends Entity
     public function getRemoteAssistancePartners()
     {
         if (array_key_exists('remoteAssistancePartners', $this->_propDict) && !is_null($this->_propDict['remoteAssistancePartners'])) {
-            $remoteAssistancePartners = [];
-            if (count($this->_propDict['remoteAssistancePartners']) > 0 && is_a($this->_propDict['remoteAssistancePartners'][0], 'RemoteAssistancePartner')) {
-                return $this->_propDict['remoteAssistancePartners'];
-            }
-            foreach ($this->_propDict['remoteAssistancePartners'] as $singleValue) {
-                $remoteAssistancePartners []= new RemoteAssistancePartner($singleValue);
-            }
-            $this->_propDict['remoteAssistancePartners'] = $remoteAssistancePartners;
-            return $this->_propDict['remoteAssistancePartners'];
+           $remoteAssistancePartners = [];
+           if (count($this->_propDict['remoteAssistancePartners']) > 0 && is_a($this->_propDict['remoteAssistancePartners'][0], 'RemoteAssistancePartner')) {
+              return $this->_propDict['remoteAssistancePartners'];
+           }
+           foreach ($this->_propDict['remoteAssistancePartners'] as $singleValue) {
+              $remoteAssistancePartners []= new RemoteAssistancePartner($singleValue);
+           }
+           $this->_propDict['remoteAssistancePartners'] = $remoteAssistancePartners;
+           return $this->_propDict['remoteAssistancePartners'];
         }
         return null;
     }
@@ -1133,15 +1133,15 @@ class DeviceManagement extends Entity
     public function getTelecomExpenseManagementPartners()
     {
         if (array_key_exists('telecomExpenseManagementPartners', $this->_propDict) && !is_null($this->_propDict['telecomExpenseManagementPartners'])) {
-            $telecomExpenseManagementPartners = [];
-            if (count($this->_propDict['telecomExpenseManagementPartners']) > 0 && is_a($this->_propDict['telecomExpenseManagementPartners'][0], 'TelecomExpenseManagementPartner')) {
-                return $this->_propDict['telecomExpenseManagementPartners'];
-            }
-            foreach ($this->_propDict['telecomExpenseManagementPartners'] as $singleValue) {
-                $telecomExpenseManagementPartners []= new TelecomExpenseManagementPartner($singleValue);
-            }
-            $this->_propDict['telecomExpenseManagementPartners'] = $telecomExpenseManagementPartners;
-            return $this->_propDict['telecomExpenseManagementPartners'];
+           $telecomExpenseManagementPartners = [];
+           if (count($this->_propDict['telecomExpenseManagementPartners']) > 0 && is_a($this->_propDict['telecomExpenseManagementPartners'][0], 'TelecomExpenseManagementPartner')) {
+              return $this->_propDict['telecomExpenseManagementPartners'];
+           }
+           foreach ($this->_propDict['telecomExpenseManagementPartners'] as $singleValue) {
+              $telecomExpenseManagementPartners []= new TelecomExpenseManagementPartner($singleValue);
+           }
+           $this->_propDict['telecomExpenseManagementPartners'] = $telecomExpenseManagementPartners;
+           return $this->_propDict['telecomExpenseManagementPartners'];
         }
         return null;
     }
@@ -1170,15 +1170,15 @@ class DeviceManagement extends Entity
     public function getTroubleshootingEvents()
     {
         if (array_key_exists('troubleshootingEvents', $this->_propDict) && !is_null($this->_propDict['troubleshootingEvents'])) {
-            $troubleshootingEvents = [];
-            if (count($this->_propDict['troubleshootingEvents']) > 0 && is_a($this->_propDict['troubleshootingEvents'][0], 'DeviceManagementTroubleshootingEvent')) {
-                return $this->_propDict['troubleshootingEvents'];
-            }
-            foreach ($this->_propDict['troubleshootingEvents'] as $singleValue) {
-                $troubleshootingEvents []= new DeviceManagementTroubleshootingEvent($singleValue);
-            }
-            $this->_propDict['troubleshootingEvents'] = $troubleshootingEvents;
-            return $this->_propDict['troubleshootingEvents'];
+           $troubleshootingEvents = [];
+           if (count($this->_propDict['troubleshootingEvents']) > 0 && is_a($this->_propDict['troubleshootingEvents'][0], 'DeviceManagementTroubleshootingEvent')) {
+              return $this->_propDict['troubleshootingEvents'];
+           }
+           foreach ($this->_propDict['troubleshootingEvents'] as $singleValue) {
+              $troubleshootingEvents []= new DeviceManagementTroubleshootingEvent($singleValue);
+           }
+           $this->_propDict['troubleshootingEvents'] = $troubleshootingEvents;
+           return $this->_propDict['troubleshootingEvents'];
         }
         return null;
     }
@@ -1207,15 +1207,15 @@ class DeviceManagement extends Entity
     public function getWindowsInformationProtectionAppLearningSummaries()
     {
         if (array_key_exists('windowsInformationProtectionAppLearningSummaries', $this->_propDict) && !is_null($this->_propDict['windowsInformationProtectionAppLearningSummaries'])) {
-            $windowsInformationProtectionAppLearningSummaries = [];
-            if (count($this->_propDict['windowsInformationProtectionAppLearningSummaries']) > 0 && is_a($this->_propDict['windowsInformationProtectionAppLearningSummaries'][0], 'WindowsInformationProtectionAppLearningSummary')) {
-                return $this->_propDict['windowsInformationProtectionAppLearningSummaries'];
-            }
-            foreach ($this->_propDict['windowsInformationProtectionAppLearningSummaries'] as $singleValue) {
-                $windowsInformationProtectionAppLearningSummaries []= new WindowsInformationProtectionAppLearningSummary($singleValue);
-            }
-            $this->_propDict['windowsInformationProtectionAppLearningSummaries'] = $windowsInformationProtectionAppLearningSummaries;
-            return $this->_propDict['windowsInformationProtectionAppLearningSummaries'];
+           $windowsInformationProtectionAppLearningSummaries = [];
+           if (count($this->_propDict['windowsInformationProtectionAppLearningSummaries']) > 0 && is_a($this->_propDict['windowsInformationProtectionAppLearningSummaries'][0], 'WindowsInformationProtectionAppLearningSummary')) {
+              return $this->_propDict['windowsInformationProtectionAppLearningSummaries'];
+           }
+           foreach ($this->_propDict['windowsInformationProtectionAppLearningSummaries'] as $singleValue) {
+              $windowsInformationProtectionAppLearningSummaries []= new WindowsInformationProtectionAppLearningSummary($singleValue);
+           }
+           $this->_propDict['windowsInformationProtectionAppLearningSummaries'] = $windowsInformationProtectionAppLearningSummaries;
+           return $this->_propDict['windowsInformationProtectionAppLearningSummaries'];
         }
         return null;
     }
@@ -1244,15 +1244,15 @@ class DeviceManagement extends Entity
     public function getWindowsInformationProtectionNetworkLearningSummaries()
     {
         if (array_key_exists('windowsInformationProtectionNetworkLearningSummaries', $this->_propDict) && !is_null($this->_propDict['windowsInformationProtectionNetworkLearningSummaries'])) {
-            $windowsInformationProtectionNetworkLearningSummaries = [];
-            if (count($this->_propDict['windowsInformationProtectionNetworkLearningSummaries']) > 0 && is_a($this->_propDict['windowsInformationProtectionNetworkLearningSummaries'][0], 'WindowsInformationProtectionNetworkLearningSummary')) {
-                return $this->_propDict['windowsInformationProtectionNetworkLearningSummaries'];
-            }
-            foreach ($this->_propDict['windowsInformationProtectionNetworkLearningSummaries'] as $singleValue) {
-                $windowsInformationProtectionNetworkLearningSummaries []= new WindowsInformationProtectionNetworkLearningSummary($singleValue);
-            }
-            $this->_propDict['windowsInformationProtectionNetworkLearningSummaries'] = $windowsInformationProtectionNetworkLearningSummaries;
-            return $this->_propDict['windowsInformationProtectionNetworkLearningSummaries'];
+           $windowsInformationProtectionNetworkLearningSummaries = [];
+           if (count($this->_propDict['windowsInformationProtectionNetworkLearningSummaries']) > 0 && is_a($this->_propDict['windowsInformationProtectionNetworkLearningSummaries'][0], 'WindowsInformationProtectionNetworkLearningSummary')) {
+              return $this->_propDict['windowsInformationProtectionNetworkLearningSummaries'];
+           }
+           foreach ($this->_propDict['windowsInformationProtectionNetworkLearningSummaries'] as $singleValue) {
+              $windowsInformationProtectionNetworkLearningSummaries []= new WindowsInformationProtectionNetworkLearningSummary($singleValue);
+           }
+           $this->_propDict['windowsInformationProtectionNetworkLearningSummaries'] = $windowsInformationProtectionNetworkLearningSummaries;
+           return $this->_propDict['windowsInformationProtectionNetworkLearningSummaries'];
         }
         return null;
     }

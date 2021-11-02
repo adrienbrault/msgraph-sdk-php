@@ -357,15 +357,15 @@ class Person extends Entity
     public function getPhones()
     {
         if (array_key_exists('phones', $this->_propDict) && !is_null($this->_propDict['phones'])) {
-            $phones = [];
-            if (count($this->_propDict['phones']) > 0 && is_a($this->_propDict['phones'][0], 'Phone')) {
-                return $this->_propDict['phones'];
-            }
-            foreach ($this->_propDict['phones'] as $singleValue) {
-                $phones []= new Phone($singleValue);
-            }
-            $this->_propDict['phones'] = $phones;
-            return $this->_propDict['phones'];
+           $phones = [];
+           if (count($this->_propDict['phones']) > 0 && is_a($this->_propDict['phones'][0], 'Phone')) {
+              return $this->_propDict['phones'];
+           }
+           foreach ($this->_propDict['phones'] as $singleValue) {
+              $phones []= new Phone($singleValue);
+           }
+           $this->_propDict['phones'] = $phones;
+           return $this->_propDict['phones'];
         }
         return null;
     }
@@ -394,15 +394,15 @@ class Person extends Entity
     public function getPostalAddresses()
     {
         if (array_key_exists('postalAddresses', $this->_propDict) && !is_null($this->_propDict['postalAddresses'])) {
-            $postalAddresses = [];
-            if (count($this->_propDict['postalAddresses']) > 0 && is_a($this->_propDict['postalAddresses'][0], 'Location')) {
-                return $this->_propDict['postalAddresses'];
-            }
-            foreach ($this->_propDict['postalAddresses'] as $singleValue) {
-                $postalAddresses []= new Location($singleValue);
-            }
-            $this->_propDict['postalAddresses'] = $postalAddresses;
-            return $this->_propDict['postalAddresses'];
+           $postalAddresses = [];
+           if (count($this->_propDict['postalAddresses']) > 0 && is_a($this->_propDict['postalAddresses'][0], 'Location')) {
+              return $this->_propDict['postalAddresses'];
+           }
+           foreach ($this->_propDict['postalAddresses'] as $singleValue) {
+              $postalAddresses []= new Location($singleValue);
+           }
+           $this->_propDict['postalAddresses'] = $postalAddresses;
+           return $this->_propDict['postalAddresses'];
         }
         return null;
     }
@@ -460,15 +460,15 @@ class Person extends Entity
     public function getScoredEmailAddresses()
     {
         if (array_key_exists('scoredEmailAddresses', $this->_propDict) && !is_null($this->_propDict['scoredEmailAddresses'])) {
-            $scoredEmailAddresses = [];
-            if (count($this->_propDict['scoredEmailAddresses']) > 0 && is_a($this->_propDict['scoredEmailAddresses'][0], 'ScoredEmailAddress')) {
-                return $this->_propDict['scoredEmailAddresses'];
-            }
-            foreach ($this->_propDict['scoredEmailAddresses'] as $singleValue) {
-                $scoredEmailAddresses []= new ScoredEmailAddress($singleValue);
-            }
-            $this->_propDict['scoredEmailAddresses'] = $scoredEmailAddresses;
-            return $this->_propDict['scoredEmailAddresses'];
+           $scoredEmailAddresses = [];
+           if (count($this->_propDict['scoredEmailAddresses']) > 0 && is_a($this->_propDict['scoredEmailAddresses'][0], 'ScoredEmailAddress')) {
+              return $this->_propDict['scoredEmailAddresses'];
+           }
+           foreach ($this->_propDict['scoredEmailAddresses'] as $singleValue) {
+              $scoredEmailAddresses []= new ScoredEmailAddress($singleValue);
+           }
+           $this->_propDict['scoredEmailAddresses'] = $scoredEmailAddresses;
+           return $this->_propDict['scoredEmailAddresses'];
         }
         return null;
     }
@@ -555,15 +555,15 @@ class Person extends Entity
     public function getWebsites()
     {
         if (array_key_exists('websites', $this->_propDict) && !is_null($this->_propDict['websites'])) {
-            $websites = [];
-            if (count($this->_propDict['websites']) > 0 && is_a($this->_propDict['websites'][0], 'Website')) {
-                return $this->_propDict['websites'];
-            }
-            foreach ($this->_propDict['websites'] as $singleValue) {
-                $websites []= new Website($singleValue);
-            }
-            $this->_propDict['websites'] = $websites;
-            return $this->_propDict['websites'];
+           $websites = [];
+           if (count($this->_propDict['websites']) > 0 && is_a($this->_propDict['websites'][0], 'Website')) {
+              return $this->_propDict['websites'];
+           }
+           foreach ($this->_propDict['websites'] as $singleValue) {
+              $websites []= new Website($singleValue);
+           }
+           $this->_propDict['websites'] = $websites;
+           return $this->_propDict['websites'];
         }
         return null;
     }

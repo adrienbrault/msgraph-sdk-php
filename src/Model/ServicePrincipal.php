@@ -63,15 +63,15 @@ class ServicePrincipal extends DirectoryObject
     public function getAddIns()
     {
         if (array_key_exists('addIns', $this->_propDict) && !is_null($this->_propDict['addIns'])) {
-            $addIns = [];
-            if (count($this->_propDict['addIns']) > 0 && is_a($this->_propDict['addIns'][0], 'AddIn')) {
-                return $this->_propDict['addIns'];
-            }
-            foreach ($this->_propDict['addIns'] as $singleValue) {
-                $addIns []= new AddIn($singleValue);
-            }
-            $this->_propDict['addIns'] = $addIns;
-            return $this->_propDict['addIns'];
+           $addIns = [];
+           if (count($this->_propDict['addIns']) > 0 && is_a($this->_propDict['addIns'][0], 'AddIn')) {
+              return $this->_propDict['addIns'];
+           }
+           foreach ($this->_propDict['addIns'] as $singleValue) {
+              $addIns []= new AddIn($singleValue);
+           }
+           $this->_propDict['addIns'] = $addIns;
+           return $this->_propDict['addIns'];
         }
         return null;
     }
@@ -303,15 +303,15 @@ class ServicePrincipal extends DirectoryObject
     public function getAppRoles()
     {
         if (array_key_exists('appRoles', $this->_propDict) && !is_null($this->_propDict['appRoles'])) {
-            $appRoles = [];
-            if (count($this->_propDict['appRoles']) > 0 && is_a($this->_propDict['appRoles'][0], 'AppRole')) {
-                return $this->_propDict['appRoles'];
-            }
-            foreach ($this->_propDict['appRoles'] as $singleValue) {
-                $appRoles []= new AppRole($singleValue);
-            }
-            $this->_propDict['appRoles'] = $appRoles;
-            return $this->_propDict['appRoles'];
+           $appRoles = [];
+           if (count($this->_propDict['appRoles']) > 0 && is_a($this->_propDict['appRoles'][0], 'AppRole')) {
+              return $this->_propDict['appRoles'];
+           }
+           foreach ($this->_propDict['appRoles'] as $singleValue) {
+              $appRoles []= new AppRole($singleValue);
+           }
+           $this->_propDict['appRoles'] = $appRoles;
+           return $this->_propDict['appRoles'];
         }
         return null;
     }
@@ -489,15 +489,15 @@ class ServicePrincipal extends DirectoryObject
     public function getKeyCredentials()
     {
         if (array_key_exists('keyCredentials', $this->_propDict) && !is_null($this->_propDict['keyCredentials'])) {
-            $keyCredentials = [];
-            if (count($this->_propDict['keyCredentials']) > 0 && is_a($this->_propDict['keyCredentials'][0], 'KeyCredential')) {
-                return $this->_propDict['keyCredentials'];
-            }
-            foreach ($this->_propDict['keyCredentials'] as $singleValue) {
-                $keyCredentials []= new KeyCredential($singleValue);
-            }
-            $this->_propDict['keyCredentials'] = $keyCredentials;
-            return $this->_propDict['keyCredentials'];
+           $keyCredentials = [];
+           if (count($this->_propDict['keyCredentials']) > 0 && is_a($this->_propDict['keyCredentials'][0], 'KeyCredential')) {
+              return $this->_propDict['keyCredentials'];
+           }
+           foreach ($this->_propDict['keyCredentials'] as $singleValue) {
+              $keyCredentials []= new KeyCredential($singleValue);
+           }
+           $this->_propDict['keyCredentials'] = $keyCredentials;
+           return $this->_propDict['keyCredentials'];
         }
         return null;
     }
@@ -642,15 +642,15 @@ class ServicePrincipal extends DirectoryObject
     public function getOauth2PermissionScopes()
     {
         if (array_key_exists('oauth2PermissionScopes', $this->_propDict) && !is_null($this->_propDict['oauth2PermissionScopes'])) {
-            $oauth2PermissionScopes = [];
-            if (count($this->_propDict['oauth2PermissionScopes']) > 0 && is_a($this->_propDict['oauth2PermissionScopes'][0], 'PermissionScope')) {
-                return $this->_propDict['oauth2PermissionScopes'];
-            }
-            foreach ($this->_propDict['oauth2PermissionScopes'] as $singleValue) {
-                $oauth2PermissionScopes []= new PermissionScope($singleValue);
-            }
-            $this->_propDict['oauth2PermissionScopes'] = $oauth2PermissionScopes;
-            return $this->_propDict['oauth2PermissionScopes'];
+           $oauth2PermissionScopes = [];
+           if (count($this->_propDict['oauth2PermissionScopes']) > 0 && is_a($this->_propDict['oauth2PermissionScopes'][0], 'PermissionScope')) {
+              return $this->_propDict['oauth2PermissionScopes'];
+           }
+           foreach ($this->_propDict['oauth2PermissionScopes'] as $singleValue) {
+              $oauth2PermissionScopes []= new PermissionScope($singleValue);
+           }
+           $this->_propDict['oauth2PermissionScopes'] = $oauth2PermissionScopes;
+           return $this->_propDict['oauth2PermissionScopes'];
         }
         return null;
     }
@@ -679,15 +679,15 @@ class ServicePrincipal extends DirectoryObject
     public function getPasswordCredentials()
     {
         if (array_key_exists('passwordCredentials', $this->_propDict) && !is_null($this->_propDict['passwordCredentials'])) {
-            $passwordCredentials = [];
-            if (count($this->_propDict['passwordCredentials']) > 0 && is_a($this->_propDict['passwordCredentials'][0], 'PasswordCredential')) {
-                return $this->_propDict['passwordCredentials'];
-            }
-            foreach ($this->_propDict['passwordCredentials'] as $singleValue) {
-                $passwordCredentials []= new PasswordCredential($singleValue);
-            }
-            $this->_propDict['passwordCredentials'] = $passwordCredentials;
-            return $this->_propDict['passwordCredentials'];
+           $passwordCredentials = [];
+           if (count($this->_propDict['passwordCredentials']) > 0 && is_a($this->_propDict['passwordCredentials'][0], 'PasswordCredential')) {
+              return $this->_propDict['passwordCredentials'];
+           }
+           foreach ($this->_propDict['passwordCredentials'] as $singleValue) {
+              $passwordCredentials []= new PasswordCredential($singleValue);
+           }
+           $this->_propDict['passwordCredentials'] = $passwordCredentials;
+           return $this->_propDict['passwordCredentials'];
         }
         return null;
     }
@@ -981,15 +981,15 @@ class ServicePrincipal extends DirectoryObject
     public function getAppRoleAssignedTo()
     {
         if (array_key_exists('appRoleAssignedTo', $this->_propDict) && !is_null($this->_propDict['appRoleAssignedTo'])) {
-            $appRoleAssignedTo = [];
-            if (count($this->_propDict['appRoleAssignedTo']) > 0 && is_a($this->_propDict['appRoleAssignedTo'][0], 'AppRoleAssignment')) {
-                return $this->_propDict['appRoleAssignedTo'];
-            }
-            foreach ($this->_propDict['appRoleAssignedTo'] as $singleValue) {
-                $appRoleAssignedTo []= new AppRoleAssignment($singleValue);
-            }
-            $this->_propDict['appRoleAssignedTo'] = $appRoleAssignedTo;
-            return $this->_propDict['appRoleAssignedTo'];
+           $appRoleAssignedTo = [];
+           if (count($this->_propDict['appRoleAssignedTo']) > 0 && is_a($this->_propDict['appRoleAssignedTo'][0], 'AppRoleAssignment')) {
+              return $this->_propDict['appRoleAssignedTo'];
+           }
+           foreach ($this->_propDict['appRoleAssignedTo'] as $singleValue) {
+              $appRoleAssignedTo []= new AppRoleAssignment($singleValue);
+           }
+           $this->_propDict['appRoleAssignedTo'] = $appRoleAssignedTo;
+           return $this->_propDict['appRoleAssignedTo'];
         }
         return null;
     }
@@ -1018,15 +1018,15 @@ class ServicePrincipal extends DirectoryObject
     public function getAppRoleAssignments()
     {
         if (array_key_exists('appRoleAssignments', $this->_propDict) && !is_null($this->_propDict['appRoleAssignments'])) {
-            $appRoleAssignments = [];
-            if (count($this->_propDict['appRoleAssignments']) > 0 && is_a($this->_propDict['appRoleAssignments'][0], 'AppRoleAssignment')) {
-                return $this->_propDict['appRoleAssignments'];
-            }
-            foreach ($this->_propDict['appRoleAssignments'] as $singleValue) {
-                $appRoleAssignments []= new AppRoleAssignment($singleValue);
-            }
-            $this->_propDict['appRoleAssignments'] = $appRoleAssignments;
-            return $this->_propDict['appRoleAssignments'];
+           $appRoleAssignments = [];
+           if (count($this->_propDict['appRoleAssignments']) > 0 && is_a($this->_propDict['appRoleAssignments'][0], 'AppRoleAssignment')) {
+              return $this->_propDict['appRoleAssignments'];
+           }
+           foreach ($this->_propDict['appRoleAssignments'] as $singleValue) {
+              $appRoleAssignments []= new AppRoleAssignment($singleValue);
+           }
+           $this->_propDict['appRoleAssignments'] = $appRoleAssignments;
+           return $this->_propDict['appRoleAssignments'];
         }
         return null;
     }
@@ -1055,15 +1055,15 @@ class ServicePrincipal extends DirectoryObject
     public function getClaimsMappingPolicies()
     {
         if (array_key_exists('claimsMappingPolicies', $this->_propDict) && !is_null($this->_propDict['claimsMappingPolicies'])) {
-            $claimsMappingPolicies = [];
-            if (count($this->_propDict['claimsMappingPolicies']) > 0 && is_a($this->_propDict['claimsMappingPolicies'][0], 'ClaimsMappingPolicy')) {
-                return $this->_propDict['claimsMappingPolicies'];
-            }
-            foreach ($this->_propDict['claimsMappingPolicies'] as $singleValue) {
-                $claimsMappingPolicies []= new ClaimsMappingPolicy($singleValue);
-            }
-            $this->_propDict['claimsMappingPolicies'] = $claimsMappingPolicies;
-            return $this->_propDict['claimsMappingPolicies'];
+           $claimsMappingPolicies = [];
+           if (count($this->_propDict['claimsMappingPolicies']) > 0 && is_a($this->_propDict['claimsMappingPolicies'][0], 'ClaimsMappingPolicy')) {
+              return $this->_propDict['claimsMappingPolicies'];
+           }
+           foreach ($this->_propDict['claimsMappingPolicies'] as $singleValue) {
+              $claimsMappingPolicies []= new ClaimsMappingPolicy($singleValue);
+           }
+           $this->_propDict['claimsMappingPolicies'] = $claimsMappingPolicies;
+           return $this->_propDict['claimsMappingPolicies'];
         }
         return null;
     }
@@ -1092,15 +1092,15 @@ class ServicePrincipal extends DirectoryObject
     public function getCreatedObjects()
     {
         if (array_key_exists('createdObjects', $this->_propDict) && !is_null($this->_propDict['createdObjects'])) {
-            $createdObjects = [];
-            if (count($this->_propDict['createdObjects']) > 0 && is_a($this->_propDict['createdObjects'][0], 'DirectoryObject')) {
-                return $this->_propDict['createdObjects'];
-            }
-            foreach ($this->_propDict['createdObjects'] as $singleValue) {
-                $createdObjects []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['createdObjects'] = $createdObjects;
-            return $this->_propDict['createdObjects'];
+           $createdObjects = [];
+           if (count($this->_propDict['createdObjects']) > 0 && is_a($this->_propDict['createdObjects'][0], 'DirectoryObject')) {
+              return $this->_propDict['createdObjects'];
+           }
+           foreach ($this->_propDict['createdObjects'] as $singleValue) {
+              $createdObjects []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['createdObjects'] = $createdObjects;
+           return $this->_propDict['createdObjects'];
         }
         return null;
     }
@@ -1129,15 +1129,15 @@ class ServicePrincipal extends DirectoryObject
     public function getDelegatedPermissionClassifications()
     {
         if (array_key_exists('delegatedPermissionClassifications', $this->_propDict) && !is_null($this->_propDict['delegatedPermissionClassifications'])) {
-            $delegatedPermissionClassifications = [];
-            if (count($this->_propDict['delegatedPermissionClassifications']) > 0 && is_a($this->_propDict['delegatedPermissionClassifications'][0], 'DelegatedPermissionClassification')) {
-                return $this->_propDict['delegatedPermissionClassifications'];
-            }
-            foreach ($this->_propDict['delegatedPermissionClassifications'] as $singleValue) {
-                $delegatedPermissionClassifications []= new DelegatedPermissionClassification($singleValue);
-            }
-            $this->_propDict['delegatedPermissionClassifications'] = $delegatedPermissionClassifications;
-            return $this->_propDict['delegatedPermissionClassifications'];
+           $delegatedPermissionClassifications = [];
+           if (count($this->_propDict['delegatedPermissionClassifications']) > 0 && is_a($this->_propDict['delegatedPermissionClassifications'][0], 'DelegatedPermissionClassification')) {
+              return $this->_propDict['delegatedPermissionClassifications'];
+           }
+           foreach ($this->_propDict['delegatedPermissionClassifications'] as $singleValue) {
+              $delegatedPermissionClassifications []= new DelegatedPermissionClassification($singleValue);
+           }
+           $this->_propDict['delegatedPermissionClassifications'] = $delegatedPermissionClassifications;
+           return $this->_propDict['delegatedPermissionClassifications'];
         }
         return null;
     }
@@ -1166,15 +1166,15 @@ class ServicePrincipal extends DirectoryObject
     public function getEndpoints()
     {
         if (array_key_exists('endpoints', $this->_propDict) && !is_null($this->_propDict['endpoints'])) {
-            $endpoints = [];
-            if (count($this->_propDict['endpoints']) > 0 && is_a($this->_propDict['endpoints'][0], 'Endpoint')) {
-                return $this->_propDict['endpoints'];
-            }
-            foreach ($this->_propDict['endpoints'] as $singleValue) {
-                $endpoints []= new Endpoint($singleValue);
-            }
-            $this->_propDict['endpoints'] = $endpoints;
-            return $this->_propDict['endpoints'];
+           $endpoints = [];
+           if (count($this->_propDict['endpoints']) > 0 && is_a($this->_propDict['endpoints'][0], 'Endpoint')) {
+              return $this->_propDict['endpoints'];
+           }
+           foreach ($this->_propDict['endpoints'] as $singleValue) {
+              $endpoints []= new Endpoint($singleValue);
+           }
+           $this->_propDict['endpoints'] = $endpoints;
+           return $this->_propDict['endpoints'];
         }
         return null;
     }
@@ -1203,15 +1203,15 @@ class ServicePrincipal extends DirectoryObject
     public function getHomeRealmDiscoveryPolicies()
     {
         if (array_key_exists('homeRealmDiscoveryPolicies', $this->_propDict) && !is_null($this->_propDict['homeRealmDiscoveryPolicies'])) {
-            $homeRealmDiscoveryPolicies = [];
-            if (count($this->_propDict['homeRealmDiscoveryPolicies']) > 0 && is_a($this->_propDict['homeRealmDiscoveryPolicies'][0], 'HomeRealmDiscoveryPolicy')) {
-                return $this->_propDict['homeRealmDiscoveryPolicies'];
-            }
-            foreach ($this->_propDict['homeRealmDiscoveryPolicies'] as $singleValue) {
-                $homeRealmDiscoveryPolicies []= new HomeRealmDiscoveryPolicy($singleValue);
-            }
-            $this->_propDict['homeRealmDiscoveryPolicies'] = $homeRealmDiscoveryPolicies;
-            return $this->_propDict['homeRealmDiscoveryPolicies'];
+           $homeRealmDiscoveryPolicies = [];
+           if (count($this->_propDict['homeRealmDiscoveryPolicies']) > 0 && is_a($this->_propDict['homeRealmDiscoveryPolicies'][0], 'HomeRealmDiscoveryPolicy')) {
+              return $this->_propDict['homeRealmDiscoveryPolicies'];
+           }
+           foreach ($this->_propDict['homeRealmDiscoveryPolicies'] as $singleValue) {
+              $homeRealmDiscoveryPolicies []= new HomeRealmDiscoveryPolicy($singleValue);
+           }
+           $this->_propDict['homeRealmDiscoveryPolicies'] = $homeRealmDiscoveryPolicies;
+           return $this->_propDict['homeRealmDiscoveryPolicies'];
         }
         return null;
     }
@@ -1240,15 +1240,15 @@ class ServicePrincipal extends DirectoryObject
     public function getMemberOf()
     {
         if (array_key_exists('memberOf', $this->_propDict) && !is_null($this->_propDict['memberOf'])) {
-            $memberOf = [];
-            if (count($this->_propDict['memberOf']) > 0 && is_a($this->_propDict['memberOf'][0], 'DirectoryObject')) {
-                return $this->_propDict['memberOf'];
-            }
-            foreach ($this->_propDict['memberOf'] as $singleValue) {
-                $memberOf []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['memberOf'] = $memberOf;
-            return $this->_propDict['memberOf'];
+           $memberOf = [];
+           if (count($this->_propDict['memberOf']) > 0 && is_a($this->_propDict['memberOf'][0], 'DirectoryObject')) {
+              return $this->_propDict['memberOf'];
+           }
+           foreach ($this->_propDict['memberOf'] as $singleValue) {
+              $memberOf []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['memberOf'] = $memberOf;
+           return $this->_propDict['memberOf'];
         }
         return null;
     }
@@ -1277,15 +1277,15 @@ class ServicePrincipal extends DirectoryObject
     public function getOauth2PermissionGrants()
     {
         if (array_key_exists('oauth2PermissionGrants', $this->_propDict) && !is_null($this->_propDict['oauth2PermissionGrants'])) {
-            $oauth2PermissionGrants = [];
-            if (count($this->_propDict['oauth2PermissionGrants']) > 0 && is_a($this->_propDict['oauth2PermissionGrants'][0], 'OAuth2PermissionGrant')) {
-                return $this->_propDict['oauth2PermissionGrants'];
-            }
-            foreach ($this->_propDict['oauth2PermissionGrants'] as $singleValue) {
-                $oauth2PermissionGrants []= new OAuth2PermissionGrant($singleValue);
-            }
-            $this->_propDict['oauth2PermissionGrants'] = $oauth2PermissionGrants;
-            return $this->_propDict['oauth2PermissionGrants'];
+           $oauth2PermissionGrants = [];
+           if (count($this->_propDict['oauth2PermissionGrants']) > 0 && is_a($this->_propDict['oauth2PermissionGrants'][0], 'OAuth2PermissionGrant')) {
+              return $this->_propDict['oauth2PermissionGrants'];
+           }
+           foreach ($this->_propDict['oauth2PermissionGrants'] as $singleValue) {
+              $oauth2PermissionGrants []= new OAuth2PermissionGrant($singleValue);
+           }
+           $this->_propDict['oauth2PermissionGrants'] = $oauth2PermissionGrants;
+           return $this->_propDict['oauth2PermissionGrants'];
         }
         return null;
     }
@@ -1314,15 +1314,15 @@ class ServicePrincipal extends DirectoryObject
     public function getOwnedObjects()
     {
         if (array_key_exists('ownedObjects', $this->_propDict) && !is_null($this->_propDict['ownedObjects'])) {
-            $ownedObjects = [];
-            if (count($this->_propDict['ownedObjects']) > 0 && is_a($this->_propDict['ownedObjects'][0], 'DirectoryObject')) {
-                return $this->_propDict['ownedObjects'];
-            }
-            foreach ($this->_propDict['ownedObjects'] as $singleValue) {
-                $ownedObjects []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['ownedObjects'] = $ownedObjects;
-            return $this->_propDict['ownedObjects'];
+           $ownedObjects = [];
+           if (count($this->_propDict['ownedObjects']) > 0 && is_a($this->_propDict['ownedObjects'][0], 'DirectoryObject')) {
+              return $this->_propDict['ownedObjects'];
+           }
+           foreach ($this->_propDict['ownedObjects'] as $singleValue) {
+              $ownedObjects []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['ownedObjects'] = $ownedObjects;
+           return $this->_propDict['ownedObjects'];
         }
         return null;
     }
@@ -1351,15 +1351,15 @@ class ServicePrincipal extends DirectoryObject
     public function getOwners()
     {
         if (array_key_exists('owners', $this->_propDict) && !is_null($this->_propDict['owners'])) {
-            $owners = [];
-            if (count($this->_propDict['owners']) > 0 && is_a($this->_propDict['owners'][0], 'DirectoryObject')) {
-                return $this->_propDict['owners'];
-            }
-            foreach ($this->_propDict['owners'] as $singleValue) {
-                $owners []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['owners'] = $owners;
-            return $this->_propDict['owners'];
+           $owners = [];
+           if (count($this->_propDict['owners']) > 0 && is_a($this->_propDict['owners'][0], 'DirectoryObject')) {
+              return $this->_propDict['owners'];
+           }
+           foreach ($this->_propDict['owners'] as $singleValue) {
+              $owners []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['owners'] = $owners;
+           return $this->_propDict['owners'];
         }
         return null;
     }
@@ -1388,15 +1388,15 @@ class ServicePrincipal extends DirectoryObject
     public function getTokenIssuancePolicies()
     {
         if (array_key_exists('tokenIssuancePolicies', $this->_propDict) && !is_null($this->_propDict['tokenIssuancePolicies'])) {
-            $tokenIssuancePolicies = [];
-            if (count($this->_propDict['tokenIssuancePolicies']) > 0 && is_a($this->_propDict['tokenIssuancePolicies'][0], 'TokenIssuancePolicy')) {
-                return $this->_propDict['tokenIssuancePolicies'];
-            }
-            foreach ($this->_propDict['tokenIssuancePolicies'] as $singleValue) {
-                $tokenIssuancePolicies []= new TokenIssuancePolicy($singleValue);
-            }
-            $this->_propDict['tokenIssuancePolicies'] = $tokenIssuancePolicies;
-            return $this->_propDict['tokenIssuancePolicies'];
+           $tokenIssuancePolicies = [];
+           if (count($this->_propDict['tokenIssuancePolicies']) > 0 && is_a($this->_propDict['tokenIssuancePolicies'][0], 'TokenIssuancePolicy')) {
+              return $this->_propDict['tokenIssuancePolicies'];
+           }
+           foreach ($this->_propDict['tokenIssuancePolicies'] as $singleValue) {
+              $tokenIssuancePolicies []= new TokenIssuancePolicy($singleValue);
+           }
+           $this->_propDict['tokenIssuancePolicies'] = $tokenIssuancePolicies;
+           return $this->_propDict['tokenIssuancePolicies'];
         }
         return null;
     }
@@ -1425,15 +1425,15 @@ class ServicePrincipal extends DirectoryObject
     public function getTokenLifetimePolicies()
     {
         if (array_key_exists('tokenLifetimePolicies', $this->_propDict) && !is_null($this->_propDict['tokenLifetimePolicies'])) {
-            $tokenLifetimePolicies = [];
-            if (count($this->_propDict['tokenLifetimePolicies']) > 0 && is_a($this->_propDict['tokenLifetimePolicies'][0], 'TokenLifetimePolicy')) {
-                return $this->_propDict['tokenLifetimePolicies'];
-            }
-            foreach ($this->_propDict['tokenLifetimePolicies'] as $singleValue) {
-                $tokenLifetimePolicies []= new TokenLifetimePolicy($singleValue);
-            }
-            $this->_propDict['tokenLifetimePolicies'] = $tokenLifetimePolicies;
-            return $this->_propDict['tokenLifetimePolicies'];
+           $tokenLifetimePolicies = [];
+           if (count($this->_propDict['tokenLifetimePolicies']) > 0 && is_a($this->_propDict['tokenLifetimePolicies'][0], 'TokenLifetimePolicy')) {
+              return $this->_propDict['tokenLifetimePolicies'];
+           }
+           foreach ($this->_propDict['tokenLifetimePolicies'] as $singleValue) {
+              $tokenLifetimePolicies []= new TokenLifetimePolicy($singleValue);
+           }
+           $this->_propDict['tokenLifetimePolicies'] = $tokenLifetimePolicies;
+           return $this->_propDict['tokenLifetimePolicies'];
         }
         return null;
     }
@@ -1461,15 +1461,15 @@ class ServicePrincipal extends DirectoryObject
     public function getTransitiveMemberOf()
     {
         if (array_key_exists('transitiveMemberOf', $this->_propDict) && !is_null($this->_propDict['transitiveMemberOf'])) {
-            $transitiveMemberOf = [];
-            if (count($this->_propDict['transitiveMemberOf']) > 0 && is_a($this->_propDict['transitiveMemberOf'][0], 'DirectoryObject')) {
-                return $this->_propDict['transitiveMemberOf'];
-            }
-            foreach ($this->_propDict['transitiveMemberOf'] as $singleValue) {
-                $transitiveMemberOf []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['transitiveMemberOf'] = $transitiveMemberOf;
-            return $this->_propDict['transitiveMemberOf'];
+           $transitiveMemberOf = [];
+           if (count($this->_propDict['transitiveMemberOf']) > 0 && is_a($this->_propDict['transitiveMemberOf'][0], 'DirectoryObject')) {
+              return $this->_propDict['transitiveMemberOf'];
+           }
+           foreach ($this->_propDict['transitiveMemberOf'] as $singleValue) {
+              $transitiveMemberOf []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['transitiveMemberOf'] = $transitiveMemberOf;
+           return $this->_propDict['transitiveMemberOf'];
         }
         return null;
     }

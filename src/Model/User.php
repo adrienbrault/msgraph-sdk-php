@@ -92,15 +92,15 @@ class User extends DirectoryObject
     public function getAssignedLicenses()
     {
         if (array_key_exists('assignedLicenses', $this->_propDict) && !is_null($this->_propDict['assignedLicenses'])) {
-            $assignedLicenses = [];
-            if (count($this->_propDict['assignedLicenses']) > 0 && is_a($this->_propDict['assignedLicenses'][0], 'AssignedLicense')) {
-                return $this->_propDict['assignedLicenses'];
-            }
-            foreach ($this->_propDict['assignedLicenses'] as $singleValue) {
-                $assignedLicenses []= new AssignedLicense($singleValue);
-            }
-            $this->_propDict['assignedLicenses'] = $assignedLicenses;
-            return $this->_propDict['assignedLicenses'];
+           $assignedLicenses = [];
+           if (count($this->_propDict['assignedLicenses']) > 0 && is_a($this->_propDict['assignedLicenses'][0], 'AssignedLicense')) {
+              return $this->_propDict['assignedLicenses'];
+           }
+           foreach ($this->_propDict['assignedLicenses'] as $singleValue) {
+              $assignedLicenses []= new AssignedLicense($singleValue);
+           }
+           $this->_propDict['assignedLicenses'] = $assignedLicenses;
+           return $this->_propDict['assignedLicenses'];
         }
         return null;
     }
@@ -129,15 +129,15 @@ class User extends DirectoryObject
     public function getAssignedPlans()
     {
         if (array_key_exists('assignedPlans', $this->_propDict) && !is_null($this->_propDict['assignedPlans'])) {
-            $assignedPlans = [];
-            if (count($this->_propDict['assignedPlans']) > 0 && is_a($this->_propDict['assignedPlans'][0], 'AssignedPlan')) {
-                return $this->_propDict['assignedPlans'];
-            }
-            foreach ($this->_propDict['assignedPlans'] as $singleValue) {
-                $assignedPlans []= new AssignedPlan($singleValue);
-            }
-            $this->_propDict['assignedPlans'] = $assignedPlans;
-            return $this->_propDict['assignedPlans'];
+           $assignedPlans = [];
+           if (count($this->_propDict['assignedPlans']) > 0 && is_a($this->_propDict['assignedPlans'][0], 'AssignedPlan')) {
+              return $this->_propDict['assignedPlans'];
+           }
+           foreach ($this->_propDict['assignedPlans'] as $singleValue) {
+              $assignedPlans []= new AssignedPlan($singleValue);
+           }
+           $this->_propDict['assignedPlans'] = $assignedPlans;
+           return $this->_propDict['assignedPlans'];
         }
         return null;
     }
@@ -675,15 +675,15 @@ class User extends DirectoryObject
     public function getIdentities()
     {
         if (array_key_exists('identities', $this->_propDict) && !is_null($this->_propDict['identities'])) {
-            $identities = [];
-            if (count($this->_propDict['identities']) > 0 && is_a($this->_propDict['identities'][0], 'ObjectIdentity')) {
-                return $this->_propDict['identities'];
-            }
-            foreach ($this->_propDict['identities'] as $singleValue) {
-                $identities []= new ObjectIdentity($singleValue);
-            }
-            $this->_propDict['identities'] = $identities;
-            return $this->_propDict['identities'];
+           $identities = [];
+           if (count($this->_propDict['identities']) > 0 && is_a($this->_propDict['identities'][0], 'ObjectIdentity')) {
+              return $this->_propDict['identities'];
+           }
+           foreach ($this->_propDict['identities'] as $singleValue) {
+              $identities []= new ObjectIdentity($singleValue);
+           }
+           $this->_propDict['identities'] = $identities;
+           return $this->_propDict['identities'];
         }
         return null;
     }
@@ -861,15 +861,15 @@ class User extends DirectoryObject
     public function getLicenseAssignmentStates()
     {
         if (array_key_exists('licenseAssignmentStates', $this->_propDict) && !is_null($this->_propDict['licenseAssignmentStates'])) {
-            $licenseAssignmentStates = [];
-            if (count($this->_propDict['licenseAssignmentStates']) > 0 && is_a($this->_propDict['licenseAssignmentStates'][0], 'LicenseAssignmentState')) {
-                return $this->_propDict['licenseAssignmentStates'];
-            }
-            foreach ($this->_propDict['licenseAssignmentStates'] as $singleValue) {
-                $licenseAssignmentStates []= new LicenseAssignmentState($singleValue);
-            }
-            $this->_propDict['licenseAssignmentStates'] = $licenseAssignmentStates;
-            return $this->_propDict['licenseAssignmentStates'];
+           $licenseAssignmentStates = [];
+           if (count($this->_propDict['licenseAssignmentStates']) > 0 && is_a($this->_propDict['licenseAssignmentStates'][0], 'LicenseAssignmentState')) {
+              return $this->_propDict['licenseAssignmentStates'];
+           }
+           foreach ($this->_propDict['licenseAssignmentStates'] as $singleValue) {
+              $licenseAssignmentStates []= new LicenseAssignmentState($singleValue);
+           }
+           $this->_propDict['licenseAssignmentStates'] = $licenseAssignmentStates;
+           return $this->_propDict['licenseAssignmentStates'];
         }
         return null;
     }
@@ -1167,15 +1167,15 @@ class User extends DirectoryObject
     public function getOnPremisesProvisioningErrors()
     {
         if (array_key_exists('onPremisesProvisioningErrors', $this->_propDict) && !is_null($this->_propDict['onPremisesProvisioningErrors'])) {
-            $onPremisesProvisioningErrors = [];
-            if (count($this->_propDict['onPremisesProvisioningErrors']) > 0 && is_a($this->_propDict['onPremisesProvisioningErrors'][0], 'OnPremisesProvisioningError')) {
-                return $this->_propDict['onPremisesProvisioningErrors'];
-            }
-            foreach ($this->_propDict['onPremisesProvisioningErrors'] as $singleValue) {
-                $onPremisesProvisioningErrors []= new OnPremisesProvisioningError($singleValue);
-            }
-            $this->_propDict['onPremisesProvisioningErrors'] = $onPremisesProvisioningErrors;
-            return $this->_propDict['onPremisesProvisioningErrors'];
+           $onPremisesProvisioningErrors = [];
+           if (count($this->_propDict['onPremisesProvisioningErrors']) > 0 && is_a($this->_propDict['onPremisesProvisioningErrors'][0], 'OnPremisesProvisioningError')) {
+              return $this->_propDict['onPremisesProvisioningErrors'];
+           }
+           foreach ($this->_propDict['onPremisesProvisioningErrors'] as $singleValue) {
+              $onPremisesProvisioningErrors []= new OnPremisesProvisioningError($singleValue);
+           }
+           $this->_propDict['onPremisesProvisioningErrors'] = $onPremisesProvisioningErrors;
+           return $this->_propDict['onPremisesProvisioningErrors'];
         }
         return null;
     }
@@ -1469,15 +1469,15 @@ class User extends DirectoryObject
     public function getProvisionedPlans()
     {
         if (array_key_exists('provisionedPlans', $this->_propDict) && !is_null($this->_propDict['provisionedPlans'])) {
-            $provisionedPlans = [];
-            if (count($this->_propDict['provisionedPlans']) > 0 && is_a($this->_propDict['provisionedPlans'][0], 'ProvisionedPlan')) {
-                return $this->_propDict['provisionedPlans'];
-            }
-            foreach ($this->_propDict['provisionedPlans'] as $singleValue) {
-                $provisionedPlans []= new ProvisionedPlan($singleValue);
-            }
-            $this->_propDict['provisionedPlans'] = $provisionedPlans;
-            return $this->_propDict['provisionedPlans'];
+           $provisionedPlans = [];
+           if (count($this->_propDict['provisionedPlans']) > 0 && is_a($this->_propDict['provisionedPlans'][0], 'ProvisionedPlan')) {
+              return $this->_propDict['provisionedPlans'];
+           }
+           foreach ($this->_propDict['provisionedPlans'] as $singleValue) {
+              $provisionedPlans []= new ProvisionedPlan($singleValue);
+           }
+           $this->_propDict['provisionedPlans'] = $provisionedPlans;
+           return $this->_propDict['provisionedPlans'];
         }
         return null;
     }
@@ -2131,15 +2131,15 @@ class User extends DirectoryObject
     public function getAppRoleAssignments()
     {
         if (array_key_exists('appRoleAssignments', $this->_propDict) && !is_null($this->_propDict['appRoleAssignments'])) {
-            $appRoleAssignments = [];
-            if (count($this->_propDict['appRoleAssignments']) > 0 && is_a($this->_propDict['appRoleAssignments'][0], 'AppRoleAssignment')) {
-                return $this->_propDict['appRoleAssignments'];
-            }
-            foreach ($this->_propDict['appRoleAssignments'] as $singleValue) {
-                $appRoleAssignments []= new AppRoleAssignment($singleValue);
-            }
-            $this->_propDict['appRoleAssignments'] = $appRoleAssignments;
-            return $this->_propDict['appRoleAssignments'];
+           $appRoleAssignments = [];
+           if (count($this->_propDict['appRoleAssignments']) > 0 && is_a($this->_propDict['appRoleAssignments'][0], 'AppRoleAssignment')) {
+              return $this->_propDict['appRoleAssignments'];
+           }
+           foreach ($this->_propDict['appRoleAssignments'] as $singleValue) {
+              $appRoleAssignments []= new AppRoleAssignment($singleValue);
+           }
+           $this->_propDict['appRoleAssignments'] = $appRoleAssignments;
+           return $this->_propDict['appRoleAssignments'];
         }
         return null;
     }
@@ -2168,15 +2168,15 @@ class User extends DirectoryObject
     public function getCreatedObjects()
     {
         if (array_key_exists('createdObjects', $this->_propDict) && !is_null($this->_propDict['createdObjects'])) {
-            $createdObjects = [];
-            if (count($this->_propDict['createdObjects']) > 0 && is_a($this->_propDict['createdObjects'][0], 'DirectoryObject')) {
-                return $this->_propDict['createdObjects'];
-            }
-            foreach ($this->_propDict['createdObjects'] as $singleValue) {
-                $createdObjects []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['createdObjects'] = $createdObjects;
-            return $this->_propDict['createdObjects'];
+           $createdObjects = [];
+           if (count($this->_propDict['createdObjects']) > 0 && is_a($this->_propDict['createdObjects'][0], 'DirectoryObject')) {
+              return $this->_propDict['createdObjects'];
+           }
+           foreach ($this->_propDict['createdObjects'] as $singleValue) {
+              $createdObjects []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['createdObjects'] = $createdObjects;
+           return $this->_propDict['createdObjects'];
         }
         return null;
     }
@@ -2205,15 +2205,15 @@ class User extends DirectoryObject
     public function getDirectReports()
     {
         if (array_key_exists('directReports', $this->_propDict) && !is_null($this->_propDict['directReports'])) {
-            $directReports = [];
-            if (count($this->_propDict['directReports']) > 0 && is_a($this->_propDict['directReports'][0], 'DirectoryObject')) {
-                return $this->_propDict['directReports'];
-            }
-            foreach ($this->_propDict['directReports'] as $singleValue) {
-                $directReports []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['directReports'] = $directReports;
-            return $this->_propDict['directReports'];
+           $directReports = [];
+           if (count($this->_propDict['directReports']) > 0 && is_a($this->_propDict['directReports'][0], 'DirectoryObject')) {
+              return $this->_propDict['directReports'];
+           }
+           foreach ($this->_propDict['directReports'] as $singleValue) {
+              $directReports []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['directReports'] = $directReports;
+           return $this->_propDict['directReports'];
         }
         return null;
     }
@@ -2242,15 +2242,15 @@ class User extends DirectoryObject
     public function getLicenseDetails()
     {
         if (array_key_exists('licenseDetails', $this->_propDict) && !is_null($this->_propDict['licenseDetails'])) {
-            $licenseDetails = [];
-            if (count($this->_propDict['licenseDetails']) > 0 && is_a($this->_propDict['licenseDetails'][0], 'LicenseDetails')) {
-                return $this->_propDict['licenseDetails'];
-            }
-            foreach ($this->_propDict['licenseDetails'] as $singleValue) {
-                $licenseDetails []= new LicenseDetails($singleValue);
-            }
-            $this->_propDict['licenseDetails'] = $licenseDetails;
-            return $this->_propDict['licenseDetails'];
+           $licenseDetails = [];
+           if (count($this->_propDict['licenseDetails']) > 0 && is_a($this->_propDict['licenseDetails'][0], 'LicenseDetails')) {
+              return $this->_propDict['licenseDetails'];
+           }
+           foreach ($this->_propDict['licenseDetails'] as $singleValue) {
+              $licenseDetails []= new LicenseDetails($singleValue);
+           }
+           $this->_propDict['licenseDetails'] = $licenseDetails;
+           return $this->_propDict['licenseDetails'];
         }
         return null;
     }
@@ -2312,15 +2312,15 @@ class User extends DirectoryObject
     public function getMemberOf()
     {
         if (array_key_exists('memberOf', $this->_propDict) && !is_null($this->_propDict['memberOf'])) {
-            $memberOf = [];
-            if (count($this->_propDict['memberOf']) > 0 && is_a($this->_propDict['memberOf'][0], 'DirectoryObject')) {
-                return $this->_propDict['memberOf'];
-            }
-            foreach ($this->_propDict['memberOf'] as $singleValue) {
-                $memberOf []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['memberOf'] = $memberOf;
-            return $this->_propDict['memberOf'];
+           $memberOf = [];
+           if (count($this->_propDict['memberOf']) > 0 && is_a($this->_propDict['memberOf'][0], 'DirectoryObject')) {
+              return $this->_propDict['memberOf'];
+           }
+           foreach ($this->_propDict['memberOf'] as $singleValue) {
+              $memberOf []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['memberOf'] = $memberOf;
+           return $this->_propDict['memberOf'];
         }
         return null;
     }
@@ -2348,15 +2348,15 @@ class User extends DirectoryObject
     public function getOauth2PermissionGrants()
     {
         if (array_key_exists('oauth2PermissionGrants', $this->_propDict) && !is_null($this->_propDict['oauth2PermissionGrants'])) {
-            $oauth2PermissionGrants = [];
-            if (count($this->_propDict['oauth2PermissionGrants']) > 0 && is_a($this->_propDict['oauth2PermissionGrants'][0], 'OAuth2PermissionGrant')) {
-                return $this->_propDict['oauth2PermissionGrants'];
-            }
-            foreach ($this->_propDict['oauth2PermissionGrants'] as $singleValue) {
-                $oauth2PermissionGrants []= new OAuth2PermissionGrant($singleValue);
-            }
-            $this->_propDict['oauth2PermissionGrants'] = $oauth2PermissionGrants;
-            return $this->_propDict['oauth2PermissionGrants'];
+           $oauth2PermissionGrants = [];
+           if (count($this->_propDict['oauth2PermissionGrants']) > 0 && is_a($this->_propDict['oauth2PermissionGrants'][0], 'OAuth2PermissionGrant')) {
+              return $this->_propDict['oauth2PermissionGrants'];
+           }
+           foreach ($this->_propDict['oauth2PermissionGrants'] as $singleValue) {
+              $oauth2PermissionGrants []= new OAuth2PermissionGrant($singleValue);
+           }
+           $this->_propDict['oauth2PermissionGrants'] = $oauth2PermissionGrants;
+           return $this->_propDict['oauth2PermissionGrants'];
         }
         return null;
     }
@@ -2384,15 +2384,15 @@ class User extends DirectoryObject
     public function getOwnedDevices()
     {
         if (array_key_exists('ownedDevices', $this->_propDict) && !is_null($this->_propDict['ownedDevices'])) {
-            $ownedDevices = [];
-            if (count($this->_propDict['ownedDevices']) > 0 && is_a($this->_propDict['ownedDevices'][0], 'DirectoryObject')) {
-                return $this->_propDict['ownedDevices'];
-            }
-            foreach ($this->_propDict['ownedDevices'] as $singleValue) {
-                $ownedDevices []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['ownedDevices'] = $ownedDevices;
-            return $this->_propDict['ownedDevices'];
+           $ownedDevices = [];
+           if (count($this->_propDict['ownedDevices']) > 0 && is_a($this->_propDict['ownedDevices'][0], 'DirectoryObject')) {
+              return $this->_propDict['ownedDevices'];
+           }
+           foreach ($this->_propDict['ownedDevices'] as $singleValue) {
+              $ownedDevices []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['ownedDevices'] = $ownedDevices;
+           return $this->_propDict['ownedDevices'];
         }
         return null;
     }
@@ -2421,15 +2421,15 @@ class User extends DirectoryObject
     public function getOwnedObjects()
     {
         if (array_key_exists('ownedObjects', $this->_propDict) && !is_null($this->_propDict['ownedObjects'])) {
-            $ownedObjects = [];
-            if (count($this->_propDict['ownedObjects']) > 0 && is_a($this->_propDict['ownedObjects'][0], 'DirectoryObject')) {
-                return $this->_propDict['ownedObjects'];
-            }
-            foreach ($this->_propDict['ownedObjects'] as $singleValue) {
-                $ownedObjects []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['ownedObjects'] = $ownedObjects;
-            return $this->_propDict['ownedObjects'];
+           $ownedObjects = [];
+           if (count($this->_propDict['ownedObjects']) > 0 && is_a($this->_propDict['ownedObjects'][0], 'DirectoryObject')) {
+              return $this->_propDict['ownedObjects'];
+           }
+           foreach ($this->_propDict['ownedObjects'] as $singleValue) {
+              $ownedObjects []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['ownedObjects'] = $ownedObjects;
+           return $this->_propDict['ownedObjects'];
         }
         return null;
     }
@@ -2458,15 +2458,15 @@ class User extends DirectoryObject
     public function getRegisteredDevices()
     {
         if (array_key_exists('registeredDevices', $this->_propDict) && !is_null($this->_propDict['registeredDevices'])) {
-            $registeredDevices = [];
-            if (count($this->_propDict['registeredDevices']) > 0 && is_a($this->_propDict['registeredDevices'][0], 'DirectoryObject')) {
-                return $this->_propDict['registeredDevices'];
-            }
-            foreach ($this->_propDict['registeredDevices'] as $singleValue) {
-                $registeredDevices []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['registeredDevices'] = $registeredDevices;
-            return $this->_propDict['registeredDevices'];
+           $registeredDevices = [];
+           if (count($this->_propDict['registeredDevices']) > 0 && is_a($this->_propDict['registeredDevices'][0], 'DirectoryObject')) {
+              return $this->_propDict['registeredDevices'];
+           }
+           foreach ($this->_propDict['registeredDevices'] as $singleValue) {
+              $registeredDevices []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['registeredDevices'] = $registeredDevices;
+           return $this->_propDict['registeredDevices'];
         }
         return null;
     }
@@ -2495,15 +2495,15 @@ class User extends DirectoryObject
     public function getScopedRoleMemberOf()
     {
         if (array_key_exists('scopedRoleMemberOf', $this->_propDict) && !is_null($this->_propDict['scopedRoleMemberOf'])) {
-            $scopedRoleMemberOf = [];
-            if (count($this->_propDict['scopedRoleMemberOf']) > 0 && is_a($this->_propDict['scopedRoleMemberOf'][0], 'ScopedRoleMembership')) {
-                return $this->_propDict['scopedRoleMemberOf'];
-            }
-            foreach ($this->_propDict['scopedRoleMemberOf'] as $singleValue) {
-                $scopedRoleMemberOf []= new ScopedRoleMembership($singleValue);
-            }
-            $this->_propDict['scopedRoleMemberOf'] = $scopedRoleMemberOf;
-            return $this->_propDict['scopedRoleMemberOf'];
+           $scopedRoleMemberOf = [];
+           if (count($this->_propDict['scopedRoleMemberOf']) > 0 && is_a($this->_propDict['scopedRoleMemberOf'][0], 'ScopedRoleMembership')) {
+              return $this->_propDict['scopedRoleMemberOf'];
+           }
+           foreach ($this->_propDict['scopedRoleMemberOf'] as $singleValue) {
+              $scopedRoleMemberOf []= new ScopedRoleMembership($singleValue);
+           }
+           $this->_propDict['scopedRoleMemberOf'] = $scopedRoleMemberOf;
+           return $this->_propDict['scopedRoleMemberOf'];
         }
         return null;
     }
@@ -2531,15 +2531,15 @@ class User extends DirectoryObject
     public function getTransitiveMemberOf()
     {
         if (array_key_exists('transitiveMemberOf', $this->_propDict) && !is_null($this->_propDict['transitiveMemberOf'])) {
-            $transitiveMemberOf = [];
-            if (count($this->_propDict['transitiveMemberOf']) > 0 && is_a($this->_propDict['transitiveMemberOf'][0], 'DirectoryObject')) {
-                return $this->_propDict['transitiveMemberOf'];
-            }
-            foreach ($this->_propDict['transitiveMemberOf'] as $singleValue) {
-                $transitiveMemberOf []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['transitiveMemberOf'] = $transitiveMemberOf;
-            return $this->_propDict['transitiveMemberOf'];
+           $transitiveMemberOf = [];
+           if (count($this->_propDict['transitiveMemberOf']) > 0 && is_a($this->_propDict['transitiveMemberOf'][0], 'DirectoryObject')) {
+              return $this->_propDict['transitiveMemberOf'];
+           }
+           foreach ($this->_propDict['transitiveMemberOf'] as $singleValue) {
+              $transitiveMemberOf []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['transitiveMemberOf'] = $transitiveMemberOf;
+           return $this->_propDict['transitiveMemberOf'];
         }
         return null;
     }
@@ -2600,15 +2600,15 @@ class User extends DirectoryObject
     public function getCalendarGroups()
     {
         if (array_key_exists('calendarGroups', $this->_propDict) && !is_null($this->_propDict['calendarGroups'])) {
-            $calendarGroups = [];
-            if (count($this->_propDict['calendarGroups']) > 0 && is_a($this->_propDict['calendarGroups'][0], 'CalendarGroup')) {
-                return $this->_propDict['calendarGroups'];
-            }
-            foreach ($this->_propDict['calendarGroups'] as $singleValue) {
-                $calendarGroups []= new CalendarGroup($singleValue);
-            }
-            $this->_propDict['calendarGroups'] = $calendarGroups;
-            return $this->_propDict['calendarGroups'];
+           $calendarGroups = [];
+           if (count($this->_propDict['calendarGroups']) > 0 && is_a($this->_propDict['calendarGroups'][0], 'CalendarGroup')) {
+              return $this->_propDict['calendarGroups'];
+           }
+           foreach ($this->_propDict['calendarGroups'] as $singleValue) {
+              $calendarGroups []= new CalendarGroup($singleValue);
+           }
+           $this->_propDict['calendarGroups'] = $calendarGroups;
+           return $this->_propDict['calendarGroups'];
         }
         return null;
     }
@@ -2637,15 +2637,15 @@ class User extends DirectoryObject
     public function getCalendars()
     {
         if (array_key_exists('calendars', $this->_propDict) && !is_null($this->_propDict['calendars'])) {
-            $calendars = [];
-            if (count($this->_propDict['calendars']) > 0 && is_a($this->_propDict['calendars'][0], 'Calendar')) {
-                return $this->_propDict['calendars'];
-            }
-            foreach ($this->_propDict['calendars'] as $singleValue) {
-                $calendars []= new Calendar($singleValue);
-            }
-            $this->_propDict['calendars'] = $calendars;
-            return $this->_propDict['calendars'];
+           $calendars = [];
+           if (count($this->_propDict['calendars']) > 0 && is_a($this->_propDict['calendars'][0], 'Calendar')) {
+              return $this->_propDict['calendars'];
+           }
+           foreach ($this->_propDict['calendars'] as $singleValue) {
+              $calendars []= new Calendar($singleValue);
+           }
+           $this->_propDict['calendars'] = $calendars;
+           return $this->_propDict['calendars'];
         }
         return null;
     }
@@ -2674,15 +2674,15 @@ class User extends DirectoryObject
     public function getCalendarView()
     {
         if (array_key_exists('calendarView', $this->_propDict) && !is_null($this->_propDict['calendarView'])) {
-            $calendarView = [];
-            if (count($this->_propDict['calendarView']) > 0 && is_a($this->_propDict['calendarView'][0], 'Event')) {
-                return $this->_propDict['calendarView'];
-            }
-            foreach ($this->_propDict['calendarView'] as $singleValue) {
-                $calendarView []= new Event($singleValue);
-            }
-            $this->_propDict['calendarView'] = $calendarView;
-            return $this->_propDict['calendarView'];
+           $calendarView = [];
+           if (count($this->_propDict['calendarView']) > 0 && is_a($this->_propDict['calendarView'][0], 'Event')) {
+              return $this->_propDict['calendarView'];
+           }
+           foreach ($this->_propDict['calendarView'] as $singleValue) {
+              $calendarView []= new Event($singleValue);
+           }
+           $this->_propDict['calendarView'] = $calendarView;
+           return $this->_propDict['calendarView'];
         }
         return null;
     }
@@ -2711,15 +2711,15 @@ class User extends DirectoryObject
     public function getContactFolders()
     {
         if (array_key_exists('contactFolders', $this->_propDict) && !is_null($this->_propDict['contactFolders'])) {
-            $contactFolders = [];
-            if (count($this->_propDict['contactFolders']) > 0 && is_a($this->_propDict['contactFolders'][0], 'ContactFolder')) {
-                return $this->_propDict['contactFolders'];
-            }
-            foreach ($this->_propDict['contactFolders'] as $singleValue) {
-                $contactFolders []= new ContactFolder($singleValue);
-            }
-            $this->_propDict['contactFolders'] = $contactFolders;
-            return $this->_propDict['contactFolders'];
+           $contactFolders = [];
+           if (count($this->_propDict['contactFolders']) > 0 && is_a($this->_propDict['contactFolders'][0], 'ContactFolder')) {
+              return $this->_propDict['contactFolders'];
+           }
+           foreach ($this->_propDict['contactFolders'] as $singleValue) {
+              $contactFolders []= new ContactFolder($singleValue);
+           }
+           $this->_propDict['contactFolders'] = $contactFolders;
+           return $this->_propDict['contactFolders'];
         }
         return null;
     }
@@ -2748,15 +2748,15 @@ class User extends DirectoryObject
     public function getContacts()
     {
         if (array_key_exists('contacts', $this->_propDict) && !is_null($this->_propDict['contacts'])) {
-            $contacts = [];
-            if (count($this->_propDict['contacts']) > 0 && is_a($this->_propDict['contacts'][0], 'Contact')) {
-                return $this->_propDict['contacts'];
-            }
-            foreach ($this->_propDict['contacts'] as $singleValue) {
-                $contacts []= new Contact($singleValue);
-            }
-            $this->_propDict['contacts'] = $contacts;
-            return $this->_propDict['contacts'];
+           $contacts = [];
+           if (count($this->_propDict['contacts']) > 0 && is_a($this->_propDict['contacts'][0], 'Contact')) {
+              return $this->_propDict['contacts'];
+           }
+           foreach ($this->_propDict['contacts'] as $singleValue) {
+              $contacts []= new Contact($singleValue);
+           }
+           $this->_propDict['contacts'] = $contacts;
+           return $this->_propDict['contacts'];
         }
         return null;
     }
@@ -2785,15 +2785,15 @@ class User extends DirectoryObject
     public function getEvents()
     {
         if (array_key_exists('events', $this->_propDict) && !is_null($this->_propDict['events'])) {
-            $events = [];
-            if (count($this->_propDict['events']) > 0 && is_a($this->_propDict['events'][0], 'Event')) {
-                return $this->_propDict['events'];
-            }
-            foreach ($this->_propDict['events'] as $singleValue) {
-                $events []= new Event($singleValue);
-            }
-            $this->_propDict['events'] = $events;
-            return $this->_propDict['events'];
+           $events = [];
+           if (count($this->_propDict['events']) > 0 && is_a($this->_propDict['events'][0], 'Event')) {
+              return $this->_propDict['events'];
+           }
+           foreach ($this->_propDict['events'] as $singleValue) {
+              $events []= new Event($singleValue);
+           }
+           $this->_propDict['events'] = $events;
+           return $this->_propDict['events'];
         }
         return null;
     }
@@ -2855,15 +2855,15 @@ class User extends DirectoryObject
     public function getMailFolders()
     {
         if (array_key_exists('mailFolders', $this->_propDict) && !is_null($this->_propDict['mailFolders'])) {
-            $mailFolders = [];
-            if (count($this->_propDict['mailFolders']) > 0 && is_a($this->_propDict['mailFolders'][0], 'MailFolder')) {
-                return $this->_propDict['mailFolders'];
-            }
-            foreach ($this->_propDict['mailFolders'] as $singleValue) {
-                $mailFolders []= new MailFolder($singleValue);
-            }
-            $this->_propDict['mailFolders'] = $mailFolders;
-            return $this->_propDict['mailFolders'];
+           $mailFolders = [];
+           if (count($this->_propDict['mailFolders']) > 0 && is_a($this->_propDict['mailFolders'][0], 'MailFolder')) {
+              return $this->_propDict['mailFolders'];
+           }
+           foreach ($this->_propDict['mailFolders'] as $singleValue) {
+              $mailFolders []= new MailFolder($singleValue);
+           }
+           $this->_propDict['mailFolders'] = $mailFolders;
+           return $this->_propDict['mailFolders'];
         }
         return null;
     }
@@ -2892,15 +2892,15 @@ class User extends DirectoryObject
     public function getMessages()
     {
         if (array_key_exists('messages', $this->_propDict) && !is_null($this->_propDict['messages'])) {
-            $messages = [];
-            if (count($this->_propDict['messages']) > 0 && is_a($this->_propDict['messages'][0], 'Message')) {
-                return $this->_propDict['messages'];
-            }
-            foreach ($this->_propDict['messages'] as $singleValue) {
-                $messages []= new Message($singleValue);
-            }
-            $this->_propDict['messages'] = $messages;
-            return $this->_propDict['messages'];
+           $messages = [];
+           if (count($this->_propDict['messages']) > 0 && is_a($this->_propDict['messages'][0], 'Message')) {
+              return $this->_propDict['messages'];
+           }
+           foreach ($this->_propDict['messages'] as $singleValue) {
+              $messages []= new Message($singleValue);
+           }
+           $this->_propDict['messages'] = $messages;
+           return $this->_propDict['messages'];
         }
         return null;
     }
@@ -2962,15 +2962,15 @@ class User extends DirectoryObject
     public function getPeople()
     {
         if (array_key_exists('people', $this->_propDict) && !is_null($this->_propDict['people'])) {
-            $people = [];
-            if (count($this->_propDict['people']) > 0 && is_a($this->_propDict['people'][0], 'Person')) {
-                return $this->_propDict['people'];
-            }
-            foreach ($this->_propDict['people'] as $singleValue) {
-                $people []= new Person($singleValue);
-            }
-            $this->_propDict['people'] = $people;
-            return $this->_propDict['people'];
+           $people = [];
+           if (count($this->_propDict['people']) > 0 && is_a($this->_propDict['people'][0], 'Person')) {
+              return $this->_propDict['people'];
+           }
+           foreach ($this->_propDict['people'] as $singleValue) {
+              $people []= new Person($singleValue);
+           }
+           $this->_propDict['people'] = $people;
+           return $this->_propDict['people'];
         }
         return null;
     }
@@ -3032,15 +3032,15 @@ class User extends DirectoryObject
     public function getDrives()
     {
         if (array_key_exists('drives', $this->_propDict) && !is_null($this->_propDict['drives'])) {
-            $drives = [];
-            if (count($this->_propDict['drives']) > 0 && is_a($this->_propDict['drives'][0], 'Drive')) {
-                return $this->_propDict['drives'];
-            }
-            foreach ($this->_propDict['drives'] as $singleValue) {
-                $drives []= new Drive($singleValue);
-            }
-            $this->_propDict['drives'] = $drives;
-            return $this->_propDict['drives'];
+           $drives = [];
+           if (count($this->_propDict['drives']) > 0 && is_a($this->_propDict['drives'][0], 'Drive')) {
+              return $this->_propDict['drives'];
+           }
+           foreach ($this->_propDict['drives'] as $singleValue) {
+              $drives []= new Drive($singleValue);
+           }
+           $this->_propDict['drives'] = $drives;
+           return $this->_propDict['drives'];
         }
         return null;
     }
@@ -3068,15 +3068,15 @@ class User extends DirectoryObject
     public function getFollowedSites()
     {
         if (array_key_exists('followedSites', $this->_propDict) && !is_null($this->_propDict['followedSites'])) {
-            $followedSites = [];
-            if (count($this->_propDict['followedSites']) > 0 && is_a($this->_propDict['followedSites'][0], 'Site')) {
-                return $this->_propDict['followedSites'];
-            }
-            foreach ($this->_propDict['followedSites'] as $singleValue) {
-                $followedSites []= new Site($singleValue);
-            }
-            $this->_propDict['followedSites'] = $followedSites;
-            return $this->_propDict['followedSites'];
+           $followedSites = [];
+           if (count($this->_propDict['followedSites']) > 0 && is_a($this->_propDict['followedSites'][0], 'Site')) {
+              return $this->_propDict['followedSites'];
+           }
+           foreach ($this->_propDict['followedSites'] as $singleValue) {
+              $followedSites []= new Site($singleValue);
+           }
+           $this->_propDict['followedSites'] = $followedSites;
+           return $this->_propDict['followedSites'];
         }
         return null;
     }
@@ -3104,15 +3104,15 @@ class User extends DirectoryObject
     public function getExtensions()
     {
         if (array_key_exists('extensions', $this->_propDict) && !is_null($this->_propDict['extensions'])) {
-            $extensions = [];
-            if (count($this->_propDict['extensions']) > 0 && is_a($this->_propDict['extensions'][0], 'Extension')) {
-                return $this->_propDict['extensions'];
-            }
-            foreach ($this->_propDict['extensions'] as $singleValue) {
-                $extensions []= new Extension($singleValue);
-            }
-            $this->_propDict['extensions'] = $extensions;
-            return $this->_propDict['extensions'];
+           $extensions = [];
+           if (count($this->_propDict['extensions']) > 0 && is_a($this->_propDict['extensions'][0], 'Extension')) {
+              return $this->_propDict['extensions'];
+           }
+           foreach ($this->_propDict['extensions'] as $singleValue) {
+              $extensions []= new Extension($singleValue);
+           }
+           $this->_propDict['extensions'] = $extensions;
+           return $this->_propDict['extensions'];
         }
         return null;
     }
@@ -3141,15 +3141,15 @@ class User extends DirectoryObject
     public function getAgreementAcceptances()
     {
         if (array_key_exists('agreementAcceptances', $this->_propDict) && !is_null($this->_propDict['agreementAcceptances'])) {
-            $agreementAcceptances = [];
-            if (count($this->_propDict['agreementAcceptances']) > 0 && is_a($this->_propDict['agreementAcceptances'][0], 'AgreementAcceptance')) {
-                return $this->_propDict['agreementAcceptances'];
-            }
-            foreach ($this->_propDict['agreementAcceptances'] as $singleValue) {
-                $agreementAcceptances []= new AgreementAcceptance($singleValue);
-            }
-            $this->_propDict['agreementAcceptances'] = $agreementAcceptances;
-            return $this->_propDict['agreementAcceptances'];
+           $agreementAcceptances = [];
+           if (count($this->_propDict['agreementAcceptances']) > 0 && is_a($this->_propDict['agreementAcceptances'][0], 'AgreementAcceptance')) {
+              return $this->_propDict['agreementAcceptances'];
+           }
+           foreach ($this->_propDict['agreementAcceptances'] as $singleValue) {
+              $agreementAcceptances []= new AgreementAcceptance($singleValue);
+           }
+           $this->_propDict['agreementAcceptances'] = $agreementAcceptances;
+           return $this->_propDict['agreementAcceptances'];
         }
         return null;
     }
@@ -3178,15 +3178,15 @@ class User extends DirectoryObject
     public function getManagedDevices()
     {
         if (array_key_exists('managedDevices', $this->_propDict) && !is_null($this->_propDict['managedDevices'])) {
-            $managedDevices = [];
-            if (count($this->_propDict['managedDevices']) > 0 && is_a($this->_propDict['managedDevices'][0], 'ManagedDevice')) {
-                return $this->_propDict['managedDevices'];
-            }
-            foreach ($this->_propDict['managedDevices'] as $singleValue) {
-                $managedDevices []= new ManagedDevice($singleValue);
-            }
-            $this->_propDict['managedDevices'] = $managedDevices;
-            return $this->_propDict['managedDevices'];
+           $managedDevices = [];
+           if (count($this->_propDict['managedDevices']) > 0 && is_a($this->_propDict['managedDevices'][0], 'ManagedDevice')) {
+              return $this->_propDict['managedDevices'];
+           }
+           foreach ($this->_propDict['managedDevices'] as $singleValue) {
+              $managedDevices []= new ManagedDevice($singleValue);
+           }
+           $this->_propDict['managedDevices'] = $managedDevices;
+           return $this->_propDict['managedDevices'];
         }
         return null;
     }
@@ -3215,15 +3215,15 @@ class User extends DirectoryObject
     public function getManagedAppRegistrations()
     {
         if (array_key_exists('managedAppRegistrations', $this->_propDict) && !is_null($this->_propDict['managedAppRegistrations'])) {
-            $managedAppRegistrations = [];
-            if (count($this->_propDict['managedAppRegistrations']) > 0 && is_a($this->_propDict['managedAppRegistrations'][0], 'ManagedAppRegistration')) {
-                return $this->_propDict['managedAppRegistrations'];
-            }
-            foreach ($this->_propDict['managedAppRegistrations'] as $singleValue) {
-                $managedAppRegistrations []= new ManagedAppRegistration($singleValue);
-            }
-            $this->_propDict['managedAppRegistrations'] = $managedAppRegistrations;
-            return $this->_propDict['managedAppRegistrations'];
+           $managedAppRegistrations = [];
+           if (count($this->_propDict['managedAppRegistrations']) > 0 && is_a($this->_propDict['managedAppRegistrations'][0], 'ManagedAppRegistration')) {
+              return $this->_propDict['managedAppRegistrations'];
+           }
+           foreach ($this->_propDict['managedAppRegistrations'] as $singleValue) {
+              $managedAppRegistrations []= new ManagedAppRegistration($singleValue);
+           }
+           $this->_propDict['managedAppRegistrations'] = $managedAppRegistrations;
+           return $this->_propDict['managedAppRegistrations'];
         }
         return null;
     }
@@ -3252,15 +3252,15 @@ class User extends DirectoryObject
     public function getDeviceManagementTroubleshootingEvents()
     {
         if (array_key_exists('deviceManagementTroubleshootingEvents', $this->_propDict) && !is_null($this->_propDict['deviceManagementTroubleshootingEvents'])) {
-            $deviceManagementTroubleshootingEvents = [];
-            if (count($this->_propDict['deviceManagementTroubleshootingEvents']) > 0 && is_a($this->_propDict['deviceManagementTroubleshootingEvents'][0], 'DeviceManagementTroubleshootingEvent')) {
-                return $this->_propDict['deviceManagementTroubleshootingEvents'];
-            }
-            foreach ($this->_propDict['deviceManagementTroubleshootingEvents'] as $singleValue) {
-                $deviceManagementTroubleshootingEvents []= new DeviceManagementTroubleshootingEvent($singleValue);
-            }
-            $this->_propDict['deviceManagementTroubleshootingEvents'] = $deviceManagementTroubleshootingEvents;
-            return $this->_propDict['deviceManagementTroubleshootingEvents'];
+           $deviceManagementTroubleshootingEvents = [];
+           if (count($this->_propDict['deviceManagementTroubleshootingEvents']) > 0 && is_a($this->_propDict['deviceManagementTroubleshootingEvents'][0], 'DeviceManagementTroubleshootingEvent')) {
+              return $this->_propDict['deviceManagementTroubleshootingEvents'];
+           }
+           foreach ($this->_propDict['deviceManagementTroubleshootingEvents'] as $singleValue) {
+              $deviceManagementTroubleshootingEvents []= new DeviceManagementTroubleshootingEvent($singleValue);
+           }
+           $this->_propDict['deviceManagementTroubleshootingEvents'] = $deviceManagementTroubleshootingEvents;
+           return $this->_propDict['deviceManagementTroubleshootingEvents'];
         }
         return null;
     }
@@ -3454,15 +3454,15 @@ class User extends DirectoryObject
     public function getPhotos()
     {
         if (array_key_exists('photos', $this->_propDict) && !is_null($this->_propDict['photos'])) {
-            $photos = [];
-            if (count($this->_propDict['photos']) > 0 && is_a($this->_propDict['photos'][0], 'ProfilePhoto')) {
-                return $this->_propDict['photos'];
-            }
-            foreach ($this->_propDict['photos'] as $singleValue) {
-                $photos []= new ProfilePhoto($singleValue);
-            }
-            $this->_propDict['photos'] = $photos;
-            return $this->_propDict['photos'];
+           $photos = [];
+           if (count($this->_propDict['photos']) > 0 && is_a($this->_propDict['photos'][0], 'ProfilePhoto')) {
+              return $this->_propDict['photos'];
+           }
+           foreach ($this->_propDict['photos'] as $singleValue) {
+              $photos []= new ProfilePhoto($singleValue);
+           }
+           $this->_propDict['photos'] = $photos;
+           return $this->_propDict['photos'];
         }
         return null;
     }
@@ -3491,15 +3491,15 @@ class User extends DirectoryObject
     public function getActivities()
     {
         if (array_key_exists('activities', $this->_propDict) && !is_null($this->_propDict['activities'])) {
-            $activities = [];
-            if (count($this->_propDict['activities']) > 0 && is_a($this->_propDict['activities'][0], 'UserActivity')) {
-                return $this->_propDict['activities'];
-            }
-            foreach ($this->_propDict['activities'] as $singleValue) {
-                $activities []= new UserActivity($singleValue);
-            }
-            $this->_propDict['activities'] = $activities;
-            return $this->_propDict['activities'];
+           $activities = [];
+           if (count($this->_propDict['activities']) > 0 && is_a($this->_propDict['activities'][0], 'UserActivity')) {
+              return $this->_propDict['activities'];
+           }
+           foreach ($this->_propDict['activities'] as $singleValue) {
+              $activities []= new UserActivity($singleValue);
+           }
+           $this->_propDict['activities'] = $activities;
+           return $this->_propDict['activities'];
         }
         return null;
     }
@@ -3527,15 +3527,15 @@ class User extends DirectoryObject
     public function getOnlineMeetings()
     {
         if (array_key_exists('onlineMeetings', $this->_propDict) && !is_null($this->_propDict['onlineMeetings'])) {
-            $onlineMeetings = [];
-            if (count($this->_propDict['onlineMeetings']) > 0 && is_a($this->_propDict['onlineMeetings'][0], 'OnlineMeeting')) {
-                return $this->_propDict['onlineMeetings'];
-            }
-            foreach ($this->_propDict['onlineMeetings'] as $singleValue) {
-                $onlineMeetings []= new OnlineMeeting($singleValue);
-            }
-            $this->_propDict['onlineMeetings'] = $onlineMeetings;
-            return $this->_propDict['onlineMeetings'];
+           $onlineMeetings = [];
+           if (count($this->_propDict['onlineMeetings']) > 0 && is_a($this->_propDict['onlineMeetings'][0], 'OnlineMeeting')) {
+              return $this->_propDict['onlineMeetings'];
+           }
+           foreach ($this->_propDict['onlineMeetings'] as $singleValue) {
+              $onlineMeetings []= new OnlineMeeting($singleValue);
+           }
+           $this->_propDict['onlineMeetings'] = $onlineMeetings;
+           return $this->_propDict['onlineMeetings'];
         }
         return null;
     }
@@ -3624,15 +3624,15 @@ class User extends DirectoryObject
     public function getChats()
     {
         if (array_key_exists('chats', $this->_propDict) && !is_null($this->_propDict['chats'])) {
-            $chats = [];
-            if (count($this->_propDict['chats']) > 0 && is_a($this->_propDict['chats'][0], 'Chat')) {
-                return $this->_propDict['chats'];
-            }
-            foreach ($this->_propDict['chats'] as $singleValue) {
-                $chats []= new Chat($singleValue);
-            }
-            $this->_propDict['chats'] = $chats;
-            return $this->_propDict['chats'];
+           $chats = [];
+           if (count($this->_propDict['chats']) > 0 && is_a($this->_propDict['chats'][0], 'Chat')) {
+              return $this->_propDict['chats'];
+           }
+           foreach ($this->_propDict['chats'] as $singleValue) {
+              $chats []= new Chat($singleValue);
+           }
+           $this->_propDict['chats'] = $chats;
+           return $this->_propDict['chats'];
         }
         return null;
     }
@@ -3660,15 +3660,15 @@ class User extends DirectoryObject
     public function getJoinedTeams()
     {
         if (array_key_exists('joinedTeams', $this->_propDict) && !is_null($this->_propDict['joinedTeams'])) {
-            $joinedTeams = [];
-            if (count($this->_propDict['joinedTeams']) > 0 && is_a($this->_propDict['joinedTeams'][0], 'Team')) {
-                return $this->_propDict['joinedTeams'];
-            }
-            foreach ($this->_propDict['joinedTeams'] as $singleValue) {
-                $joinedTeams []= new Team($singleValue);
-            }
-            $this->_propDict['joinedTeams'] = $joinedTeams;
-            return $this->_propDict['joinedTeams'];
+           $joinedTeams = [];
+           if (count($this->_propDict['joinedTeams']) > 0 && is_a($this->_propDict['joinedTeams'][0], 'Team')) {
+              return $this->_propDict['joinedTeams'];
+           }
+           foreach ($this->_propDict['joinedTeams'] as $singleValue) {
+              $joinedTeams []= new Team($singleValue);
+           }
+           $this->_propDict['joinedTeams'] = $joinedTeams;
+           return $this->_propDict['joinedTeams'];
         }
         return null;
     }

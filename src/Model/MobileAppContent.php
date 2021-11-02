@@ -34,15 +34,15 @@ class MobileAppContent extends Entity
     public function getFiles()
     {
         if (array_key_exists('files', $this->_propDict) && !is_null($this->_propDict['files'])) {
-            $files = [];
-            if (count($this->_propDict['files']) > 0 && is_a($this->_propDict['files'][0], 'MobileAppContentFile')) {
-                return $this->_propDict['files'];
-            }
-            foreach ($this->_propDict['files'] as $singleValue) {
-                $files []= new MobileAppContentFile($singleValue);
-            }
-            $this->_propDict['files'] = $files;
-            return $this->_propDict['files'];
+           $files = [];
+           if (count($this->_propDict['files']) > 0 && is_a($this->_propDict['files'][0], 'MobileAppContentFile')) {
+              return $this->_propDict['files'];
+           }
+           foreach ($this->_propDict['files'] as $singleValue) {
+              $files []= new MobileAppContentFile($singleValue);
+           }
+           $this->_propDict['files'] = $files;
+           return $this->_propDict['files'];
         }
         return null;
     }

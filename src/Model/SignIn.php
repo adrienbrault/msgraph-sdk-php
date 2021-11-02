@@ -92,15 +92,15 @@ class SignIn extends Entity
     public function getAppliedConditionalAccessPolicies()
     {
         if (array_key_exists('appliedConditionalAccessPolicies', $this->_propDict) && !is_null($this->_propDict['appliedConditionalAccessPolicies'])) {
-            $appliedConditionalAccessPolicies = [];
-            if (count($this->_propDict['appliedConditionalAccessPolicies']) > 0 && is_a($this->_propDict['appliedConditionalAccessPolicies'][0], 'AppliedConditionalAccessPolicy')) {
-                return $this->_propDict['appliedConditionalAccessPolicies'];
-            }
-            foreach ($this->_propDict['appliedConditionalAccessPolicies'] as $singleValue) {
-                $appliedConditionalAccessPolicies []= new AppliedConditionalAccessPolicy($singleValue);
-            }
-            $this->_propDict['appliedConditionalAccessPolicies'] = $appliedConditionalAccessPolicies;
-            return $this->_propDict['appliedConditionalAccessPolicies'];
+           $appliedConditionalAccessPolicies = [];
+           if (count($this->_propDict['appliedConditionalAccessPolicies']) > 0 && is_a($this->_propDict['appliedConditionalAccessPolicies'][0], 'AppliedConditionalAccessPolicy')) {
+              return $this->_propDict['appliedConditionalAccessPolicies'];
+           }
+           foreach ($this->_propDict['appliedConditionalAccessPolicies'] as $singleValue) {
+              $appliedConditionalAccessPolicies []= new AppliedConditionalAccessPolicy($singleValue);
+           }
+           $this->_propDict['appliedConditionalAccessPolicies'] = $appliedConditionalAccessPolicies;
+           return $this->_propDict['appliedConditionalAccessPolicies'];
         }
         return null;
     }
@@ -468,15 +468,15 @@ class SignIn extends Entity
     public function getRiskEventTypes()
     {
         if (array_key_exists('riskEventTypes', $this->_propDict) && !is_null($this->_propDict['riskEventTypes'])) {
-            $riskEventTypes = [];
-            if (count($this->_propDict['riskEventTypes']) > 0 && is_a($this->_propDict['riskEventTypes'][0], 'RiskEventType')) {
-                return $this->_propDict['riskEventTypes'];
-            }
-            foreach ($this->_propDict['riskEventTypes'] as $singleValue) {
-                $riskEventTypes []= new RiskEventType($singleValue);
-            }
-            $this->_propDict['riskEventTypes'] = $riskEventTypes;
-            return $this->_propDict['riskEventTypes'];
+           $riskEventTypes = [];
+           if (count($this->_propDict['riskEventTypes']) > 0 && is_a($this->_propDict['riskEventTypes'][0], 'RiskEventType')) {
+              return $this->_propDict['riskEventTypes'];
+           }
+           foreach ($this->_propDict['riskEventTypes'] as $singleValue) {
+              $riskEventTypes []= new RiskEventType($singleValue);
+           }
+           $this->_propDict['riskEventTypes'] = $riskEventTypes;
+           return $this->_propDict['riskEventTypes'];
         }
         return null;
     }
