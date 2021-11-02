@@ -100,15 +100,15 @@ class PolicyRoot extends Entity
     public function getActivityBasedTimeoutPolicies()
     {
         if (array_key_exists('activityBasedTimeoutPolicies', $this->_propDict) && !is_null($this->_propDict['activityBasedTimeoutPolicies'])) {
-            $activityBasedTimeoutPolicies = [];
-            if (count($this->_propDict['activityBasedTimeoutPolicies']) > 0 && is_a($this->_propDict['activityBasedTimeoutPolicies'][0], 'ActivityBasedTimeoutPolicy')) {
-                return $this->_propDict['activityBasedTimeoutPolicies'];
-            }
-            foreach ($this->_propDict['activityBasedTimeoutPolicies'] as $singleValue) {
-                $activityBasedTimeoutPolicies []= new ActivityBasedTimeoutPolicy($singleValue);
-            }
-            $this->_propDict['activityBasedTimeoutPolicies'] = $activityBasedTimeoutPolicies;
-            return $this->_propDict['activityBasedTimeoutPolicies'];
+           $activityBasedTimeoutPolicies = [];
+           if (count($this->_propDict['activityBasedTimeoutPolicies']) > 0 && is_a($this->_propDict['activityBasedTimeoutPolicies'][0], 'ActivityBasedTimeoutPolicy')) {
+              return $this->_propDict['activityBasedTimeoutPolicies'];
+           }
+           foreach ($this->_propDict['activityBasedTimeoutPolicies'] as $singleValue) {
+              $activityBasedTimeoutPolicies []= new ActivityBasedTimeoutPolicy($singleValue);
+           }
+           $this->_propDict['activityBasedTimeoutPolicies'] = $activityBasedTimeoutPolicies;
+           return $this->_propDict['activityBasedTimeoutPolicies'];
         }
         return null;
     }
@@ -170,15 +170,15 @@ class PolicyRoot extends Entity
     public function getClaimsMappingPolicies()
     {
         if (array_key_exists('claimsMappingPolicies', $this->_propDict) && !is_null($this->_propDict['claimsMappingPolicies'])) {
-            $claimsMappingPolicies = [];
-            if (count($this->_propDict['claimsMappingPolicies']) > 0 && is_a($this->_propDict['claimsMappingPolicies'][0], 'ClaimsMappingPolicy')) {
-                return $this->_propDict['claimsMappingPolicies'];
-            }
-            foreach ($this->_propDict['claimsMappingPolicies'] as $singleValue) {
-                $claimsMappingPolicies []= new ClaimsMappingPolicy($singleValue);
-            }
-            $this->_propDict['claimsMappingPolicies'] = $claimsMappingPolicies;
-            return $this->_propDict['claimsMappingPolicies'];
+           $claimsMappingPolicies = [];
+           if (count($this->_propDict['claimsMappingPolicies']) > 0 && is_a($this->_propDict['claimsMappingPolicies'][0], 'ClaimsMappingPolicy')) {
+              return $this->_propDict['claimsMappingPolicies'];
+           }
+           foreach ($this->_propDict['claimsMappingPolicies'] as $singleValue) {
+              $claimsMappingPolicies []= new ClaimsMappingPolicy($singleValue);
+           }
+           $this->_propDict['claimsMappingPolicies'] = $claimsMappingPolicies;
+           return $this->_propDict['claimsMappingPolicies'];
         }
         return null;
     }
@@ -207,15 +207,15 @@ class PolicyRoot extends Entity
     public function getHomeRealmDiscoveryPolicies()
     {
         if (array_key_exists('homeRealmDiscoveryPolicies', $this->_propDict) && !is_null($this->_propDict['homeRealmDiscoveryPolicies'])) {
-            $homeRealmDiscoveryPolicies = [];
-            if (count($this->_propDict['homeRealmDiscoveryPolicies']) > 0 && is_a($this->_propDict['homeRealmDiscoveryPolicies'][0], 'HomeRealmDiscoveryPolicy')) {
-                return $this->_propDict['homeRealmDiscoveryPolicies'];
-            }
-            foreach ($this->_propDict['homeRealmDiscoveryPolicies'] as $singleValue) {
-                $homeRealmDiscoveryPolicies []= new HomeRealmDiscoveryPolicy($singleValue);
-            }
-            $this->_propDict['homeRealmDiscoveryPolicies'] = $homeRealmDiscoveryPolicies;
-            return $this->_propDict['homeRealmDiscoveryPolicies'];
+           $homeRealmDiscoveryPolicies = [];
+           if (count($this->_propDict['homeRealmDiscoveryPolicies']) > 0 && is_a($this->_propDict['homeRealmDiscoveryPolicies'][0], 'HomeRealmDiscoveryPolicy')) {
+              return $this->_propDict['homeRealmDiscoveryPolicies'];
+           }
+           foreach ($this->_propDict['homeRealmDiscoveryPolicies'] as $singleValue) {
+              $homeRealmDiscoveryPolicies []= new HomeRealmDiscoveryPolicy($singleValue);
+           }
+           $this->_propDict['homeRealmDiscoveryPolicies'] = $homeRealmDiscoveryPolicies;
+           return $this->_propDict['homeRealmDiscoveryPolicies'];
         }
         return null;
     }
@@ -244,15 +244,15 @@ class PolicyRoot extends Entity
     public function getPermissionGrantPolicies()
     {
         if (array_key_exists('permissionGrantPolicies', $this->_propDict) && !is_null($this->_propDict['permissionGrantPolicies'])) {
-            $permissionGrantPolicies = [];
-            if (count($this->_propDict['permissionGrantPolicies']) > 0 && is_a($this->_propDict['permissionGrantPolicies'][0], 'PermissionGrantPolicy')) {
-                return $this->_propDict['permissionGrantPolicies'];
-            }
-            foreach ($this->_propDict['permissionGrantPolicies'] as $singleValue) {
-                $permissionGrantPolicies []= new PermissionGrantPolicy($singleValue);
-            }
-            $this->_propDict['permissionGrantPolicies'] = $permissionGrantPolicies;
-            return $this->_propDict['permissionGrantPolicies'];
+           $permissionGrantPolicies = [];
+           if (count($this->_propDict['permissionGrantPolicies']) > 0 && is_a($this->_propDict['permissionGrantPolicies'][0], 'PermissionGrantPolicy')) {
+              return $this->_propDict['permissionGrantPolicies'];
+           }
+           foreach ($this->_propDict['permissionGrantPolicies'] as $singleValue) {
+              $permissionGrantPolicies []= new PermissionGrantPolicy($singleValue);
+           }
+           $this->_propDict['permissionGrantPolicies'] = $permissionGrantPolicies;
+           return $this->_propDict['permissionGrantPolicies'];
         }
         return null;
     }
@@ -281,15 +281,15 @@ class PolicyRoot extends Entity
     public function getTokenIssuancePolicies()
     {
         if (array_key_exists('tokenIssuancePolicies', $this->_propDict) && !is_null($this->_propDict['tokenIssuancePolicies'])) {
-            $tokenIssuancePolicies = [];
-            if (count($this->_propDict['tokenIssuancePolicies']) > 0 && is_a($this->_propDict['tokenIssuancePolicies'][0], 'TokenIssuancePolicy')) {
-                return $this->_propDict['tokenIssuancePolicies'];
-            }
-            foreach ($this->_propDict['tokenIssuancePolicies'] as $singleValue) {
-                $tokenIssuancePolicies []= new TokenIssuancePolicy($singleValue);
-            }
-            $this->_propDict['tokenIssuancePolicies'] = $tokenIssuancePolicies;
-            return $this->_propDict['tokenIssuancePolicies'];
+           $tokenIssuancePolicies = [];
+           if (count($this->_propDict['tokenIssuancePolicies']) > 0 && is_a($this->_propDict['tokenIssuancePolicies'][0], 'TokenIssuancePolicy')) {
+              return $this->_propDict['tokenIssuancePolicies'];
+           }
+           foreach ($this->_propDict['tokenIssuancePolicies'] as $singleValue) {
+              $tokenIssuancePolicies []= new TokenIssuancePolicy($singleValue);
+           }
+           $this->_propDict['tokenIssuancePolicies'] = $tokenIssuancePolicies;
+           return $this->_propDict['tokenIssuancePolicies'];
         }
         return null;
     }
@@ -318,15 +318,15 @@ class PolicyRoot extends Entity
     public function getTokenLifetimePolicies()
     {
         if (array_key_exists('tokenLifetimePolicies', $this->_propDict) && !is_null($this->_propDict['tokenLifetimePolicies'])) {
-            $tokenLifetimePolicies = [];
-            if (count($this->_propDict['tokenLifetimePolicies']) > 0 && is_a($this->_propDict['tokenLifetimePolicies'][0], 'TokenLifetimePolicy')) {
-                return $this->_propDict['tokenLifetimePolicies'];
-            }
-            foreach ($this->_propDict['tokenLifetimePolicies'] as $singleValue) {
-                $tokenLifetimePolicies []= new TokenLifetimePolicy($singleValue);
-            }
-            $this->_propDict['tokenLifetimePolicies'] = $tokenLifetimePolicies;
-            return $this->_propDict['tokenLifetimePolicies'];
+           $tokenLifetimePolicies = [];
+           if (count($this->_propDict['tokenLifetimePolicies']) > 0 && is_a($this->_propDict['tokenLifetimePolicies'][0], 'TokenLifetimePolicy')) {
+              return $this->_propDict['tokenLifetimePolicies'];
+           }
+           foreach ($this->_propDict['tokenLifetimePolicies'] as $singleValue) {
+              $tokenLifetimePolicies []= new TokenLifetimePolicy($singleValue);
+           }
+           $this->_propDict['tokenLifetimePolicies'] = $tokenLifetimePolicies;
+           return $this->_propDict['tokenLifetimePolicies'];
         }
         return null;
     }
@@ -355,15 +355,15 @@ class PolicyRoot extends Entity
     public function getFeatureRolloutPolicies()
     {
         if (array_key_exists('featureRolloutPolicies', $this->_propDict) && !is_null($this->_propDict['featureRolloutPolicies'])) {
-            $featureRolloutPolicies = [];
-            if (count($this->_propDict['featureRolloutPolicies']) > 0 && is_a($this->_propDict['featureRolloutPolicies'][0], 'FeatureRolloutPolicy')) {
-                return $this->_propDict['featureRolloutPolicies'];
-            }
-            foreach ($this->_propDict['featureRolloutPolicies'] as $singleValue) {
-                $featureRolloutPolicies []= new FeatureRolloutPolicy($singleValue);
-            }
-            $this->_propDict['featureRolloutPolicies'] = $featureRolloutPolicies;
-            return $this->_propDict['featureRolloutPolicies'];
+           $featureRolloutPolicies = [];
+           if (count($this->_propDict['featureRolloutPolicies']) > 0 && is_a($this->_propDict['featureRolloutPolicies'][0], 'FeatureRolloutPolicy')) {
+              return $this->_propDict['featureRolloutPolicies'];
+           }
+           foreach ($this->_propDict['featureRolloutPolicies'] as $singleValue) {
+              $featureRolloutPolicies []= new FeatureRolloutPolicy($singleValue);
+           }
+           $this->_propDict['featureRolloutPolicies'] = $featureRolloutPolicies;
+           return $this->_propDict['featureRolloutPolicies'];
         }
         return null;
     }
@@ -425,15 +425,15 @@ class PolicyRoot extends Entity
     public function getConditionalAccessPolicies()
     {
         if (array_key_exists('conditionalAccessPolicies', $this->_propDict) && !is_null($this->_propDict['conditionalAccessPolicies'])) {
-            $conditionalAccessPolicies = [];
-            if (count($this->_propDict['conditionalAccessPolicies']) > 0 && is_a($this->_propDict['conditionalAccessPolicies'][0], 'ConditionalAccessPolicy')) {
-                return $this->_propDict['conditionalAccessPolicies'];
-            }
-            foreach ($this->_propDict['conditionalAccessPolicies'] as $singleValue) {
-                $conditionalAccessPolicies []= new ConditionalAccessPolicy($singleValue);
-            }
-            $this->_propDict['conditionalAccessPolicies'] = $conditionalAccessPolicies;
-            return $this->_propDict['conditionalAccessPolicies'];
+           $conditionalAccessPolicies = [];
+           if (count($this->_propDict['conditionalAccessPolicies']) > 0 && is_a($this->_propDict['conditionalAccessPolicies'][0], 'ConditionalAccessPolicy')) {
+              return $this->_propDict['conditionalAccessPolicies'];
+           }
+           foreach ($this->_propDict['conditionalAccessPolicies'] as $singleValue) {
+              $conditionalAccessPolicies []= new ConditionalAccessPolicy($singleValue);
+           }
+           $this->_propDict['conditionalAccessPolicies'] = $conditionalAccessPolicies;
+           return $this->_propDict['conditionalAccessPolicies'];
         }
         return null;
     }

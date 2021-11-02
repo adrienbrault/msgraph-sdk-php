@@ -63,15 +63,15 @@ class Device extends DirectoryObject
     public function getAlternativeSecurityIds()
     {
         if (array_key_exists('alternativeSecurityIds', $this->_propDict) && !is_null($this->_propDict['alternativeSecurityIds'])) {
-            $alternativeSecurityIds = [];
-            if (count($this->_propDict['alternativeSecurityIds']) > 0 && is_a($this->_propDict['alternativeSecurityIds'][0], 'AlternativeSecurityId')) {
-                return $this->_propDict['alternativeSecurityIds'];
-            }
-            foreach ($this->_propDict['alternativeSecurityIds'] as $singleValue) {
-                $alternativeSecurityIds []= new AlternativeSecurityId($singleValue);
-            }
-            $this->_propDict['alternativeSecurityIds'] = $alternativeSecurityIds;
-            return $this->_propDict['alternativeSecurityIds'];
+           $alternativeSecurityIds = [];
+           if (count($this->_propDict['alternativeSecurityIds']) > 0 && is_a($this->_propDict['alternativeSecurityIds'][0], 'AlternativeSecurityId')) {
+              return $this->_propDict['alternativeSecurityIds'];
+           }
+           foreach ($this->_propDict['alternativeSecurityIds'] as $singleValue) {
+              $alternativeSecurityIds []= new AlternativeSecurityId($singleValue);
+           }
+           $this->_propDict['alternativeSecurityIds'] = $alternativeSecurityIds;
+           return $this->_propDict['alternativeSecurityIds'];
         }
         return null;
     }
@@ -605,15 +605,15 @@ class Device extends DirectoryObject
     public function getMemberOf()
     {
         if (array_key_exists('memberOf', $this->_propDict) && !is_null($this->_propDict['memberOf'])) {
-            $memberOf = [];
-            if (count($this->_propDict['memberOf']) > 0 && is_a($this->_propDict['memberOf'][0], 'DirectoryObject')) {
-                return $this->_propDict['memberOf'];
-            }
-            foreach ($this->_propDict['memberOf'] as $singleValue) {
-                $memberOf []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['memberOf'] = $memberOf;
-            return $this->_propDict['memberOf'];
+           $memberOf = [];
+           if (count($this->_propDict['memberOf']) > 0 && is_a($this->_propDict['memberOf'][0], 'DirectoryObject')) {
+              return $this->_propDict['memberOf'];
+           }
+           foreach ($this->_propDict['memberOf'] as $singleValue) {
+              $memberOf []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['memberOf'] = $memberOf;
+           return $this->_propDict['memberOf'];
         }
         return null;
     }
@@ -642,15 +642,15 @@ class Device extends DirectoryObject
     public function getRegisteredOwners()
     {
         if (array_key_exists('registeredOwners', $this->_propDict) && !is_null($this->_propDict['registeredOwners'])) {
-            $registeredOwners = [];
-            if (count($this->_propDict['registeredOwners']) > 0 && is_a($this->_propDict['registeredOwners'][0], 'DirectoryObject')) {
-                return $this->_propDict['registeredOwners'];
-            }
-            foreach ($this->_propDict['registeredOwners'] as $singleValue) {
-                $registeredOwners []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['registeredOwners'] = $registeredOwners;
-            return $this->_propDict['registeredOwners'];
+           $registeredOwners = [];
+           if (count($this->_propDict['registeredOwners']) > 0 && is_a($this->_propDict['registeredOwners'][0], 'DirectoryObject')) {
+              return $this->_propDict['registeredOwners'];
+           }
+           foreach ($this->_propDict['registeredOwners'] as $singleValue) {
+              $registeredOwners []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['registeredOwners'] = $registeredOwners;
+           return $this->_propDict['registeredOwners'];
         }
         return null;
     }
@@ -679,15 +679,15 @@ class Device extends DirectoryObject
     public function getRegisteredUsers()
     {
         if (array_key_exists('registeredUsers', $this->_propDict) && !is_null($this->_propDict['registeredUsers'])) {
-            $registeredUsers = [];
-            if (count($this->_propDict['registeredUsers']) > 0 && is_a($this->_propDict['registeredUsers'][0], 'DirectoryObject')) {
-                return $this->_propDict['registeredUsers'];
-            }
-            foreach ($this->_propDict['registeredUsers'] as $singleValue) {
-                $registeredUsers []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['registeredUsers'] = $registeredUsers;
-            return $this->_propDict['registeredUsers'];
+           $registeredUsers = [];
+           if (count($this->_propDict['registeredUsers']) > 0 && is_a($this->_propDict['registeredUsers'][0], 'DirectoryObject')) {
+              return $this->_propDict['registeredUsers'];
+           }
+           foreach ($this->_propDict['registeredUsers'] as $singleValue) {
+              $registeredUsers []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['registeredUsers'] = $registeredUsers;
+           return $this->_propDict['registeredUsers'];
         }
         return null;
     }
@@ -716,15 +716,15 @@ class Device extends DirectoryObject
     public function getTransitiveMemberOf()
     {
         if (array_key_exists('transitiveMemberOf', $this->_propDict) && !is_null($this->_propDict['transitiveMemberOf'])) {
-            $transitiveMemberOf = [];
-            if (count($this->_propDict['transitiveMemberOf']) > 0 && is_a($this->_propDict['transitiveMemberOf'][0], 'DirectoryObject')) {
-                return $this->_propDict['transitiveMemberOf'];
-            }
-            foreach ($this->_propDict['transitiveMemberOf'] as $singleValue) {
-                $transitiveMemberOf []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['transitiveMemberOf'] = $transitiveMemberOf;
-            return $this->_propDict['transitiveMemberOf'];
+           $transitiveMemberOf = [];
+           if (count($this->_propDict['transitiveMemberOf']) > 0 && is_a($this->_propDict['transitiveMemberOf'][0], 'DirectoryObject')) {
+              return $this->_propDict['transitiveMemberOf'];
+           }
+           foreach ($this->_propDict['transitiveMemberOf'] as $singleValue) {
+              $transitiveMemberOf []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['transitiveMemberOf'] = $transitiveMemberOf;
+           return $this->_propDict['transitiveMemberOf'];
         }
         return null;
     }
@@ -753,15 +753,15 @@ class Device extends DirectoryObject
     public function getExtensions()
     {
         if (array_key_exists('extensions', $this->_propDict) && !is_null($this->_propDict['extensions'])) {
-            $extensions = [];
-            if (count($this->_propDict['extensions']) > 0 && is_a($this->_propDict['extensions'][0], 'Extension')) {
-                return $this->_propDict['extensions'];
-            }
-            foreach ($this->_propDict['extensions'] as $singleValue) {
-                $extensions []= new Extension($singleValue);
-            }
-            $this->_propDict['extensions'] = $extensions;
-            return $this->_propDict['extensions'];
+           $extensions = [];
+           if (count($this->_propDict['extensions']) > 0 && is_a($this->_propDict['extensions'][0], 'Extension')) {
+              return $this->_propDict['extensions'];
+           }
+           foreach ($this->_propDict['extensions'] as $singleValue) {
+              $extensions []= new Extension($singleValue);
+           }
+           $this->_propDict['extensions'] = $extensions;
+           return $this->_propDict['extensions'];
         }
         return null;
     }

@@ -33,15 +33,15 @@ class AccessReviewSet extends Entity
     public function getDefinitions()
     {
         if (array_key_exists('definitions', $this->_propDict) && !is_null($this->_propDict['definitions'])) {
-            $definitions = [];
-            if (count($this->_propDict['definitions']) > 0 && is_a($this->_propDict['definitions'][0], 'AccessReviewScheduleDefinition')) {
-                return $this->_propDict['definitions'];
-            }
-            foreach ($this->_propDict['definitions'] as $singleValue) {
-                $definitions []= new AccessReviewScheduleDefinition($singleValue);
-            }
-            $this->_propDict['definitions'] = $definitions;
-            return $this->_propDict['definitions'];
+           $definitions = [];
+           if (count($this->_propDict['definitions']) > 0 && is_a($this->_propDict['definitions'][0], 'AccessReviewScheduleDefinition')) {
+              return $this->_propDict['definitions'];
+           }
+           foreach ($this->_propDict['definitions'] as $singleValue) {
+              $definitions []= new AccessReviewScheduleDefinition($singleValue);
+           }
+           $this->_propDict['definitions'] = $definitions;
+           return $this->_propDict['definitions'];
         }
         return null;
     }

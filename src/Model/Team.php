@@ -439,15 +439,15 @@ class Team extends Entity
     public function getChannels()
     {
         if (array_key_exists('channels', $this->_propDict) && !is_null($this->_propDict['channels'])) {
-            $channels = [];
-            if (count($this->_propDict['channels']) > 0 && is_a($this->_propDict['channels'][0], 'Channel')) {
-                return $this->_propDict['channels'];
-            }
-            foreach ($this->_propDict['channels'] as $singleValue) {
-                $channels []= new Channel($singleValue);
-            }
-            $this->_propDict['channels'] = $channels;
-            return $this->_propDict['channels'];
+           $channels = [];
+           if (count($this->_propDict['channels']) > 0 && is_a($this->_propDict['channels'][0], 'Channel')) {
+              return $this->_propDict['channels'];
+           }
+           foreach ($this->_propDict['channels'] as $singleValue) {
+              $channels []= new Channel($singleValue);
+           }
+           $this->_propDict['channels'] = $channels;
+           return $this->_propDict['channels'];
         }
         return null;
     }
@@ -507,15 +507,15 @@ class Team extends Entity
     public function getInstalledApps()
     {
         if (array_key_exists('installedApps', $this->_propDict) && !is_null($this->_propDict['installedApps'])) {
-            $installedApps = [];
-            if (count($this->_propDict['installedApps']) > 0 && is_a($this->_propDict['installedApps'][0], 'TeamsAppInstallation')) {
-                return $this->_propDict['installedApps'];
-            }
-            foreach ($this->_propDict['installedApps'] as $singleValue) {
-                $installedApps []= new TeamsAppInstallation($singleValue);
-            }
-            $this->_propDict['installedApps'] = $installedApps;
-            return $this->_propDict['installedApps'];
+           $installedApps = [];
+           if (count($this->_propDict['installedApps']) > 0 && is_a($this->_propDict['installedApps'][0], 'TeamsAppInstallation')) {
+              return $this->_propDict['installedApps'];
+           }
+           foreach ($this->_propDict['installedApps'] as $singleValue) {
+              $installedApps []= new TeamsAppInstallation($singleValue);
+           }
+           $this->_propDict['installedApps'] = $installedApps;
+           return $this->_propDict['installedApps'];
         }
         return null;
     }
@@ -544,15 +544,15 @@ class Team extends Entity
     public function getMembers()
     {
         if (array_key_exists('members', $this->_propDict) && !is_null($this->_propDict['members'])) {
-            $members = [];
-            if (count($this->_propDict['members']) > 0 && is_a($this->_propDict['members'][0], 'ConversationMember')) {
-                return $this->_propDict['members'];
-            }
-            foreach ($this->_propDict['members'] as $singleValue) {
-                $members []= new ConversationMember($singleValue);
-            }
-            $this->_propDict['members'] = $members;
-            return $this->_propDict['members'];
+           $members = [];
+           if (count($this->_propDict['members']) > 0 && is_a($this->_propDict['members'][0], 'ConversationMember')) {
+              return $this->_propDict['members'];
+           }
+           foreach ($this->_propDict['members'] as $singleValue) {
+              $members []= new ConversationMember($singleValue);
+           }
+           $this->_propDict['members'] = $members;
+           return $this->_propDict['members'];
         }
         return null;
     }
@@ -581,15 +581,15 @@ class Team extends Entity
     public function getOperations()
     {
         if (array_key_exists('operations', $this->_propDict) && !is_null($this->_propDict['operations'])) {
-            $operations = [];
-            if (count($this->_propDict['operations']) > 0 && is_a($this->_propDict['operations'][0], 'TeamsAsyncOperation')) {
-                return $this->_propDict['operations'];
-            }
-            foreach ($this->_propDict['operations'] as $singleValue) {
-                $operations []= new TeamsAsyncOperation($singleValue);
-            }
-            $this->_propDict['operations'] = $operations;
-            return $this->_propDict['operations'];
+           $operations = [];
+           if (count($this->_propDict['operations']) > 0 && is_a($this->_propDict['operations'][0], 'TeamsAsyncOperation')) {
+              return $this->_propDict['operations'];
+           }
+           foreach ($this->_propDict['operations'] as $singleValue) {
+              $operations []= new TeamsAsyncOperation($singleValue);
+           }
+           $this->_propDict['operations'] = $operations;
+           return $this->_propDict['operations'];
         }
         return null;
     }

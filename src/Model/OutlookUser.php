@@ -34,15 +34,15 @@ class OutlookUser extends Entity
     public function getMasterCategories()
     {
         if (array_key_exists('masterCategories', $this->_propDict) && !is_null($this->_propDict['masterCategories'])) {
-            $masterCategories = [];
-            if (count($this->_propDict['masterCategories']) > 0 && is_a($this->_propDict['masterCategories'][0], 'OutlookCategory')) {
-                return $this->_propDict['masterCategories'];
-            }
-            foreach ($this->_propDict['masterCategories'] as $singleValue) {
-                $masterCategories []= new OutlookCategory($singleValue);
-            }
-            $this->_propDict['masterCategories'] = $masterCategories;
-            return $this->_propDict['masterCategories'];
+           $masterCategories = [];
+           if (count($this->_propDict['masterCategories']) > 0 && is_a($this->_propDict['masterCategories'][0], 'OutlookCategory')) {
+              return $this->_propDict['masterCategories'];
+           }
+           foreach ($this->_propDict['masterCategories'] as $singleValue) {
+              $masterCategories []= new OutlookCategory($singleValue);
+           }
+           $this->_propDict['masterCategories'] = $masterCategories;
+           return $this->_propDict['masterCategories'];
         }
         return null;
     }

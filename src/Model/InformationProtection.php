@@ -64,15 +64,15 @@ class InformationProtection extends Entity
     public function getThreatAssessmentRequests()
     {
         if (array_key_exists('threatAssessmentRequests', $this->_propDict) && !is_null($this->_propDict['threatAssessmentRequests'])) {
-            $threatAssessmentRequests = [];
-            if (count($this->_propDict['threatAssessmentRequests']) > 0 && is_a($this->_propDict['threatAssessmentRequests'][0], 'ThreatAssessmentRequest')) {
-                return $this->_propDict['threatAssessmentRequests'];
-            }
-            foreach ($this->_propDict['threatAssessmentRequests'] as $singleValue) {
-                $threatAssessmentRequests []= new ThreatAssessmentRequest($singleValue);
-            }
-            $this->_propDict['threatAssessmentRequests'] = $threatAssessmentRequests;
-            return $this->_propDict['threatAssessmentRequests'];
+           $threatAssessmentRequests = [];
+           if (count($this->_propDict['threatAssessmentRequests']) > 0 && is_a($this->_propDict['threatAssessmentRequests'][0], 'ThreatAssessmentRequest')) {
+              return $this->_propDict['threatAssessmentRequests'];
+           }
+           foreach ($this->_propDict['threatAssessmentRequests'] as $singleValue) {
+              $threatAssessmentRequests []= new ThreatAssessmentRequest($singleValue);
+           }
+           $this->_propDict['threatAssessmentRequests'] = $threatAssessmentRequests;
+           return $this->_propDict['threatAssessmentRequests'];
         }
         return null;
     }

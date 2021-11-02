@@ -33,15 +33,15 @@ class EntitlementManagement extends Entity
     public function getAccessPackageAssignmentApprovals()
     {
         if (array_key_exists('accessPackageAssignmentApprovals', $this->_propDict) && !is_null($this->_propDict['accessPackageAssignmentApprovals'])) {
-            $accessPackageAssignmentApprovals = [];
-            if (count($this->_propDict['accessPackageAssignmentApprovals']) > 0 && is_a($this->_propDict['accessPackageAssignmentApprovals'][0], 'Approval')) {
-                return $this->_propDict['accessPackageAssignmentApprovals'];
-            }
-            foreach ($this->_propDict['accessPackageAssignmentApprovals'] as $singleValue) {
-                $accessPackageAssignmentApprovals []= new Approval($singleValue);
-            }
-            $this->_propDict['accessPackageAssignmentApprovals'] = $accessPackageAssignmentApprovals;
-            return $this->_propDict['accessPackageAssignmentApprovals'];
+           $accessPackageAssignmentApprovals = [];
+           if (count($this->_propDict['accessPackageAssignmentApprovals']) > 0 && is_a($this->_propDict['accessPackageAssignmentApprovals'][0], 'Approval')) {
+              return $this->_propDict['accessPackageAssignmentApprovals'];
+           }
+           foreach ($this->_propDict['accessPackageAssignmentApprovals'] as $singleValue) {
+              $accessPackageAssignmentApprovals []= new Approval($singleValue);
+           }
+           $this->_propDict['accessPackageAssignmentApprovals'] = $accessPackageAssignmentApprovals;
+           return $this->_propDict['accessPackageAssignmentApprovals'];
         }
         return null;
     }

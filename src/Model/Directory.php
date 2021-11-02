@@ -34,15 +34,15 @@ class Directory extends Entity
     public function getAdministrativeUnits()
     {
         if (array_key_exists('administrativeUnits', $this->_propDict) && !is_null($this->_propDict['administrativeUnits'])) {
-            $administrativeUnits = [];
-            if (count($this->_propDict['administrativeUnits']) > 0 && is_a($this->_propDict['administrativeUnits'][0], 'AdministrativeUnit')) {
-                return $this->_propDict['administrativeUnits'];
-            }
-            foreach ($this->_propDict['administrativeUnits'] as $singleValue) {
-                $administrativeUnits []= new AdministrativeUnit($singleValue);
-            }
-            $this->_propDict['administrativeUnits'] = $administrativeUnits;
-            return $this->_propDict['administrativeUnits'];
+           $administrativeUnits = [];
+           if (count($this->_propDict['administrativeUnits']) > 0 && is_a($this->_propDict['administrativeUnits'][0], 'AdministrativeUnit')) {
+              return $this->_propDict['administrativeUnits'];
+           }
+           foreach ($this->_propDict['administrativeUnits'] as $singleValue) {
+              $administrativeUnits []= new AdministrativeUnit($singleValue);
+           }
+           $this->_propDict['administrativeUnits'] = $administrativeUnits;
+           return $this->_propDict['administrativeUnits'];
         }
         return null;
     }
@@ -71,15 +71,15 @@ class Directory extends Entity
     public function getDeletedItems()
     {
         if (array_key_exists('deletedItems', $this->_propDict) && !is_null($this->_propDict['deletedItems'])) {
-            $deletedItems = [];
-            if (count($this->_propDict['deletedItems']) > 0 && is_a($this->_propDict['deletedItems'][0], 'DirectoryObject')) {
-                return $this->_propDict['deletedItems'];
-            }
-            foreach ($this->_propDict['deletedItems'] as $singleValue) {
-                $deletedItems []= new DirectoryObject($singleValue);
-            }
-            $this->_propDict['deletedItems'] = $deletedItems;
-            return $this->_propDict['deletedItems'];
+           $deletedItems = [];
+           if (count($this->_propDict['deletedItems']) > 0 && is_a($this->_propDict['deletedItems'][0], 'DirectoryObject')) {
+              return $this->_propDict['deletedItems'];
+           }
+           foreach ($this->_propDict['deletedItems'] as $singleValue) {
+              $deletedItems []= new DirectoryObject($singleValue);
+           }
+           $this->_propDict['deletedItems'] = $deletedItems;
+           return $this->_propDict['deletedItems'];
         }
         return null;
     }

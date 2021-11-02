@@ -34,15 +34,15 @@ class RbacApplication extends Entity
     public function getRoleAssignments()
     {
         if (array_key_exists('roleAssignments', $this->_propDict) && !is_null($this->_propDict['roleAssignments'])) {
-            $roleAssignments = [];
-            if (count($this->_propDict['roleAssignments']) > 0 && is_a($this->_propDict['roleAssignments'][0], 'UnifiedRoleAssignment')) {
-                return $this->_propDict['roleAssignments'];
-            }
-            foreach ($this->_propDict['roleAssignments'] as $singleValue) {
-                $roleAssignments []= new UnifiedRoleAssignment($singleValue);
-            }
-            $this->_propDict['roleAssignments'] = $roleAssignments;
-            return $this->_propDict['roleAssignments'];
+           $roleAssignments = [];
+           if (count($this->_propDict['roleAssignments']) > 0 && is_a($this->_propDict['roleAssignments'][0], 'UnifiedRoleAssignment')) {
+              return $this->_propDict['roleAssignments'];
+           }
+           foreach ($this->_propDict['roleAssignments'] as $singleValue) {
+              $roleAssignments []= new UnifiedRoleAssignment($singleValue);
+           }
+           $this->_propDict['roleAssignments'] = $roleAssignments;
+           return $this->_propDict['roleAssignments'];
         }
         return null;
     }
@@ -71,15 +71,15 @@ class RbacApplication extends Entity
     public function getRoleDefinitions()
     {
         if (array_key_exists('roleDefinitions', $this->_propDict) && !is_null($this->_propDict['roleDefinitions'])) {
-            $roleDefinitions = [];
-            if (count($this->_propDict['roleDefinitions']) > 0 && is_a($this->_propDict['roleDefinitions'][0], 'UnifiedRoleDefinition')) {
-                return $this->_propDict['roleDefinitions'];
-            }
-            foreach ($this->_propDict['roleDefinitions'] as $singleValue) {
-                $roleDefinitions []= new UnifiedRoleDefinition($singleValue);
-            }
-            $this->_propDict['roleDefinitions'] = $roleDefinitions;
-            return $this->_propDict['roleDefinitions'];
+           $roleDefinitions = [];
+           if (count($this->_propDict['roleDefinitions']) > 0 && is_a($this->_propDict['roleDefinitions'][0], 'UnifiedRoleDefinition')) {
+              return $this->_propDict['roleDefinitions'];
+           }
+           foreach ($this->_propDict['roleDefinitions'] as $singleValue) {
+              $roleDefinitions []= new UnifiedRoleDefinition($singleValue);
+           }
+           $this->_propDict['roleDefinitions'] = $roleDefinitions;
+           return $this->_propDict['roleDefinitions'];
         }
         return null;
     }

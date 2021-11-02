@@ -193,15 +193,15 @@ class Drive extends BaseItem
     public function getBundles()
     {
         if (array_key_exists('bundles', $this->_propDict) && !is_null($this->_propDict['bundles'])) {
-            $bundles = [];
-            if (count($this->_propDict['bundles']) > 0 && is_a($this->_propDict['bundles'][0], 'DriveItem')) {
-                return $this->_propDict['bundles'];
-            }
-            foreach ($this->_propDict['bundles'] as $singleValue) {
-                $bundles []= new DriveItem($singleValue);
-            }
-            $this->_propDict['bundles'] = $bundles;
-            return $this->_propDict['bundles'];
+           $bundles = [];
+           if (count($this->_propDict['bundles']) > 0 && is_a($this->_propDict['bundles'][0], 'DriveItem')) {
+              return $this->_propDict['bundles'];
+           }
+           foreach ($this->_propDict['bundles'] as $singleValue) {
+              $bundles []= new DriveItem($singleValue);
+           }
+           $this->_propDict['bundles'] = $bundles;
+           return $this->_propDict['bundles'];
         }
         return null;
     }
@@ -230,15 +230,15 @@ class Drive extends BaseItem
     public function getFollowing()
     {
         if (array_key_exists('following', $this->_propDict) && !is_null($this->_propDict['following'])) {
-            $following = [];
-            if (count($this->_propDict['following']) > 0 && is_a($this->_propDict['following'][0], 'DriveItem')) {
-                return $this->_propDict['following'];
-            }
-            foreach ($this->_propDict['following'] as $singleValue) {
-                $following []= new DriveItem($singleValue);
-            }
-            $this->_propDict['following'] = $following;
-            return $this->_propDict['following'];
+           $following = [];
+           if (count($this->_propDict['following']) > 0 && is_a($this->_propDict['following'][0], 'DriveItem')) {
+              return $this->_propDict['following'];
+           }
+           foreach ($this->_propDict['following'] as $singleValue) {
+              $following []= new DriveItem($singleValue);
+           }
+           $this->_propDict['following'] = $following;
+           return $this->_propDict['following'];
         }
         return null;
     }
@@ -267,15 +267,15 @@ class Drive extends BaseItem
     public function getItems()
     {
         if (array_key_exists('items', $this->_propDict) && !is_null($this->_propDict['items'])) {
-            $items = [];
-            if (count($this->_propDict['items']) > 0 && is_a($this->_propDict['items'][0], 'DriveItem')) {
-                return $this->_propDict['items'];
-            }
-            foreach ($this->_propDict['items'] as $singleValue) {
-                $items []= new DriveItem($singleValue);
-            }
-            $this->_propDict['items'] = $items;
-            return $this->_propDict['items'];
+           $items = [];
+           if (count($this->_propDict['items']) > 0 && is_a($this->_propDict['items'][0], 'DriveItem')) {
+              return $this->_propDict['items'];
+           }
+           foreach ($this->_propDict['items'] as $singleValue) {
+              $items []= new DriveItem($singleValue);
+           }
+           $this->_propDict['items'] = $items;
+           return $this->_propDict['items'];
         }
         return null;
     }
@@ -370,15 +370,15 @@ class Drive extends BaseItem
     public function getSpecial()
     {
         if (array_key_exists('special', $this->_propDict) && !is_null($this->_propDict['special'])) {
-            $special = [];
-            if (count($this->_propDict['special']) > 0 && is_a($this->_propDict['special'][0], 'DriveItem')) {
-                return $this->_propDict['special'];
-            }
-            foreach ($this->_propDict['special'] as $singleValue) {
-                $special []= new DriveItem($singleValue);
-            }
-            $this->_propDict['special'] = $special;
-            return $this->_propDict['special'];
+           $special = [];
+           if (count($this->_propDict['special']) > 0 && is_a($this->_propDict['special'][0], 'DriveItem')) {
+              return $this->_propDict['special'];
+           }
+           foreach ($this->_propDict['special'] as $singleValue) {
+              $special []= new DriveItem($singleValue);
+           }
+           $this->_propDict['special'] = $special;
+           return $this->_propDict['special'];
         }
         return null;
     }

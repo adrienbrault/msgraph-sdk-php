@@ -67,15 +67,15 @@ class IdentityContainer extends Entity
     public function getApiConnectors()
     {
         if (array_key_exists('apiConnectors', $this->_propDict) && !is_null($this->_propDict['apiConnectors'])) {
-            $apiConnectors = [];
-            if (count($this->_propDict['apiConnectors']) > 0 && is_a($this->_propDict['apiConnectors'][0], 'IdentityApiConnector')) {
-                return $this->_propDict['apiConnectors'];
-            }
-            foreach ($this->_propDict['apiConnectors'] as $singleValue) {
-                $apiConnectors []= new IdentityApiConnector($singleValue);
-            }
-            $this->_propDict['apiConnectors'] = $apiConnectors;
-            return $this->_propDict['apiConnectors'];
+           $apiConnectors = [];
+           if (count($this->_propDict['apiConnectors']) > 0 && is_a($this->_propDict['apiConnectors'][0], 'IdentityApiConnector')) {
+              return $this->_propDict['apiConnectors'];
+           }
+           foreach ($this->_propDict['apiConnectors'] as $singleValue) {
+              $apiConnectors []= new IdentityApiConnector($singleValue);
+           }
+           $this->_propDict['apiConnectors'] = $apiConnectors;
+           return $this->_propDict['apiConnectors'];
         }
         return null;
     }
@@ -104,15 +104,15 @@ class IdentityContainer extends Entity
     public function getB2xUserFlows()
     {
         if (array_key_exists('b2xUserFlows', $this->_propDict) && !is_null($this->_propDict['b2xUserFlows'])) {
-            $b2xUserFlows = [];
-            if (count($this->_propDict['b2xUserFlows']) > 0 && is_a($this->_propDict['b2xUserFlows'][0], 'B2xIdentityUserFlow')) {
-                return $this->_propDict['b2xUserFlows'];
-            }
-            foreach ($this->_propDict['b2xUserFlows'] as $singleValue) {
-                $b2xUserFlows []= new B2xIdentityUserFlow($singleValue);
-            }
-            $this->_propDict['b2xUserFlows'] = $b2xUserFlows;
-            return $this->_propDict['b2xUserFlows'];
+           $b2xUserFlows = [];
+           if (count($this->_propDict['b2xUserFlows']) > 0 && is_a($this->_propDict['b2xUserFlows'][0], 'B2xIdentityUserFlow')) {
+              return $this->_propDict['b2xUserFlows'];
+           }
+           foreach ($this->_propDict['b2xUserFlows'] as $singleValue) {
+              $b2xUserFlows []= new B2xIdentityUserFlow($singleValue);
+           }
+           $this->_propDict['b2xUserFlows'] = $b2xUserFlows;
+           return $this->_propDict['b2xUserFlows'];
         }
         return null;
     }
@@ -141,15 +141,15 @@ class IdentityContainer extends Entity
     public function getIdentityProviders()
     {
         if (array_key_exists('identityProviders', $this->_propDict) && !is_null($this->_propDict['identityProviders'])) {
-            $identityProviders = [];
-            if (count($this->_propDict['identityProviders']) > 0 && is_a($this->_propDict['identityProviders'][0], 'IdentityProviderBase')) {
-                return $this->_propDict['identityProviders'];
-            }
-            foreach ($this->_propDict['identityProviders'] as $singleValue) {
-                $identityProviders []= new IdentityProviderBase($singleValue);
-            }
-            $this->_propDict['identityProviders'] = $identityProviders;
-            return $this->_propDict['identityProviders'];
+           $identityProviders = [];
+           if (count($this->_propDict['identityProviders']) > 0 && is_a($this->_propDict['identityProviders'][0], 'IdentityProviderBase')) {
+              return $this->_propDict['identityProviders'];
+           }
+           foreach ($this->_propDict['identityProviders'] as $singleValue) {
+              $identityProviders []= new IdentityProviderBase($singleValue);
+           }
+           $this->_propDict['identityProviders'] = $identityProviders;
+           return $this->_propDict['identityProviders'];
         }
         return null;
     }
@@ -178,15 +178,15 @@ class IdentityContainer extends Entity
     public function getUserFlowAttributes()
     {
         if (array_key_exists('userFlowAttributes', $this->_propDict) && !is_null($this->_propDict['userFlowAttributes'])) {
-            $userFlowAttributes = [];
-            if (count($this->_propDict['userFlowAttributes']) > 0 && is_a($this->_propDict['userFlowAttributes'][0], 'IdentityUserFlowAttribute')) {
-                return $this->_propDict['userFlowAttributes'];
-            }
-            foreach ($this->_propDict['userFlowAttributes'] as $singleValue) {
-                $userFlowAttributes []= new IdentityUserFlowAttribute($singleValue);
-            }
-            $this->_propDict['userFlowAttributes'] = $userFlowAttributes;
-            return $this->_propDict['userFlowAttributes'];
+           $userFlowAttributes = [];
+           if (count($this->_propDict['userFlowAttributes']) > 0 && is_a($this->_propDict['userFlowAttributes'][0], 'IdentityUserFlowAttribute')) {
+              return $this->_propDict['userFlowAttributes'];
+           }
+           foreach ($this->_propDict['userFlowAttributes'] as $singleValue) {
+              $userFlowAttributes []= new IdentityUserFlowAttribute($singleValue);
+           }
+           $this->_propDict['userFlowAttributes'] = $userFlowAttributes;
+           return $this->_propDict['userFlowAttributes'];
         }
         return null;
     }

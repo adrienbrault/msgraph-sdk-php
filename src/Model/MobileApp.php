@@ -427,15 +427,15 @@ class MobileApp extends Entity
     public function getAssignments()
     {
         if (array_key_exists('assignments', $this->_propDict) && !is_null($this->_propDict['assignments'])) {
-            $assignments = [];
-            if (count($this->_propDict['assignments']) > 0 && is_a($this->_propDict['assignments'][0], 'MobileAppAssignment')) {
-                return $this->_propDict['assignments'];
-            }
-            foreach ($this->_propDict['assignments'] as $singleValue) {
-                $assignments []= new MobileAppAssignment($singleValue);
-            }
-            $this->_propDict['assignments'] = $assignments;
-            return $this->_propDict['assignments'];
+           $assignments = [];
+           if (count($this->_propDict['assignments']) > 0 && is_a($this->_propDict['assignments'][0], 'MobileAppAssignment')) {
+              return $this->_propDict['assignments'];
+           }
+           foreach ($this->_propDict['assignments'] as $singleValue) {
+              $assignments []= new MobileAppAssignment($singleValue);
+           }
+           $this->_propDict['assignments'] = $assignments;
+           return $this->_propDict['assignments'];
         }
         return null;
     }
@@ -464,15 +464,15 @@ class MobileApp extends Entity
     public function getCategories()
     {
         if (array_key_exists('categories', $this->_propDict) && !is_null($this->_propDict['categories'])) {
-            $categories = [];
-            if (count($this->_propDict['categories']) > 0 && is_a($this->_propDict['categories'][0], 'MobileAppCategory')) {
-                return $this->_propDict['categories'];
-            }
-            foreach ($this->_propDict['categories'] as $singleValue) {
-                $categories []= new MobileAppCategory($singleValue);
-            }
-            $this->_propDict['categories'] = $categories;
-            return $this->_propDict['categories'];
+           $categories = [];
+           if (count($this->_propDict['categories']) > 0 && is_a($this->_propDict['categories'][0], 'MobileAppCategory')) {
+              return $this->_propDict['categories'];
+           }
+           foreach ($this->_propDict['categories'] as $singleValue) {
+              $categories []= new MobileAppCategory($singleValue);
+           }
+           $this->_propDict['categories'] = $categories;
+           return $this->_propDict['categories'];
         }
         return null;
     }
