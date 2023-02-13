@@ -24,7 +24,6 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Beta\\Microsoft\\Graph\\": "src/Beta/Microsoft/Graph/",
 			"Microsoft\\Graph\\": "src/"
 		}
 	},
